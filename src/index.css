@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header_container{
+    border-bottom: 5px solid !important; /* Adjust the width of the border as needed */
+    border-image: linear-gradient(to right,#1D9AD6,#90C03E) 1 !important;
+    padding: 0px !important;
+}

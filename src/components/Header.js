@@ -1,5 +1,7 @@
 import { Fragment, useState } from "react";
 import productImage from "../assests/product.png";
+import { Link } from 'react-router-dom';
+
 
 import {
   Dialog,
@@ -50,21 +52,21 @@ const technology = [
     name: "nanoX technology",
     description:
       "AOP CELL Technology Virusheild Air Purifier Falcon C (For Cassette AC)  Flacon S (For Split AC)",
-    href: "#",
+    href: "/technology#section1",
     icon: ChartPieIcon,
     src: technology1, // Use imported variable
   },
   {
     name: "plasmOX technology",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/technology#section2",
     icon: CursorArrowRaysIcon,
     src: technology2, // Use imported variable
   },
   {
     name: "ultraSORB technology",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/technology#section3",
     icon: FingerPrintIcon,
     src: technology3, // Use imported variable
   },
@@ -255,7 +257,7 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
             Abouts us
           </a>
 

@@ -2,13 +2,13 @@ import React from "react";
 import logo from "../assests/logo.png"
 import { IoIosSearch } from "react-icons/io";
 import { FiPhoneCall } from "react-icons/fi";
-
+import { Link } from "react-router-dom";
 
 
 const TopNav = () => {
   return (
     <div className="flex items-center justify-between p-4 border-b-2">
-      <img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18" />
+      <a href="/"><img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18" /></a>
       <div className="flex items-center space-x-4">
         <div className="hidden md:flex items-center space-x-2">
           <FiPhoneCall className="text-lg md:text-xl text-gray-700" />

@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import './carousel.css'; // Create this file for custom styling if needed
 
 const images = [
-  { src: '/assests/products/p_(1).png', heading: 'Heading 1' },
-  { src: '/assests/products/p_(2).png', heading: 'Heading 2' },
-  { src: '/assests/products/p_(3).png', heading: 'Heading 3' },
-  { src: '/assests/products/p_(4).png', heading: 'Heading 4' },
-  { src: '/assests/products/p_(5).png', heading: 'Heading 5' },
-  { src: '/assests/products/p_(6).png', heading: 'Heading 6' },
+  { src: '/assets/products/p_(1)_png', heading: 'Heading 1' },
+  { src: '/assets/products/p_(2)_png', heading: 'Heading 2' },
+  { src: '/assets/products/p_(3)_png', heading: 'Heading 3' },
+  { src: '/assets/products/p_(1)_png', heading: 'Heading 4' },
+  { src: '/assets/products/p_(2)_png', heading: 'Heading 5' },
+  { src: '/assets/products/p_(3)_png', heading: 'Heading 6' },
 ];
 
 const Carousel = () => {
@@ -16,13 +16,13 @@ const Carousel = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 3 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 3 ? 0 : prevIndex + 1
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -39,7 +39,7 @@ const Carousel = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-1/3 flex-shrink-0 p-5"
+            className="w-full md:w-1/3 flex-shrink-0"
             style={{ backgroundImage: `url(${image.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
             <div className="relative h-64">

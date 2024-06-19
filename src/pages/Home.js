@@ -9,6 +9,7 @@ import choose2 from "../assests/whyChose/choose (2).png";
 import choose3 from "../assests/whyChose/choose (3).png";
 import COUNT from "../assests/banner2.png";
 import sol from "../assests/sol.png";
+import Carousel from "../components/Carousel";
 // import ImageTextCard from './components/ImageTextCard';
 import ImageTextCard from "../components/ImageTextCard";
 export default function HomePage() {
@@ -84,10 +85,9 @@ export default function HomePage() {
       <div className="flex justify-center mt-10">
       <ImageTextCard
         imageUrl={sol}
-        heading="Sample Heading"
-        content="This is a sample paragraph to demonstrate the ImageTextCard component. The image is on the right-hand side, while the heading and text are on the left-hand side."
       />
     </div>
+      <Carousel />  
     </div>
   );
 }

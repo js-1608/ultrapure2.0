@@ -1,14 +1,18 @@
 // src/Carousel.js
 import React, { useState } from 'react';
-import './carousel.css'; // Create this file for custom styling if needed
+import './carousel.css'; // Ensure this file contains the necessary styling
+import p1 from '../assests/products/product.png';
+import p2 from '../assests/products/product2.png';
+import p3 from '../assests/products/product3.png';
+
 
 const images = [
-  { src: '/assets/products/p_(1)_png', heading: 'Heading 1' },
-  { src: '/assets/products/p_(2)_png', heading: 'Heading 2' },
-  { src: '/assets/products/p_(3)_png', heading: 'Heading 3' },
-  { src: '/assets/products/p_(1)_png', heading: 'Heading 4' },
-  { src: '/assets/products/p_(2)_png', heading: 'Heading 5' },
-  { src: '/assets/products/p_(3)_png', heading: 'Heading 6' },
+  { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
+  { src: p2, heading: 'Corrosion Control Unit' },
+  { src: p3, heading: 'germiNOX Air Purifier' },
+  { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
+  { src: p2, heading: 'Corrosion Control Unit' },
+  { src: p3, heading: 'germiNOX Air Purifier' },
 ];
 
 const Carousel = () => {
@@ -31,44 +35,38 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+    <div className="carousel-container p-5">
+      <div className='mt-10 p-2'>
+       <h2 className=" font-bold text-5xl  text-white">
+       Discover Our Product Range
+      </h2>
+      <p className='text-md p-1 text-white'>Breathe easier with ouur advanced air purification solutions.</p>
+      </div>
       <div
-        className="flex transition-transform duration-500"
+        className="carousel-slide"
         style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
       >
+         
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="w-full md:w-1/3 flex-shrink-0"
-            style={{ backgroundImage: `url(${image.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-          >
-            <div className="relative h-64">
-              <div className="absolute bottom-0 w-full p-4 bg-black bg-opacity-50 text-white text-center">
-                <h2>{image.heading}</h2>
-              </div>
+          <div key={index} className="carousel-item bg-white ml-5 rounded">
+            <img src={image.src} alt={image.heading} className="carousel-image" />
+            <div className="carousel-caption strong font-bold text-xl">
+              <h2>{image.heading}</h2>
             </div>
           </div>
         ))}
       </div>
-      <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-        <button onClick={prevSlide} className="p-2 bg-gray-800 bg-opacity-50 text-white">
-          &lt;
-        </button>
-      </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-        <button onClick={nextSlide} className="p-2 bg-gray-800 bg-opacity-50 text-white">
-          &gt;
-        </button>
-      </div>
-      <div className="flex justify-center mt-4">
+      <button onClick={prevSlide} className="carousel-button prev">&lt;</button>
+      <button onClick={nextSlide} className="carousel-button next">&gt;</button>
+      {/* <div className="carousel-dots">
         {Array.from({ length: Math.ceil(images.length / 3) }).map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index * 3)}
-            className={`mx-1 w-3 h-3 rounded-full ${index === Math.floor(currentIndex / 3) ? 'bg-gray-800' : 'bg-gray-400'}`}
+            className={`carousel-dot ${index === Math.floor(currentIndex / 3) ? 'active' : ''}`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

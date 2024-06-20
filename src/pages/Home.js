@@ -12,6 +12,7 @@ import sol from "../assests/sol.png";
 import Carousel from "../components/Carousel";
 // import ImageTextCard from './components/ImageTextCard';
 import ImageTextCard from "../components/ImageTextCard";
+import OurClientele from "../components/OurClientele";
 export default function HomePage() {
   return (
     <div>
@@ -82,12 +83,14 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 p-10">
       <ImageTextCard
         imageUrl={sol}
       />
     </div>
       <Carousel />  
+      <OurClientele/>
     </div>
+
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageTextCard = ({ imageUrl }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="flex flex-col md:flex-row items-center bg-white  overflow-hidden ">
       <div className="w-full md:w-1/2">
         <img src={imageUrl} alt={imageUrl} className="object-cover w-full h-full opacity-100" />
       </div>

@@ -7,3 +7,9 @@
     border-image: linear-gradient(to right,#1D9AD6,#90C03E) 1 !important;
     padding: 0px !important;
 }
+
+.border_left{
+    border-left: 8px solid !important; /* Adjust the width of the border as needed */
+    border-image: linear-gradient(to bottom,#1D9AD6,#90C03E) 1 !important;
+    padding: 0px !important;
+}

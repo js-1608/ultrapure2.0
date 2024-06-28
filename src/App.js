@@ -10,7 +10,7 @@ import Product from './pages/Product';
 import Resources from './pages/Resources';
 import Insights from './pages/Insights';
 import Home from './pages/Home';
-
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -23,6 +23,8 @@ export default function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </Router>
   );

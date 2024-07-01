@@ -21,7 +21,7 @@ const About = () => {
 
 			<div className="container mx-auto p-4">
 				<div className="flex flex-col md:flex-row">
-					<div className="w-fit md:w-1/2 p-4  bg-gray-200 header_container m-5 sm:m-0">
+					<div className="w-fit md:w-1/2 p-4  bg-gray-200 header_container lg:m-5 sm:m-0">
 						<div className="  p-4 m-auto ">
 							<img src={mission} alt="Email Logo" className="  m-auto " />
 
@@ -33,7 +33,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="w-fit md:w-1/2 p-4  bg-gray-200  header_container m-5 sm:m-0">
+					<div className="w-fit md:w-1/2 p-4  bg-gray-200  header_container lg:m-5 sm:m-0">
 						<div className="  p-4 m-auto ">
 							<img src={vision} alt="Email Logo" className="  m-auto" />
 

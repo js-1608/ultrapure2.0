@@ -17,7 +17,7 @@ const About = () => {
 				<div className="flex flex-col md:flex-row">
 				<div className="w-full md:w-1/2 p-4  ">
 						{/* <img src="" alt="Email Logo" className="w-3/5 h-4/5  m-auto header_container" /> */}
-						<div className="w-3/5  p-4 m-auto header_container">
+						<div className="  p-4 m-auto header_container">
 							<h5 className='font-bold'>Head Office</h5>
 							3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
 						</div>
@@ -25,7 +25,7 @@ const About = () => {
 					</div>
 					<div className="w-full md:w-1/2 p-4  ">
 						{/* <img src="" alt="Email Logo" className="w-3/5 h-4/5  m-auto header_container" /> */}
-						<div className="w-3/5  p-4 m-auto header_container">
+						<div className="  p-4 m-auto header_container">
 							<h5 className='font-bold'>Head Office</h5>
 							3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
 						</div>
@@ -33,6 +33,50 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+
+
+			<div className="container mx-auto p-4">
+                <div className="flex flex-col md:flex-row">
+				<div className="w-full md:w-3/5 p-4  ">
+                    <img src="" alt="Email Logo" className="w-3/5 h-4/5  m-auto border_left" />
+
+                    </div>
+                    <div className="w-full md:w-2/6 p-4 m-auto">
+                    <h5 className='font-bold'>Head Office</h5>
+                    3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
+                    </div>
+                   
+                </div>
+            </div>
+
+			<div className="container mx-auto p-4">
+                <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-2/6 p-4 m-auto">
+                    <h5 className='font-bold'>Head Office</h5>
+                    3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
+                    </div>
+                    <div className="w-full md:w-3/5 p-4  ">
+                    <img src="" alt="Email Logo" className="w-3/5 h-4/5  m-auto border_left" />
+
+                    </div>
+                </div>
+            </div>
+
+			<div className="container mx-auto p-4">
+                <div className="flex flex-col md:flex-row">
+				<div className="w-full md:w-3/5 p-4  ">
+                    <img src="" alt="Email Logo" className="w-3/5 h-4/5  m-auto border_left" />
+
+                    </div>
+                    <div className="w-full md:w-2/6 p-4 m-auto">
+                    <h5 className='font-bold'>Head Office</h5>
+                    3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
+                    </div>
+                   
+                </div>
+            </div>
+
+
 		</div>
 	);
 }

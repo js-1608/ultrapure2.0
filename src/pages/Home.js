@@ -10,6 +10,7 @@ import choose3 from "../assests/whyChose/choose (3).png";
 import COUNT from "../assests/banner2.png";
 import sol from "../assests/sol.png";
 import Carousel from "../components/Carousel";
+import Newsletter from '../components/Newsletter';
 // import ImageTextCard from './components/ImageTextCard';
 import ImageTextCard from "../components/ImageTextCard";
 import OurClientele from "../components/OurClientele";
@@ -100,7 +101,7 @@ export default function HomePage() {
         <CarouselComponent />
         </div>
       </div>
-
+<Newsletter/>
     </div>
 
   );

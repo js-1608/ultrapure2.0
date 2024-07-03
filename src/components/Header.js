@@ -201,7 +201,7 @@ const resources = [
   {
     name: "Customer Support",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/contact",
     icon: CursorArrowRaysIcon,
     src: r7,
   },

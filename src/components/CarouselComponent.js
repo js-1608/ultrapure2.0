@@ -31,17 +31,17 @@ const CarouselComponent = () => {
   return (
     <div className="flex  p-5 rounded-lg">
       <div className="w-1/4 flex flex-col items-center justify-center">
-        <h2 className="lg:text-3xl sm:text-2xl font-bold "><span className='text-[#90C03E]'>Tested</span> By</h2>
+        <h2 className="lg:text-3xl sm:text-sm font-bold "><span className='text-[#90C03E]'>Tested</span>By</h2>
         <div className="flex space-x-4">
           <button 
             onClick={handlePrev}
-            className="   rounded-lg text-4xl"
+            className="   rounded-lg lg:text-4xl sm:text-2xl"
           >
             <span aria-hidden="true">&larr;</span>
           </button>
           <button 
             onClick={handleNext}
-            className=" rounded-lg text-4xl"
+            className=" rounded-lg lg:text-4xl sm:text-2xl"
           >
            <span aria-hidden="true">&rarr;</span>
           </button>
@@ -54,8 +54,8 @@ const CarouselComponent = () => {
             style={{ transform: `translateX(-${currentIndex * (100 / 7)}%)` }}
           >
             {logos.map((logo, index) => (
-              <div key={index} className="flex-shrink-0 lg:w-1/6 sm:w-1/5 p-2">
-                <img src={logo} alt={`Logo ${index + 1}`} className="mx-auto " />
+              <div key={index} className="flex  w-1/2 ">
+                <img src={logo} alt={`Logo ${index + 1}`} className="mx-auto max-w-full  " />
               </div>
             ))}
           </div>

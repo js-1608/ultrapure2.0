@@ -7,6 +7,10 @@ import nanox from "../assests/nanoX technology.png";
 import ultrasorb from "../assests/ultrasorb technology.png";
 import plasma from "../assests/plasmOX Technology.png";
 import CarouselComponent from '../components/CarouselComponent';
+import tech1 from '../assests/technology (1).png';
+import tech2 from '../assests/technology (2).png';
+import tech3 from '../assests/plasmOX.png';
+
 
 export default function Technology() {
   const location = useLocation();
@@ -30,9 +34,49 @@ export default function Technology() {
 				buttonUrl=""
 				buttonText=""
 			/>
-      <CarouselComponent />
+      <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
+          
+          <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
+            <p className="text-gray-700 p-8 text-justify">
+              nanoX Technology is at the forefront of our air purification solutions, harnessing the power of nature-friendly oxidizers to effectively eliminate viruses, microbes, and pollutants from indoor environments. By utilizing UV light to activate nano Titanium dioxide, nanoX generates hydroxyl radicals, which act as powerful oxidizers, breaking down harmful contaminants at the molecular level. This innovative technology offers continuous air purification and disinfection, providing peace of mind and protection against airborne pathogens.        </p>
+          </div>
+          <div className="w-full md:w-1/2 flex justify-between items-center">
+          <div className='w-1/4'>
+            <img
+              src={tech1}
+              alt="Sample Image"
+              className=" h-auto rounded-lg"
+
+            />
+            <h6 className='font-bold text-sm'>nanoX® Technology</h6>
+            </div>
+            <div className='w-1/4'>
+
+            <img
+              src={tech2}
+              alt="Sample Image"
+              className="h-auto rounded-lg"
+
+            />
+            <h6 className='font-bold text-sm'>plasmOX® Technology</h6>
+            </div>
+                      <div className='w-1/4'>
+
+            <img
+              src={tech3}
+              alt="Sample Image"
+              className=" h-auto rounded-lg"
+
+            />
+            <h6 className='font-bold w-full text-sm'>plasmOX® Technology</h6>
+            </div>
+          </div>
+        </div>
+        <CarouselComponent />
+
+      
       <section id="section1">
-        <div className="flex flex-col md:flex-row bg-gray-50 p-4 md:p-8 rounded-lg">
+      <div className="flex flex-col md:flex-row bg-gray-50 p-4 md:p-8 rounded-lg">
           <div className="w-full md:w-1/2 flex justify-center items-center">
             <img
               src={nanox}
@@ -47,7 +91,6 @@ export default function Technology() {
               nanoX Technology is at the forefront of our air purification solutions, harnessing the power of nature-friendly oxidizers to effectively eliminate viruses, microbes, and pollutants from indoor environments. By utilizing UV light to activate nano Titanium dioxide, nanoX generates hydroxyl radicals, which act as powerful oxidizers, breaking down harmful contaminants at the molecular level. This innovative technology offers continuous air purification and disinfection, providing peace of mind and protection against airborne pathogens.        </p>
           </div>
         </div>
-
       </section>
 
       <section id="section2">

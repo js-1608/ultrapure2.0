@@ -89,11 +89,11 @@ const products = [
         buttonText=""
       />
 
-<div className="flex flex-wrap">
+<div className="flex flex-wrap ">
       <div className="flex-1 p-4 w-4/5">
         <FAQSection faqs={faqs} />
       </div>
-      <div className=" p-4 w-1/5">
+      <div className=" p-4 w-1/5  border border-black m-5 rounded display_hide">
         <ProductList products={products} />
       </div>
     </div>

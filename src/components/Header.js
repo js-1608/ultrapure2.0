@@ -108,31 +108,31 @@ const market_served = [
       "Falcon C (For Cassette AC)",
       "Falcon S (For Split AC)",
     ],
-    href: "/page1",
+    href: "/market-served",
     icon: ChartPieIcon,
   },
   {
     name: "Industrial/Transportation",
     items: ["Speak directly to your customers"],
-    href: "#",
+    href: "/market-served",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Food & Beverage",
     items: ["Your customers’ data will be safe and secure"],
-    href: "#",
+    href: "/market-served",
     icon: FingerPrintIcon,
   },
   {
     name: "Material Processing",
     items: ["Connect with third-party tools"],
-    href: "#",
+    href: "/market-served",
     icon: SquaresPlusIcon,
   },
   {
     name: "Water/Wastewater",
     items: ["Connect with third-party tools"],
-    href: "#",
+    href: "/market-served",
     icon: SquaresPlusIcon,
   },
 ];
@@ -141,11 +141,11 @@ const solution = [
   { name: "Indoor Air Quality", href: "#", icon: ChartPieIcon },
   {
     name: "Toxic Gas & Corrosion Control",
-    href: "#",
+    href: "/market-served",
     icon: CursorArrowRaysIcon,
   },
-  { name: "AQI Monitoring", href: "#", icon: FingerPrintIcon },
-  { name: "Odor Control", href: "#", icon: SquaresPlusIcon },
+  { name: "AQI Monitoring", href: "/market-served", icon: FingerPrintIcon },
+  { name: "Odor Control", href: "/market-served", icon: SquaresPlusIcon },
 ];
 const resources = [
   {

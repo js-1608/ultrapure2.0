@@ -15,16 +15,21 @@ import logo13 from '../assests/Our_Clientele/logo (13).png'
 import logo14 from '../assests/Our_Clientele/logo (14).png'
 import logo15 from '../assests/Our_Clientele/logo (15).png'
 import logo16 from '../assests/Our_Clientele/logo (16).png'
+import logo17 from '../assests/Our_Clientele/Client Logo-1.png'
+import logo18 from '../assests/Our_Clientele/Client Logo-2.png'
+import logo19 from '../assests/Our_Clientele/Client Logo-3.png'
+import logo20 from '../assests/Our_Clientele/Client Logo-4.png'
+
 
 
 const logos = [
-   logo1, logo2 ,logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12]
+   logo1, logo2 ,logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12 ,logo13,logo14, logo15, logo16 ,logo17 ,logo18 ,logo19 ,logo20]
 
 const OurClientele = () => {
     return (
         <div className="flex flex-wrap justify-center mx-4 my-8">
             {logos.map((logo, index) => (
-                <div key={index} className="flex justify-center items-center w-1/6 p-1">
+                <div key={index} className="flex justify items-center w-1/7 p-2">
                     <img src={`${logo}`} alt={`Client Logo ${index + 1}`} className="max-w-full h-auto" />
                 </div>
             ))}

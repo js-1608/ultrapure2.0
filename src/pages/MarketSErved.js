@@ -71,11 +71,11 @@ const faqs = [
 ];
 
 const products = [
-  { id: 1, name: 'Commerical & Public Buildings',list:['Airports', 'Halls & Malls' ,'Hotels', 'Museums','Offices', 'Restaurants,Schools & Universities' , 'Hospitals/ IVFCentres'], href: 'https://example.com/product1' },
-  { id: 2, name: 'Industrial/Transportation',list:['Airport','Power Generation','Public Transportation','Pulp and Paper','Refineries'], href: 'https://example.com/product2' },
-  { id: 3, name: 'Food & Beverages',list:['Beverage Production','Dairy Processes','Food Processing'], href: 'https://example.com/product2' },
-  { id: 4, name: 'Material Processing',list:['Mining', 'Oil, Gas & Chemicals',' Pulp & Paper'], href: 'https://example.com/product2' },
-  { id: 5, name: 'Water/Waste',list:['Corrosion Control','Emergency Gas Scrubbing','Odor Control'], href: 'https://example.com/product2' },
+  { id: 1, name: 'Commerical & Public Buildings',list:['Airports', 'Halls & Malls' ,'Hotels', 'Museums','Offices', 'Restaurants,Schools & Universities' , 'Hospitals/ IVFCentres'], href: '/product1' },
+  { id: 2, name: 'Industrial/Transportation',list:['Airport','Power Generation','Public Transportation','Pulp and Paper','Refineries'], href: '/product2' },
+  { id: 3, name: 'Food & Beverages',list:['Beverage Production','Dairy Processes','Food Processing'], href: '/product2' },
+  { id: 4, name: 'Material Processing',list:['Mining', 'Oil, Gas & Chemicals',' Pulp & Paper'], href: '/product2' },
+  { id: 5, name: 'Water/Waste',list:['Corrosion Control','Emergency Gas Scrubbing','Odor Control'], href: '/product2' },
 
   // Add more products as needed
 ];

@@ -24,9 +24,9 @@ const FAQSection = ({ faqs }) => {
           </div>
 
           {openFAQ === faq.id && (
-            <div className="mt-2 flex flex-wrap place-content-center">
+            <div className="mt-2 flex flex-wrap ">
               {faq.content.map((item, index) => (
-                <div key={index} className="m-5">
+                <div key={index} className="m-2">
                   <img src={item.imageUrl} alt={item.heading} className="w-full h-auto" />
                   <h4 className="bg-gray-100 mt-0">
                     <a

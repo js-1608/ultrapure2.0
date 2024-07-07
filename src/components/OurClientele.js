@@ -27,7 +27,7 @@ const logos = [
 
 const OurClientele = () => {
     return (
-        <div className="flex flex-wrap justify-center mx-4 my-8">
+        <div className="flex flex-wrap justify-center ">
             {logos.map((logo, index) => (
                 <div key={index} className="flex justify items-center w-1/7 p-2">
                     <img src={`${logo}`} alt={`Client Logo ${index + 1}`} className="max-w-full h-auto" />

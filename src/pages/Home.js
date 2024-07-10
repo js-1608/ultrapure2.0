@@ -94,7 +94,7 @@ export default function HomePage() {
 
       <div className="p-10 border-solid   ">
         <div className="rounded-lg shadow-2xl border-2">
-        <h6 className="m-auto text-center text-3xl font-bold p-4">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
+        <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
 
         <OurClientele />
         <hr className=" border-1 border-black lg:w-4/5 sm:w-full m-auto"></hr>

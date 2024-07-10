@@ -75,25 +75,28 @@ const technology = [
 const products = [
   {
     name: "Microbial Contamination",
-    description:
-      "AOP CELL Technology Virusheild Air Purifier Falcon C (For Cassette AC)  Flacon S (For Split AC)",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description:"",
     href: "#",
     icon: ChartPieIcon,
   },
   {
     name: "For Gaseous Contamination",
-    description: "ultraSORB Chemical Media",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description: "",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Particulate Contamination",
-    description: "CBR Filter ESP Filter plasmOX Bipolar Ionizers",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description: "",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
     name: "Particulate Contamination",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
@@ -416,16 +419,21 @@ export default function Header() {
                             />
                           </div>
                           <div className="flex-auto">
-                            <a
+                            {/* <a
                               href={item.href}
                               className="block font-semibold text-gray-900"
                             >
-                              {item.name}
+                             <h5> {item.name}</h5>
                               <span className="absolute inset-0" />
-                            </a>
-                            <p className="mt-1 text-gray-600">
-                              {item.description}
-                            </p>
+                            </a> */}
+                            {/* <p className="mt-1 text-gray-600">
+                              {item.list}
+                            </p> */}
+                                <ul className="mt-1 text-gray-600  list-inside">
+                              {item.list.map((listItem, index) => (
+                                <li key={index}><a href={listItem}>{listItem}</a></li>
+                              ))}
+                            </ul>
                           </div>
                         </div>
                       ))}

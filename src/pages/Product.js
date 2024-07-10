@@ -35,7 +35,7 @@ const images = [
       />
         <SearchBar2 data={data} />
 
-				<div className="min-h-screen flex items-center justify-center ">
+				<div className="flex items-center justify-center ">
 			<ImageGrid images={images} />
 			</div>
 		</div>

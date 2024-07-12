@@ -48,5 +48,4 @@ const FAQSection = ({ faqs }) => {
     </div>
   );
 };
-
 export default FAQSection;

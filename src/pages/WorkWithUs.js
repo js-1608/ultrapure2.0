@@ -3,6 +3,8 @@ import React from 'react';
 import Banner from '../components/Banner';
 import banner from '../assests/contactBanner.png'
 import Newsletter from '../components/Newsletter';
+import { MdArrowOutward } from "react-icons/md";
+
 const jobPositions = [
   {
     title: 'Frontend Developer',
@@ -41,9 +43,11 @@ const WorkWithUs = () => {
           </div>
           <button className="flex items-center  py-2 px-4 rounded hover:bg-ultragreen">
             <a href="example.com">Apply</a>
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <MdArrowOutward className="ml-2 w-5 h-5"/>
+
+            {/* <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
+            </svg> */}
           </button>
         </div>
       ))}

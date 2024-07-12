@@ -10,7 +10,7 @@ import CarouselComponent from '../components/CarouselComponent';
 import tech1 from '../assests/technology (1).png';
 import tech2 from '../assests/technology (2).png';
 import tech3 from '../assests/plasmOX.png';
-
+import Newsletter from '../components/Newsletter';
 
 export default function Technology() {
   const location = useLocation();
@@ -139,7 +139,7 @@ export default function Technology() {
           </div>
         </div>
       </section>
-
+      <Newsletter/>
     </div>
   );
 }

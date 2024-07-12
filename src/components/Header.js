@@ -1,6 +1,5 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import productImage from "../assests/product.png";
-import { Link } from 'react-router-dom';
 
 
 import {
@@ -170,21 +169,21 @@ const resources = [
     name: "FAQ s",
     description:
       "AOP CELL Technology Virusheild Air Purifier Falcon C (For Cassette AC)  Flacon S (For Split AC)",
-    href: "#",
+    href: "/faq",
     icon: ChartPieIcon,
     src: r1,
   },
   {
     name: "Careers",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/work",
     icon: CursorArrowRaysIcon,
     src: r2,
   },
   {
     name: "Download Centre",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/download",
     icon: CursorArrowRaysIcon,
     src: r2,
   },

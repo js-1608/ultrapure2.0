@@ -16,15 +16,10 @@ import Header from './components/Header';
 import ProductDetail1 from './pages/Products/ProductDetail1';
 import ProductDetail2 from './pages/Products/ProductDetail2';
 import ProductDetail3 from './pages/Products/ProductDetail3';
-
+import Faq from './pages/Faq';
+import WorkWithUs from './pages/WorkWithUs';
+import Download from './pages/Download';
 export default function App() {
-  const data = [
-    { id: 1, name: 'al', description: 'Description of Product 1', path: '/product1' },
-    { id: 2, name: 'Product 2', description: 'Description of Product 2', path: '/product2' },
-    { id: 3, name: 'Product 3', description: 'Description of Product 3', path: '/product3' },
-    // Add more data as needed
-  ];
-
   return (
     <Router>
           <TopNav/>
@@ -39,7 +34,17 @@ export default function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/product1" element={<ProductDetail1 />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/work" element={<WorkWithUs/>} />
+        <Route path="/download" element={<Download/>} />
+
+
+
+
+
+
+
+            <Route path="/product1" element={<ProductDetail1 />} />
             <Route path="/product2" element={<ProductDetail2 />} />
             <Route path="/product3" element={<ProductDetail3 />} />
       </Routes>

@@ -6,8 +6,8 @@ import SearchBar from './SearchBar'; // Adjust the import path as necessary
 
 const TopNav = () => {
   const data = [
-    { id: 1, name: 'al', description: 'Description of Product 1', path: '/product1' },
-    { id: 2, name: 'Product 2', description: 'Description of Product 2', path: '/product2' },
+    { id: 1, name: 'about', description: 'Description of Product 1', path: '/about' },
+    { id: 2, name: 'Out Techology', description: 'Description of Product 2', path: '/technology' },
     { id: 3, name: 'Product 3', description: 'Description of Product 3', path: '/product3' },
     // Add more data as needed
   ];

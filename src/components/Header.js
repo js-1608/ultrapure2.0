@@ -1,6 +1,5 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import productImage from "../assests/product.png";
-import { Link } from 'react-router-dom';
 
 
 import {
@@ -75,25 +74,28 @@ const technology = [
 const products = [
   {
     name: "Microbial Contamination",
-    description:
-      "AOP CELL Technology Virusheild Air Purifier Falcon C (For Cassette AC)  Flacon S (For Split AC)",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description:"",
     href: "#",
     icon: ChartPieIcon,
   },
   {
     name: "For Gaseous Contamination",
-    description: "ultraSORB Chemical Media",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description: "",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Particulate Contamination",
-    description: "CBR Filter ESP Filter plasmOX Bipolar Ionizers",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    description: "",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
     name: "Particulate Contamination",
+    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
@@ -103,36 +105,51 @@ const market_served = [
   {
     name: "Commercial & Public Buildings",
     items: [
-      "AOP CELL Technology",
-      "Virusheild Air Purifier",
-      "Falcon C (For Cassette AC)",
-      "Falcon S (For Split AC)",
+      "Airports",
+      "Halls & Malls",
+      "Hotels",
+      "Museums",
+      "Offices",
+      "Restaurants",
+      "Schools & Universities",
+      "Hospitals/IVF Centres",
+      
     ],
-    href: "/page1",
+    href: "/market-served",
     icon: ChartPieIcon,
   },
   {
     name: "Industrial/Transportation",
-    items: ["Speak directly to your customers"],
-    href: "#",
+    items: ["Airpor",
+          "Power Generation",
+          "Public Transportation",
+          "Pulp and Paper",
+          "Refineries"],
+    href: "/market-served",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Food & Beverage",
-    items: ["Your customers’ data will be safe and secure"],
-    href: "#",
+    items: ["Beverage Production",
+            "Dairy Processes",
+            "Food Processing"],
+    href: "/market-served",
     icon: FingerPrintIcon,
   },
   {
     name: "Material Processing",
-    items: ["Connect with third-party tools"],
-    href: "#",
+    items: ["Mining",
+          "Oil, Gas & Chemicals",
+          "Pulp & Paper"],
+    href: "/market-served",
     icon: SquaresPlusIcon,
   },
   {
     name: "Water/Wastewater",
-    items: ["Connect with third-party tools"],
-    href: "#",
+    items: ["Corrosion Control",
+          "Emergency Gas Scrubbing",
+          "Odor Control"],
+    href: "/market-served",
     icon: SquaresPlusIcon,
   },
 ];
@@ -141,32 +158,32 @@ const solution = [
   { name: "Indoor Air Quality", href: "#", icon: ChartPieIcon },
   {
     name: "Toxic Gas & Corrosion Control",
-    href: "#",
+    href: "/market-served",
     icon: CursorArrowRaysIcon,
   },
-  { name: "AQI Monitoring", href: "#", icon: FingerPrintIcon },
-  { name: "Odor Control", href: "#", icon: SquaresPlusIcon },
+  { name: "AQI Monitoring", href: "/market-served", icon: FingerPrintIcon },
+  { name: "Odor Control", href: "/market-served", icon: SquaresPlusIcon },
 ];
 const resources = [
   {
     name: "FAQ s",
     description:
       "AOP CELL Technology Virusheild Air Purifier Falcon C (For Cassette AC)  Flacon S (For Split AC)",
-    href: "#",
+    href: "/faq",
     icon: ChartPieIcon,
     src: r1,
   },
   {
     name: "Careers",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/work",
     icon: CursorArrowRaysIcon,
     src: r2,
   },
   {
     name: "Download Centre",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/download",
     icon: CursorArrowRaysIcon,
     src: r2,
   },
@@ -201,7 +218,7 @@ const resources = [
   {
     name: "Customer Support",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/contact",
     icon: CursorArrowRaysIcon,
     src: r7,
   },
@@ -401,16 +418,21 @@ export default function Header() {
                             />
                           </div>
                           <div className="flex-auto">
-                            <a
+                            {/* <a
                               href={item.href}
                               className="block font-semibold text-gray-900"
                             >
-                              {item.name}
+                             <h5> {item.name}</h5>
                               <span className="absolute inset-0" />
-                            </a>
-                            <p className="mt-1 text-gray-600">
-                              {item.description}
-                            </p>
+                            </a> */}
+                            {/* <p className="mt-1 text-gray-600">
+                              {item.list}
+                            </p> */}
+                                <ul className="mt-1 text-gray-600  list-inside">
+                              {item.list.map((listItem, index) => (
+                                <li key={index}><a href={listItem}>{listItem}</a></li>
+                              ))}
+                            </ul>
                           </div>
                         </div>
                       ))}
@@ -527,7 +549,7 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About us

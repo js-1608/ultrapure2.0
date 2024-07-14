@@ -4,15 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Footer from './components/Footer';
-import TopNav from './components/TopNav';
-import Header from './components/Header';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TopNav/>
     
-    <Header/>
     <App />
     <Footer/>
   </React.StrictMode>

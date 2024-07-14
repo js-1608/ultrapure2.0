@@ -7,3 +7,31 @@
     border-image: linear-gradient(to right,#1D9AD6,#90C03E) 1 !important;
     padding: 0px !important;
 }
+
+.border_left{
+    border-left: 8px solid !important; /* Adjust the width of the border as needed */
+    border-image: linear-gradient(to bottom,#1D9AD6,#90C03E) 1 !important;
+    padding: 0px !important;
+}
+.border_left2{
+    border-left: 8px solid !important; /* Adjust the width of the border as needed */
+    border-image: linear-gradient(to bottom,#1D9AD6,#90C03E) 1 !important;
+}
+.box_shadow{
+
+    border: 1px solid black;
+    
+}
+.header_box{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .display_hide{
+        display:none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .display_hide_big{
+        display:none;
+    }
+}

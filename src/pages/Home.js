@@ -10,9 +10,11 @@ import choose3 from "../assests/whyChose/choose (3).png";
 import COUNT from "../assests/banner2.png";
 import sol from "../assests/sol.png";
 import Carousel from "../components/Carousel";
+import Newsletter from '../components/Newsletter';
 // import ImageTextCard from './components/ImageTextCard';
 import ImageTextCard from "../components/ImageTextCard";
 import OurClientele from "../components/OurClientele";
+import CarouselComponent from "../components/CarouselComponent";
 export default function HomePage() {
   return (
     <div>
@@ -84,12 +86,22 @@ export default function HomePage() {
       </div>
 
       <div className="flex justify-center mt-10 p-10">
-      <ImageTextCard
-        imageUrl={sol}
-      />
-    </div>
-      <Carousel />  
-      <OurClientele/>
+        <ImageTextCard
+          imageUrl={sol}
+        />
+      </div>
+      <Carousel />
+
+      <div className="p-10 border-solid   ">
+        <div className="rounded-lg shadow-2xl border-2">
+        <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
+
+        <OurClientele />
+        <hr className=" border-1 border-black lg:w-4/5 sm:w-full m-auto"></hr>
+        <CarouselComponent />
+        </div>
+      </div>
+<Newsletter/>
     </div>
 
   );

@@ -19,6 +19,8 @@ import ProductDetail3 from './pages/Products/ProductDetail3';
 import Faq from './pages/Faq';
 import WorkWithUs from './pages/WorkWithUs';
 import Download from './pages/Download';
+import Gallery from './pages/Gallery';
+
 export default function App() {
   return (
     <Router>
@@ -37,6 +39,8 @@ export default function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/work" element={<WorkWithUs/>} />
         <Route path="/download" element={<Download/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+
 
 
 

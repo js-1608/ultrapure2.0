@@ -211,7 +211,7 @@ const resources = [
   {
     name: "Media Gallery",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/gallery",
     icon: CursorArrowRaysIcon,
     src: r6,
   },

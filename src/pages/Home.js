@@ -101,7 +101,7 @@ export default function HomePage() {
         <CarouselComponent />
         </div>
       </div>
-<Newsletter/>
+        <Newsletter/>
     </div>
 
   );

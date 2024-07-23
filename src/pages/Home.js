@@ -28,7 +28,7 @@ export default function HomePage() {
       <div className="relative  ">
         <img
           src={COUNT}
-          alt="Card image"
+          alt="banner"
           className="w-full h-full object-cover opacity-100"
         />
         <div className="absolute inset-0 flex items-center ">

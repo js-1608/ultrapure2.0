@@ -6,6 +6,22 @@ import { Link } from "react-router-dom";
 
 
 const TopNav = () => {
+<<<<<<< Updated upstream
+=======
+  const data = [
+    { id: 1, name: 'about', description: 'Description of about', path: '/about' },
+    { id: 2, name: 'Out Techology', description: 'Description of technology', path: '/technology' },
+    { id: 3, name: 'Product', description: 'Description of Product ', path: '/product' },
+    { id: 4, name: 'Home', description: 'Description of Product ', path: '/' },
+    { id: 5, name: 'market', description: 'Description of Product ', path: '/market-served' },
+    { id: 6, name: 'Product', description: 'Description of Product ', path: '/product' },
+    { id: 7, name: 'Product', description: 'Description of Product ', path: '/product' },
+    { id: 8, name: 'Product', description: 'Description of Product ', path: '/product' },
+
+    // Add more data as needed
+  ];
+
+>>>>>>> Stashed changes
   return (
     <div className="flex items-center justify-between p-4 border-b-2">
       <a href="/"><img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18" /></a>

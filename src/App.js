@@ -10,6 +10,20 @@ import Product from './pages/Product';
 import Resources from './pages/Resources';
 import Insights from './pages/Insights';
 import Home from './pages/Home';
+<<<<<<< Updated upstream
+=======
+import Contact from './pages/Contact';
+import TopNav from './components/TopNav';
+import Header from './components/Header';
+import ProductDetail1 from './pages/Products/ProductDetail1';
+import ProductDetail2 from './pages/Products/ProductDetail2';
+import ProductDetail3 from './pages/Products/ProductDetail3';
+import Faq from './pages/Faq';
+import WorkWithUs from './pages/WorkWithUs';
+import Download from './pages/Download';
+import Gallery from './pages/Gallery';
+import ProductDisplay from './pages/Products/Advanced_oxidation_plasma_(AOP)';
+>>>>>>> Stashed changes
 
 
 export default function App() {
@@ -23,6 +37,30 @@ export default function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/insights" element={<Insights />} />
+<<<<<<< Updated upstream
+=======
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/work" element={<WorkWithUs/>} />
+        <Route path="/download" element={<Download/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+
+        <Route path="/gallery" element={<Gallery/>} />
+
+
+
+
+
+
+
+            <Route path="/product1" element={<ProductDetail1 />} />
+            <Route path="/product2" element={<ProductDetail2 />} />
+            <Route path="/product3" element={<ProductDetail3 />} />
+            <Route path="/aop" element={    <ProductDisplay/>} />
+
+            <Route path="/Advanced_oxidation_plasma_(AOP)" element={<ProductDisplay/>} />
+
+>>>>>>> Stashed changes
       </Routes>
     </Router>
   );

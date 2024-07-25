@@ -21,6 +21,7 @@ import WorkWithUs from './pages/WorkWithUs';
 import Download from './pages/Download';
 import Gallery from './pages/Gallery';
 import ProductDisplay from './pages/Advanced_oxidation_plasma_(AOP)';
+import Aop from './pages/Products/Aop';
 
 export default function App() {
   return (
@@ -44,13 +45,13 @@ export default function App() {
 
         <Route path="/gallery" element={<Gallery/>} />
 
-        <Route path="/aop" element={    <ProductDisplay/>} />
+        {/* <Route path="/aop" element={<ProductDisplay/>} /> */}
 
 
 
 
 
-
+            <Route path="/aop" element={<Aop/>} />
             <Route path="/product1" element={<ProductDetail1 />} />
             <Route path="/product2" element={<ProductDetail2 />} />
             <Route path="/product3" element={<ProductDetail3 />} />

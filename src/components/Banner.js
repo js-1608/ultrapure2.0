@@ -4,11 +4,9 @@ import { FaArrowRight } from 'react-icons/fa'; // Using react-icons for the arro
 function Banner({ src, title, text, updated, buttonUrl, buttonText }) {
   return (
     <div className="relative  text-white">
-<<<<<<< Updated upstream
-      <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" />
-=======
+
+      {/* <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" /> */}
       <img src={src} alt="banner" className="w-full h-full object-cover opacity-75" />
->>>>>>> Stashed changes
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="p-8 text-center">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">{title}</h1>

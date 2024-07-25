@@ -9,8 +9,17 @@ const TopNav = () => {
     { id: 1, name: 'about', description: 'Description of Product 1', path: '/about' },
     { id: 2, name: 'Out Techology', description: 'Description of Product 2', path: '/technology' },
     { id: 3, name: 'Product', description: 'Description of Product 3', path: '/product' },
-    
     { id: 4, name: 'Home', description: 'Description of Product 3', path: '/' },
+    { id: 5, name: 'Market served', description: 'Description of Product 3', path: '/market-served' },
+    { id: 6, name: 'faq', description: 'Description of Product 3', path: '/faq' },
+    { id: 7, name: 'career', description: 'Description of Product 3', path: '/work' },
+    { id: 8, name: 'download', description: 'Description of Product 3', path: '/download' },
+    { id: 9, name: 'contact', description: 'Description of Product 3', path: '/contact' },
+    { id: 4, name: 'Gallery', description: 'Description of Product 3', path: '/gallery' },
+
+
+
+
 
     // Add more data as needed
   ];

@@ -15,7 +15,8 @@ const TopNav = () => {
     { id: 7, name: 'career', description: 'Description of Product 3', path: '/work' },
     { id: 8, name: 'download', description: 'Description of Product 3', path: '/download' },
     { id: 9, name: 'contact', description: 'Description of Product 3', path: '/contact' },
-    { id: 4, name: 'Gallery', description: 'Description of Product 3', path: '/gallery' },
+    { id: 10, name: 'Gallery', description: 'Description of Product 3', path: '/gallery' },
+    { id: 11, name: 'Advanced Oxidation Plasma (AOP) Cell', description: 'Description of Product 3', path: '/aop' },
 
 
 

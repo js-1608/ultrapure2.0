@@ -8,14 +8,14 @@ import ImageGrid from '../components/ImageGrid';
 		{ id: 1, name: 'Advanced Oxidation Plasma (AOP) Cell (for AHU)', description: 'Description of Product 1', path: '/aop' },
 		{ id: 2, name: 'odorNOX Unit', description: 'Description of Product 1', path: '/OdorNOX' },
 		{ id: 3, name: 'Virushield Air Purifier', description: 'Description of Product 1', path: '/vap' },
-		{ id: 4, name: 'Corrosion Control Unit', description: 'Description of Product 1', path: '/product1' },
-		{ id: 5, name: 'germiNOX Air Purifier', description: 'Description of Product 1', path: '/product1' },
-		{ id: 6, name: 'Falcon S Air Purifier', description: 'Description of Product 1', path: '/product1' },
-		{ id: 7, name: 'Falcon C Air Purifier', description: 'Description of Product 1', path: '/product1' },
-		{ id: 8, name: 'CBR Filter', description: 'Description of Product 1', path: '/product1' },
-		{ id: 9, name: 'ESP Filter', description: 'Description of Product 1', path: '/product1' },
-		{ id: 10, name: 'ultraSORB Chemical Media', description: 'Description of Product 1', path: '/product1' },
-		{ id: 11, name: 'Ceiling Suspended Air Purifier', description: 'Description of Product 1', path: '/product1' },
+		{ id: 4, name: 'Corrosion Control Unit', description: 'Description of Product 1', path: '/ccu' },
+		{ id: 5, name: 'germiNOX Air Purifier', description: 'Description of Product 1', path: '/gap' },
+		{ id: 6, name: 'Falcon S Air Purifier', description: 'Description of Product 1', path: '/fsap' },
+		{ id: 7, name: 'Falcon C Air Purifier', description: 'Description of Product 1', path: '/fcap' },
+		{ id: 8, name: 'CBR Filter', description: 'Description of Product 1', path: '/cf' },
+		{ id: 9, name: 'ESP Filter', description: 'Description of Product 1', path: '/ef' },
+		{ id: 10, name: 'ultraSORB Chemical Media', description: 'Description of Product 1', path: '/ucm' },
+		{ id: 11, name: 'Ceiling Suspended Air Purifier', description: 'Description of Product 1', path: '/csap' },
 
 		
 	  ];
@@ -23,13 +23,16 @@ import ImageGrid from '../components/ImageGrid';
 const images = [
 	{ src: '/products/Group 87.png', alt: 'Image 1', link: '/aop' },
 	{ src: '/products/Group 88.png', alt: 'Image 2', link: '/OdorNOX' },
-	{ src: '/products/Group 89.png', alt: 'Image 3', link: '/product3' },
-	{ src: '/products/Group 90.png', alt: 'Image 4', link: '/product4' },
-	{ src: '/products/Group 91.png', alt: 'Image 5', link: '/product5' },
-	{ src: '/products/Group 92.png', alt: 'Image 6', link: '/product6' },
-	{ src: '/products/Group 93.png', alt: 'Image 7', link: '/product7' },
-	{ src: '/products/Group 94.png', alt: 'Image 8', link: '/product8' },
-	{ src: '/products/Group 95.png', alt: 'Image 9', link: '/product9' },
+	{ src: '/products/Group 89.png', alt: 'Image 3', link: '/vap' },
+	{ src: '/products/Group 112.png', alt: 'Image 4', link: '/ccu' },
+	{ src: '/products/Group 90.png', alt: 'Image 5', link: '/gap' },
+	{ src: '/products/Group 92.png', alt: 'Image 6', link: '/fsap' },
+	{ src: '/products/Group 91.png', alt: 'Image 7', link: '/fcap' },
+	{ src: '/products/Group 94.png', alt: 'Image 8', link: '/cf' },
+	{ src: '/products/Group 95.png', alt: 'Image 9', link: '/ucm' },
+	{ src: '/products/Group 95.png', alt: 'Image 9', link: '/ecsap' },
+
+
   ];
   
 	return (
@@ -42,7 +45,7 @@ const images = [
         buttonUrl=""
         buttonText=""
       />
-        <Search	Bar2 data={data} />
+        <SearchBar2 data={data} />
 
 				<div className="flex items-center justify-center ">
 			<ImageGrid images={images} />

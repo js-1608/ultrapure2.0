@@ -3,7 +3,7 @@
   }
   /* src/carousel.css */
 .carousel-item {
-  height: 400px; /* Adjust the height as needed */
+  /* height: 400px;  */
   padding:4%;
 }
 
@@ -44,7 +44,7 @@
 .carousel-caption {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 50%;
   /* padding:2%; */
   /* background: rgba(0, 0, 0, 0.5); */
   color: white;
@@ -65,7 +65,7 @@
 }
 
 .carousel-button.prev {
-  right: 6%;
+  right: 8%;
 }
 
 .carousel-button.next {
@@ -90,4 +90,9 @@
 
 .carousel-dot.active {
   background: black;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-button {
+     padding: 5px;
+  }
 }

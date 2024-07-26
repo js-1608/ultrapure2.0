@@ -23,7 +23,9 @@ import Gallery from './pages/Gallery';
 import ProductDisplay from './pages/Advanced_oxidation_plasma_(AOP)';
 import Aop from './pages/Products/Aop';
 import OdorNOX from './pages/Products/OdorNOX';
-
+import Virushield from './pages/Products/Virushield';
+import Corrosion from './pages/Products/Corrosion';
+import Germinox from './pages/Products/Germinox';
 export default function App() {
   return (
     <Router>
@@ -53,6 +55,9 @@ export default function App() {
 
             <Route path="/aop" element={<Aop/>} />
             <Route path="/OdorNOX" element={<OdorNOX/>} />
+            <Route path="/vap" element={<Virushield/>} />
+            <Route path="/Ccu" element={<Corrosion/>} />
+            <Route path="/gap" element={<Germinox/>} />
 
             <Route path="/product1" element={<ProductDetail1 />} />
             <Route path="/product2" element={<ProductDetail2 />} />

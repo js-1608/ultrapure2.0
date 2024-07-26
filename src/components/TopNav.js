@@ -17,6 +17,17 @@ const TopNav = () => {
     { id: 9, name: 'contact', description: 'Description of Product 3', path: '/contact' },
     { id: 10, name: 'Gallery', description: 'Description of Product 3', path: '/gallery' },
     { id: 11, name: 'Advanced Oxidation Plasma (AOP) Cell', description: 'Description of Product 3', path: '/aop' },
+    { id: 12, name: 'Advanced Oxidation Plasma (AOP) Cell (for AHU)', description: 'Description of Product 1', path: '/aop' },
+		{ id: 13, name: 'odorNOX Unit', description: 'Description of Product 1', path: '/OdorNOX' },
+		{ id: 14, name: 'Virushield Air Purifier', description: 'Description of Product 1', path: '/vap' },
+		{ id: 15, name: 'Corrosion Control Unit', description: 'Description of Product 1', path: '/ccu' },
+		{ id: 16, name: 'germiNOX Air Purifier', description: 'Description of Product 1', path: '/gap' },
+		{ id: 17, name: 'Falcon S Air Purifier', description: 'Description of Product 1', path: '/fsap' },
+		{ id: 18, name: 'Falcon C Air Purifier', description: 'Description of Product 1', path: '/fcap' },
+		{ id: 19, name: 'CBR Filter', description: 'Description of Product 1', path: '/cf' },
+		{ id: 20, name: 'ESP Filter', description: 'Description of Product 1', path: '/ef' },
+		{ id: 21, name: 'ultraSORB Chemical Media', description: 'Description of Product 1', path: '/ucm' },
+		{ id: 22, name: 'Ceiling Suspended Air Purifier', description: 'Description of Product 1', path: '/csap' },
 
 
 

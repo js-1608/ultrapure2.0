@@ -79,8 +79,8 @@
 }
 
 .carousel-dot {
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px; */
   margin: 0 5px;
   border-radius: 50%;
   background: rgb(87, 216, 184);
@@ -93,6 +93,6 @@
 }
 @media only screen and (max-width: 600px) {
   .carousel-button {
-     padding: 5px;
+     padding: 7px;
   }
 }

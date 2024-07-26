@@ -26,8 +26,8 @@ const logos = [
 
 const OurClientele = () => {
     return (
-        <div className="grid grid-cols-10 gap-1 p-2">
-            {logos.map((logo, index) => (
+<div className="grid grid-cols-5 lg:grid-cols-10 gap-1 p-2">
+{logos.map((logo, index) => (
                 <div key={index} className="flex justify-center items-center">
                     <img src={logo} alt={`Client Logo ${index + 1}`} className="" />
                 </div>

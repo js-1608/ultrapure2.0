@@ -22,6 +22,7 @@ import Download from './pages/Download';
 import Gallery from './pages/Gallery';
 import ProductDisplay from './pages/Advanced_oxidation_plasma_(AOP)';
 import Aop from './pages/Products/Aop';
+import OdorNOX from './pages/Products/OdorNOX';
 
 export default function App() {
   return (
@@ -50,8 +51,9 @@ export default function App() {
 
 
 
-
             <Route path="/aop" element={<Aop/>} />
+            <Route path="/OdorNOX" element={<OdorNOX/>} />
+
             <Route path="/product1" element={<ProductDetail1 />} />
             <Route path="/product2" element={<ProductDetail2 />} />
             <Route path="/product3" element={<ProductDetail3 />} />

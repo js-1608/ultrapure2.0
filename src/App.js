@@ -26,6 +26,9 @@ import OdorNOX from './pages/Products/OdorNOX';
 import Virushield from './pages/Products/Virushield';
 import Corrosion from './pages/Products/Corrosion';
 import Germinox from './pages/Products/Germinox';
+import FalconS from './pages/Products/FalconS';
+import Falconc from './pages/Products/FalconC';
+import CBR from './pages/Products/CBR';
 export default function App() {
   return (
     <Router>
@@ -58,6 +61,10 @@ export default function App() {
             <Route path="/vap" element={<Virushield/>} />
             <Route path="/Ccu" element={<Corrosion/>} />
             <Route path="/gap" element={<Germinox/>} />
+            <Route path="/fsap" element={<FalconS/>} />
+            <Route path="/fcap" element={<Falconc/>} />
+            <Route path="/cf" element={<CBR/>} />
+
 
             <Route path="/product1" element={<ProductDetail1 />} />
             <Route path="/product2" element={<ProductDetail2 />} />

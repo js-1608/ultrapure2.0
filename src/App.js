@@ -29,6 +29,8 @@ import Germinox from './pages/Products/Germinox';
 import FalconS from './pages/Products/FalconS';
 import Falconc from './pages/Products/FalconC';
 import CBR from './pages/Products/CBR';
+import ESP from './pages/prodcuts/ESP';
+import UltraSORB from './pages/Products/UltraSORB';
 export default function App() {
   return (
     <Router>
@@ -49,9 +51,6 @@ export default function App() {
         <Route path="/download" element={<Download/>} />
         <Route path="/gallery" element={<Gallery/>} />
 
-        <Route path="/gallery" element={<Gallery/>} />
-
-        {/* <Route path="/aop" element={<ProductDisplay/>} /> */}
 
 
 
@@ -64,6 +63,10 @@ export default function App() {
             <Route path="/fsap" element={<FalconS/>} />
             <Route path="/fcap" element={<Falconc/>} />
             <Route path="/cf" element={<CBR/>} />
+            <Route path="/ucm" element={<CBR/>} />
+            <Route path="/ef" element={<UltraSORB/>} />
+
+
 
 
             <Route path="/product1" element={<ProductDetail1 />} />

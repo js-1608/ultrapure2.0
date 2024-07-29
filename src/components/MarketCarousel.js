@@ -13,6 +13,16 @@ const MarketCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000, // Slide transition interval in milliseconds
+    responsive: [
+      {
+        breakpoint: 640, // Tailwind's sm breakpoint
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
   };
 
   return (

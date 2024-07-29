@@ -136,7 +136,7 @@ export default function Commerical() {
 
                  {/* Musuems */}
                  <section id="Museums">
-            <h1 className='text-4xl text-center font-bold '>Airport</h1>
+            <h1 className='text-4xl text-center font-bold '>Museums</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={MuseumsimageUrl} problem={Museumsproblem} tableData={MuseumstableData} health={Museumshealth} />
             </div>

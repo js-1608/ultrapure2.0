@@ -104,7 +104,6 @@ export default function HomePage() {
       </div>
 
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-6 text-center">Explore Our Solutions</h1>
         <MarketCarousel/>
       </div>
         <Newsletter/>

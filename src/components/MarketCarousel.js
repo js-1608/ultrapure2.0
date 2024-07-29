@@ -17,6 +17,8 @@ const MarketCarousel = () => {
 
   return (
     <div className="p-6">
+                <h1 className="text-3xl font-bold mb-6 ">Markets <span className="text-textBlue">We Serve</span></h1>
+
       <Slider {...settings}>
         {faqs.map((faq) =>
           faq.content.map((item) => (

@@ -5,11 +5,13 @@ export const AirportSolutions = ({ imageUrl, problem, tableData ,health}) => {
     <div className="p-6 border rounded shadow-lg">
         <div className='flex'>
       <img src={imageUrl} alt="Airport" className="w-full h-64 object-cover  rounded m-auto display_hide" />
-      <div className='p-4'>
+      <div className='p-2'>
+      <img src={imageUrl} alt="Airport" className="w-full h-64 object-cover  rounded m-auto display_hide_big" />
+
         <h4 className='text-xl font-semibold'>Problem:</h4>
-      <p className="mb-4 text-lg">{problem}</p>
+      <p className="mb-4 text-lg text-justify">{problem}</p>
       <h4 className='text-xl font-semibold'>Health:</h4>
-      <p className="mb-4 text-lg">{health}</p>
+      <p className="mb-4 text-lg text-justify">{health}</p>
       </div>
       </div>
       <table className="w-full mb-4 border">

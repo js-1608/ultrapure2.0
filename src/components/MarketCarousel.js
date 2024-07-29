@@ -41,7 +41,7 @@ const MarketCarousel = () => {
                       className="object-contain w-full h-full"
                     />
                     <div className="absolute inset-0 bg-green-600 bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex ">
-                      <h3 className="text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2">{item.heading}</h3>
+                      <h3 className="text-xl font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2">{item.heading}</h3>
                     </div>
                   </div>
                 </div>

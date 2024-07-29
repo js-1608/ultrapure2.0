@@ -31,8 +31,8 @@ export default function Commerical() {
   ];
 
   const imageUrl = "publicbuilding/public (1).png";
-  const problem = "Problems: Airports experience high foot traffic, leading to elevated levels of airborne pathogens, dust, VOCs, and pollutants from aircraft and ground vehicles. The constant movement of people and luggage stirs up dust and other particulates, while the presence of travelers from various locations increases the risk of spreading infectious diseases. Health Risks: Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases.";
-  const health = "Health Risks: Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases."
+  const problem = " Airports experience high foot traffic, leading to elevated levels of airborne pathogens, dust, VOCs, and pollutants from aircraft and ground vehicles. The constant movement of people and luggage stirs up dust and other particulates, while the presence of travelers from various locations increases the risk of spreading infectious diseases. Health Risks: Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases.";
+  const health = "Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases."
 
   // halls data
   const HallstableData = [

@@ -15,6 +15,7 @@ import Newsletter from '../components/Newsletter';
 import ImageTextCard from "../components/ImageTextCard";
 import OurClientele from "../components/OurClientele";
 import CarouselComponent from "../components/CarouselComponent";
+import MarketCarousel from "../components/MarketCarousel";
 export default function HomePage() {
   return (
     <div>
@@ -100,6 +101,11 @@ export default function HomePage() {
         <hr className=" border-1 border-black lg:w-4/5 sm:w-full m-auto"></hr>
         <CarouselComponent />
         </div>
+      </div>
+
+      <div className="container mx-auto p-4">
+        <h1 className="text-2xl font-bold mb-6 text-center">Explore Our Solutions</h1>
+        <MarketCarousel/>
       </div>
         <Newsletter/>
     </div>

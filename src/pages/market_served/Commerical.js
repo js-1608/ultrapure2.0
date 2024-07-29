@@ -75,6 +75,21 @@ export default function Commerical() {
   const Officesproblem = "Office environments often suffer from indoor air pollutants, including VOCs from office equipment, dust, mold spores, and poor ventilation. These factors can lead to 'sick building syndrome,' where occupants experience health issues such as headaches, dizziness, and respiratory problems, impacting productivity and well-being.";
   const Officeshealth = "Headaches, fatigue, respiratory problems, and irritation of the eyes, nose, and throat.";
   
+   // Museums & Cultural Institutions
+   const MuseumstableData = [
+    { applicationArea: 'Whole building with Centralized Air Conditioning', solution: 'Pentagon AOP duct air purifiers' },
+    { applicationArea: 'Spa areas', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
+    { applicationArea: 'Washrooms/ restrooms', solution: 'Virushield/ GermiNOX' },
+    { applicationArea: 'Pantry/ kitchen areas/ Cafeteria/ Lounges', solution: 'Virushield/ GermiNOX' },
+    { applicationArea: 'Waiting areas', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
+    { applicationArea: 'Smoking Zones', solution: 'Customized air purification (SmokoNOX)' },
+    { applicationArea: 'Bags Check-in area', solution: 'Virushield/ GermiNOX/ Customized purifier' },
+  ];
+
+  const MuseumsimageUrl = "publicbuilding/public (3).png";
+  const Museumsproblem = "Problems: Airports experience high foot traffic, leading to elevated levels of airborne pathogens, dust, VOCs, and pollutants from aircraft and ground vehicles. The constant movement of people and luggage stirs up dust and other particulates, while the presence of travelers from various locations increases the risk of spreading infectious diseases. Health Risks: Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases.";
+  const Museumshealth = "Health Risks: Respiratory infections, asthma exacerbations, allergic reactions, and transmission of infectious diseases."
+
   return (
     <div>
       <Banner
@@ -116,6 +131,14 @@ export default function Commerical() {
             <h1 className='text-4xl text-center font-bold '>	Halls & Malls</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={HallsimageUrl} problem={Hallsproblem} tableData={HallstableData} health={Hallshealth} />
+            </div>
+          </section>
+
+                 {/* Musuems */}
+                 <section id="Museums">
+            <h1 className='text-4xl text-center font-bold '>Airport</h1>
+            <div className="container mx-auto p-4">
+              <AirportSolutions imageUrl={MuseumsimageUrl} problem={Museumsproblem} tableData={MuseumstableData} health={Museumshealth} />
             </div>
           </section>
 

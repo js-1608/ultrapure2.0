@@ -17,8 +17,7 @@ const MarketCarousel = () => {
 
   return (
     <div className="p-6">
-                <h1 className="text-3xl font-bold mb-6 ">Markets <span className="text-textBlue">We Serve</span></h1>
-
+        <h1 className="text-3xl font-bold mb-6 ">Markets <span className="text-textBlue">We Serve</span></h1>
       <Slider {...settings}>
         {faqs.map((faq) =>
           faq.content.map((item) => (
@@ -29,10 +28,10 @@ const MarketCarousel = () => {
                     <img
                       src={item.imageUrl}
                       alt={item.heading}
-                      className="object-contain w-full h-64"
+                      className="object-contain w-full h-full"
                     />
                     <div className="absolute inset-0 bg-green-600 bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex ">
-                      <h3 className="text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">{item.heading}</h3>
+                      <h3 className="text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-2">{item.heading}</h3>
                     </div>
                   </div>
                 </div>

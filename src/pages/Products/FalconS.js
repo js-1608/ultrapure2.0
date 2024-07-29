@@ -22,15 +22,15 @@
   
   
       const product = {
-          headingText: "HVAC Duct Air Purification",
-          title: "Advanced Oxidation Plasma (AOP) Cell",
+          headingText: "AC AIR PURIFIERS (For Split AC)",
+          title: "FALCON-S Air Purifier",
           downloadFile: "./Product/aop/brochure.pdf",
-          mainImage: 'product/aop.png',
+          mainImage: 'product/FALCONS.png',
           relativeImages: [
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
+              "./Product/FALCONS.png",
+              "./Product/FALCONS.png",
+              "./Product/FALCONS.png",
+              "./Product/FALCONS.png",
           ],
       };
       const toggleFAQ = (id) => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp ,faChevronRight} from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown ,faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
 const FAQSection = ({ faqs }) => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -24,20 +24,19 @@ const FAQSection = ({ faqs }) => {
           </div>
 
           {openFAQ === faq.id && (
-            <div className="mt-2 flex flex-wrap m-auto sm:place-content-center">
+            <div className="mt-2 flex flex-wrap m-auto  justify-evenly  ">
               {faq.content.map((item, index) => (
-                <div key={index} className="m-2">
-                  <img src={item.imageUrl} alt={item.heading} className="w-full h-auto" />
-                  <h4 className="bg-gray-100 mt-0">
+                <div key={index} className="m-2 hover:shadow-lg ">
                     <a
                       href={item.href}
-                      target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline block p-2 text-lg font-semibold"
+                      className="hover:underline block hover:text-ultragreen "
                     >
-                      {item.heading}
-                    </a>
+                  <img src={item.imageUrl} alt={item.heading} className="w-full h-auto" />
+                  <h4 className="bg-gray-100 mt-0 p-2 text-lg font-semibold">
+                    {item.heading}
                   </h4>
+                  </a>
                   <hr className="border-1 border-grey shadow-xl"></hr>
                 </div>
               ))}

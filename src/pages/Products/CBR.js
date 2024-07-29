@@ -25,12 +25,12 @@
           headingText: "HVAC Duct Air Purification",
           title: "Advanced Oxidation Plasma (AOP) Cell",
           downloadFile: "./Product/aop/brochure.pdf",
-          mainImage: 'product/aop.png',
+          mainImage: 'product/CBR.png',
           relativeImages: [
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
+              "product/CBR.png",
+              "product/CBR.png",
+              "product/CBR.png",
+              "product/CBR.png",
           ],
       };
       const toggleFAQ = (id) => {

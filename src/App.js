@@ -13,14 +13,10 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import TopNav from './components/TopNav';
 import Header from './components/Header';
-import ProductDetail1 from './pages/Products/ProductDetail1';
-import ProductDetail2 from './pages/Products/ProductDetail2';
-import ProductDetail3 from './pages/Products/ProductDetail3';
 import Faq from './pages/Faq';
 import WorkWithUs from './pages/WorkWithUs';
 import Download from './pages/Download';
 import Gallery from './pages/Gallery';
-import ProductDisplay from './pages/Advanced_oxidation_plasma_(AOP)';
 import Aop from './pages/Products/Aop';
 import OdorNOX from './pages/Products/OdorNOX';
 import Virushield from './pages/Products/Virushield';
@@ -29,8 +25,9 @@ import Germinox from './pages/Products/Germinox';
 import FalconS from './pages/Products/FalconS';
 import Falconc from './pages/Products/FalconC';
 import CBR from './pages/Products/CBR';
-import ESP from './pages/prodcuts/ESP';
 import UltraSORB from './pages/Products/UltraSORB';
+import ESP from './pages/Products/ESP';
+import Commerical from './pages/market_served/Commerical';
 export default function App() {
   return (
     <Router>
@@ -63,15 +60,14 @@ export default function App() {
             <Route path="/fsap" element={<FalconS/>} />
             <Route path="/fcap" element={<Falconc/>} />
             <Route path="/cf" element={<CBR/>} />
-            <Route path="/ucm" element={<CBR/>} />
-            <Route path="/ef" element={<UltraSORB/>} />
+            <Route path="/ucm" element={<UltraSORB/>} />
+            <Route path="/ef" element={<ESP/>} />
+
+
+            <Route path="commercial" element={<Commerical/>} />
 
 
 
-
-            <Route path="/product1" element={<ProductDetail1 />} />
-            <Route path="/product2" element={<ProductDetail2 />} />
-            <Route path="/product3" element={<ProductDetail3 />} />
       </Routes>
     </Router>
   );

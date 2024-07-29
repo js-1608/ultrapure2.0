@@ -21,15 +21,15 @@ function OdorNOX() {
 
 
 	const product = {
-		headingText: "HVAC Duct Air Purification",
-		title: "Advanced Oxidation Plasma (AOP) Cell",
+		headingText: "For Gases Filtration	",
+		title: "odorNOX",
 		downloadFile: "./Product/aop/brochure.pdf",
-		mainImage: 'product/aop.png',
+		mainImage: 'product/odorNOX.png',
 		relativeImages: [
-			"./Product/aop.png",
-			"./Product/aop.png",
-			"./Product/aop.png",
-			"./Product/aop.png",
+			"./Product/odorNOX.png",
+			"./Product/odorNOX.png",
+			"./Product/odorNOX.png",
+			"./Product/odorNOX.png",
 		],
 	};
 	const toggleFAQ = (id) => {

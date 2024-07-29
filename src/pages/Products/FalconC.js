@@ -21,15 +21,15 @@
   
   
       const product = {
-          headingText: "HVAC Duct Air Purification",
-          title: "Advanced Oxidation Plasma (AOP) Cell",
+          headingText: "AC AIR PURIFIERS (For Cassette AC)",
+          title: "FALCON-C Air Purifier",
           downloadFile: "./Product/aop/brochure.pdf",
-          mainImage: 'product/aop.png',
+          mainImage: 'product/FALCONC.png',
           relativeImages: [
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
-              "./Product/aop.png",
+              "./Product/FALCONC.png",
+              "./Product/FALCONC.png",
+              "./Product/FALCONC.png",
+              "./Product/FALCONC.png",
           ],
       };
       const toggleFAQ = (id) => {

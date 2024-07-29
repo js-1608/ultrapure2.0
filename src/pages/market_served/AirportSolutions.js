@@ -4,7 +4,7 @@ export const AirportSolutions = ({ imageUrl, problem, tableData ,health}) => {
   return (
     <div className="p-6 border rounded shadow-lg">
         <div className='flex'>
-      <img src={imageUrl} alt="Airport" className="w-full h-64 object-cover  rounded m-auto" />
+      <img src={imageUrl} alt="Airport" className="w-full h-64 object-cover  rounded m-auto display_hide" />
       <div className='p-4'>
         <h4 className='text-xl font-semibold'>Problem:</h4>
       <p className="mb-4 text-lg">{problem}</p>

@@ -74,33 +74,34 @@ const technology = [
 const products = [
   {
     name: "Microbial Contamination",
-    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
-    description:"",
-    href: "#",
+    list: ['AOP CELL Technology', 'Virusheild Air Purifier', 'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
+    links: ['/aop', '/vap', '/fcap', '/fsap', '/cf'],
+    description: "",
     icon: ChartPieIcon,
   },
   {
     name: "For Gaseous Contamination",
-    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    list: ['AOP CELL Technology', 'Virusheild Air Purifier', 'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
+    links: ['/aop', '/vap', '/fcap', '/fsap', '/cf'],
     description: "",
-    href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Particulate Contamination",
-    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
+    list: ['AOP CELL Technology', 'Virusheild Air Purifier', 'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
+    links: ['/aop', '/vap', '/fcap', '/fsap', '/cf'],
     description: "",
-    href: "#",
     icon: FingerPrintIcon,
   },
   {
     name: "Particulate Contamination",
-    list:['AOP CELL Technology' , 'Virusheild Air Purifier' ,'Falcon C (For Cassette AC)', ' Flacon S (For Split AC)','Ceiling Suspended Air Purifier'],
-    description: "Connect with third-party tools",
-    href: "#",
+    list: ['AOP CELL Technology', 'Virusheild Air Purifier', 'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
+    links: ['/aop', '/vap', '/fcap', '/fsap', '/cf'],   
+     description: "Connect with third-party tools",
     icon: SquaresPlusIcon,
   },
 ];
+
 const market_served = [
   {
     name: "Commercial & Public Buildings",
@@ -383,81 +384,81 @@ export default function Header() {
             </Transition>
           </Popover> */}
 
-<Popover className="relative">
-  <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-    Product
-    <ChevronDownIcon
-      className="h-5 w-5 flex-none text-gray-400"
-      aria-hidden="true"
-    />
-  </Popover.Button>
+        <Popover className="relative">
+          <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            Product
+            <ChevronDownIcon
+              className="h-5 w-5 flex-none text-gray-400"
+              aria-hidden="true"
+            />
+          </Popover.Button>
 
-  <Transition
-    enter="transition ease-out duration-200"
-    enterFrom="opacity-0 translate-y-1"
-    enterTo="opacity-100 translate-y-0"
-    leave="transition ease-in duration-150"
-    leaveFrom="opacity-100 translate-y-0"
-    leaveTo="opacity-0 translate-y-1"
-  >
-    <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-      <div className="w-full flex overflow-hidden bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-        {/* Left Content (60% width) */}
-        <div className="w-60% p-2 m-2">
-          <div className="p-4">
-            <div className="grid grid-cols-2 gap-4">
-              {products.map((item) => (
-                <div
-                  key={item.name}
-                  className="group relative flex items-start gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
-                >
-                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <item.icon
-                      className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div className="flex-auto">
-                    <h5 className="block font-semibold text-gray-900">{item.name}</h5>
-                    <ul className="mt-1 text-gray-600 list-inside">
-                      {item.list.map((listItem, index) => (
-                        <li key={index}>
-                          <a href={listItem}>{listItem}</a>
-                        </li>
+          <Transition
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+              <div className="w-full flex overflow-hidden bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                {/* Left Content (60% width) */}
+                <div className="w-60% p-2 m-2">
+                  <div className="p-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      {products.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group relative flex items-start gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
+                        >
+                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            <item.icon
+                              className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                              aria-hidden="true"
+                            />
+                          </div>
+                          <div className="flex-auto">
+                            <h5 className="block font-semibold text-gray-900">{item.name}</h5>
+                            <ul className="mt-1 text-gray-600 list-inside">
+                              {item.list.map((listItem, index) => (
+                                <li key={index}>
+                                  <a href={item.links[index]}>{listItem}</a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                    {callsToAction.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      >
+                        <item.icon
+                          className="h-5 w-5 flex-none text-gray-400"
+                          aria-hidden="true"
+                        />
+                        {item.name}
+                      </a>
+                    ))}
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-            {callsToAction.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-              >
-                <item.icon
-                  className="h-5 w-5 flex-none text-gray-400"
-                  aria-hidden="true"
-                />
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </div>
 
-        {/* Right Content (40% width) */}
-        <div className="w-40% pl-5 m-auto">
-          <div className="cols-1 p-5 m-auto">
-            <img src={productImage} alt="Logo" className="w-full" />
-          </div>
-        </div>
-      </div>
-    </Popover.Panel>
-  </Transition>
-</Popover>
+                {/* Right Content (40% width) */}
+                <div className="w-40% pl-5 m-auto">
+                  <div className="cols-1 p-5 m-auto">
+                    <img src={productImage} alt="Logo" className="w-full" />
+                  </div>
+                </div>
+              </div>
+            </Popover.Panel>
+          </Transition>
+        </Popover>
 
 
           <Popover className="">

@@ -4,7 +4,8 @@ import './carousel.css'; // Ensure this file contains the necessary styling
 import p1 from '../assests/products/product.png';
 import p2 from '../assests/products/product2.png';
 import p3 from '../assests/products/product3.png';
-
+import l from '../assests/l.png';
+import r from '../assests/r.png'
 
 const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
@@ -37,7 +38,7 @@ const Carousel = () => {
   return (
     <div className="carousel-container p-5">
       <div className='mt-10 p-2'>
-       <h2 className=" font-bold text-5xl  text-white">
+       <h2 className=" font-bold text-3xl sm:text-4xl lg:text-7xl  text-white">
        Discover Our Product Range
       </h2>
       <p className='text-md p-1 text-white'>Breathe easier with ouur advanced air purification solutions.</p>
@@ -56,8 +57,8 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <button onClick={prevSlide} className="carousel-button prev">&lt;</button>
-      <button onClick={nextSlide} className="carousel-button next">&gt;</button>
+      <button onClick={prevSlide} className="carousel-button prev display_hide"><img src={l} alt="back button"/></button>
+      <button onClick={nextSlide} className="carousel-button next display_hide" ><img src={r} alt="forward button"/></button>
       {/* <div className="carousel-dots">
         {Array.from({ length: Math.ceil(images.length / 3) }).map((_, index) => (
           <button

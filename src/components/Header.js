@@ -194,20 +194,20 @@ const resources = [
     icon: CursorArrowRaysIcon,
     src: r3,
   },
-  {
-    name: "Corporate Social Responsibilities",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-    src: r4,
-  },
-  {
-    name: "Events and Webinars",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-    src: r5,
-  },
+  // {
+  //   name: "Corporate Social Responsibilities",
+  //   description: "Speak directly to your customers",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r4,
+  // },
+  // {
+  //   name: "Events and Webinars",
+  //   description: "Speak directly to your customers",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r5,
+  // },
   {
     name: "Media Gallery",
     description: "Speak directly to your customers",
@@ -215,27 +215,27 @@ const resources = [
     icon: CursorArrowRaysIcon,
     src: r6,
   },
-  {
-    name: "Customer Support",
-    description: "Speak directly to your customers",
-    href: "/contact",
-    icon: CursorArrowRaysIcon,
-    src: r7,
-  },
-  {
-    name: "Videos",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-    src: r8,
-  },
-  {
-    name: "Testimonials",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-    src: r9,
-  },
+  // {
+  //   name: "Customer Support",
+  //   description: "Speak directly to your customers",
+  //   href: "/contact",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r7,
+  // },
+  // {
+  //   name: "Videos",
+  //   description: "Speak directly to your customers",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r8,
+  // },
+  // {
+  //   name: "Testimonials",
+  //   description: "Speak directly to your customers",
+  //   href: "#",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r9,
+  // },
 ];
 const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
@@ -328,7 +328,7 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <Popover className="">
+          {/* <Popover className="">
             <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Market Served
               <ChevronDownIcon
@@ -347,7 +347,6 @@ export default function Header() {
             >
               <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
                 <div className="w-full flex overflow-hidden  bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 ">
-                  {/* Left Content (60% width) */}
                   <div className=" w-100% p-2 m-2 flex ">
                     <div className="p-4 flex">
                       {market_served.map((item) => (
@@ -382,7 +381,7 @@ export default function Header() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
 
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -512,8 +511,8 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Insights
+          <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+            Contact us
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -583,7 +582,7 @@ export default function Header() {
                   )}
                 </Disclosure>
 
-                <Disclosure as="div" className="-mx-3">
+                {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -610,9 +609,9 @@ export default function Header() {
                       </DisclosurePanel>
                     </>
                   )}
-                </Disclosure>
+                </Disclosure> */}
 
-                <Disclosure as="div" className="-mx-3">
+                {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -639,7 +638,7 @@ export default function Header() {
                       </DisclosurePanel>
                     </>
                   )}
-                </Disclosure>
+                </Disclosure> */}
 
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
@@ -683,7 +682,7 @@ export default function Header() {
                           aria-hidden="true"
                         />
                       </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
+                      <DisclosurePanel className="mt-2 space-y-2 w-full">
                         {[...resources].map((item) => (
                           <DisclosureButton
                             key={item.name}
@@ -700,10 +699,10 @@ export default function Header() {
                 </Disclosure>
 
                 <a
-                  href="#"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Insights
+                  Contact Us
                 </a>
               </div>
               <div className="py-6">

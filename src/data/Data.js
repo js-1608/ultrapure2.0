@@ -142,4 +142,37 @@ const faqs = [
   ];
   
   export default faqs;
+
+
   
+  export const market = [{
+    id: 1,
+    heading: "Commerical & Public Buildings",
+    imageUrl: "market/m (1).png",
+    href: "/commercial",
+    },
+    {
+    id: 1,
+    heading: "Industrial/Transportation",
+    imageUrl: "market/m (2).png",
+    href: "/Industrial",
+    },
+    {
+    id: 1,
+    heading: "Food and Beverage",
+    imageUrl: "market/m (3).png",
+    href: "/Food",
+    },
+    {
+      id: 1,
+      heading: "Material Processing",
+      imageUrl: "market/m (4).png",
+      href: "/Material",
+      },
+      {
+        id: 1,
+        heading: "Water/Waste",
+        imageUrl: "market/m (5).png",
+        href: "/Waste",
+        },
+      ]

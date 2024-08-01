@@ -24,7 +24,7 @@ const TopNav = () => {
 		{ id: 16, name: 'germiNOX Air Purifier', description: 'Description of Product 1', path: '/gap' },
 		{ id: 17, name: 'Falcon S Air Purifier', description: 'Description of Product 1', path: '/fsap' },
 		{ id: 18, name: 'Falcon C Air Purifier', description: 'Description of Product 1', path: '/fcap' },
-		{ id: 19, name: 'CBR Filter', description: 'Description of Product 1', path: '/cf' },
+		{ id: 19, name: 'Chemical BiologicalRadiological Filter (CBR)', description: 'Description of Product 1', path: '/cf' },
 		{ id: 20, name: 'ESP Filter', description: 'Description of Product 1', path: '/ef' },
 		{ id: 21, name: 'ultraSORB Chemical Media', description: 'Description of Product 1', path: '/ucm' },
 		{ id: 22, name: 'Ceiling Suspended Air Purifier', description: 'Description of Product 1', path: '/csap' },

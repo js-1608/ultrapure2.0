@@ -1,6 +1,6 @@
 import { useState } from "react";
 import productImage from "../assests/product.png";
-
+import { Link } from "react-router-dom";
 
 import {
   Dialog,
@@ -257,10 +257,10 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-          </a>
+          </Link>
         </div>
 
         <div className="flex lg:hidden">
@@ -275,9 +275,9 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/about" className="text-sm font-semibold leading-6 text-gray-900">
             Abouts us
-          </a>
+          </Link>
 
           <Popover className="">
             <PopoverButton className="flex relative right-0 items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -308,13 +308,13 @@ export default function Header() {
                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
                       >
                         <div className="flex-auto">
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             className="block font-semibold text-gray-900"
                           >
                             {item.name}
                             <span className="absolute inset-0" />
-                          </a>
+                          </Link>
                           <img
                             src={item.src}
                             alt={item.name}
@@ -423,7 +423,7 @@ export default function Header() {
                             <ul className="mt-1 text-gray-600 list-inside">
                               {item.list.map((listItem, index) => (
                                 <li key={index}>
-                                  <a href={item.links[index]}>{listItem}</a>
+                                  <Link to={item.links[index]}>{listItem}</Link>
                                 </li>
                               ))}
                             </ul>
@@ -434,9 +434,9 @@ export default function Header() {
                   </div>
                   <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                     {callsToAction.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                       >
                         <item.icon
@@ -444,7 +444,7 @@ export default function Header() {
                           aria-hidden="true"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -494,12 +494,12 @@ export default function Header() {
                             aria-hidden="true"
                           />
                         </div>
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className="block font-semibold mt-2"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>
@@ -508,14 +508,14 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
             Contact us
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="#" className="text-sm font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -528,10 +528,10 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -544,12 +544,12 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About us
-                </a>
+                </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -568,7 +568,7 @@ export default function Header() {
                           <DisclosureButton
                             key={item.name}
                             as="a"
-                            href={item.href}
+                            to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
@@ -655,7 +655,7 @@ export default function Header() {
                           <DisclosureButton
                             key={item.name}
                             as="a"
-                            href={item.href}
+                            to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
@@ -684,7 +684,7 @@ export default function Header() {
                           <DisclosureButton
                             key={item.name}
                             as="a"
-                            href={item.href}
+                            to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
@@ -695,20 +695,20 @@ export default function Header() {
                   )}
                 </Disclosure>
 
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
-                </a>
+                </Link>
               </div>
             </div>
           </div>

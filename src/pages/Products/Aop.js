@@ -81,8 +81,8 @@ function Aop() {
 			answer: {
 				type: "words",
 				words: [
-					"Word1", "Word2", "Word3", "Word4", "Word5", "Word6",
-					"Word7", "Word8", "Word9", "Word10", "Word11", "Word12"
+					"Government", "Airport", "Offices", "Residential", "University",
+					"Hospitality", "Transportation", "Factories", "Residential", "Railways", 
 				]
 			}
 		}
@@ -189,9 +189,9 @@ function Aop() {
 									</div>
 								)}
 								{faq.answer.type === "words" && (
-									<div className="grid grid-cols-6 gap-2">
+									<div className="grid grid-cols-5 gap-2">
 										{faq.answer.words.map((word, index) => (
-											<span key={index}>{word}</span>
+											<li key={index}>{word}</li>
 										))}
 									</div>
 								)}

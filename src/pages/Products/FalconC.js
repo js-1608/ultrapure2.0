@@ -50,7 +50,7 @@
 		},
 		{
 			id: 2,
-			question: "Protection From",
+			question: "Benefits",
 			answer: {
 				type: "list",
 				items: ["Enhances Indoor air quality of conditioned spaces.",
@@ -65,7 +65,7 @@
 		},
 		{
 			id: 3,
-			question: "Benefits",
+			question: "Protection From",
 			answer: {
 				type: "images",
 				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
@@ -79,8 +79,8 @@
 			answer: {
 				type: "words",
 				words: [
-					"Word1", "Word2", "Word3", "Word4", "Word5", "Word6",
-					"Word7", "Word8", "Word9", "Word10", "Word11", "Word12"
+					"Government", "Airport", "Offices", "Residential", "University",
+					"Hospitality", "Transportation", "Factories", "Residential", "Railways", 
 				]
 			}
 		}
@@ -114,7 +114,7 @@
               />
   
         
-              {/* faq */}
+          
               <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">

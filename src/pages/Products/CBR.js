@@ -12,6 +12,7 @@
   import tech1 from "../../assests/technology (1).png";
   import tech2 from "../../assests/technology (2).png";
   import tech3 from "../../assests/plasmOX.png";
+
   function CBR() {
       const [openFAQ, setOpenFAQ] = useState(null);
       const faqs = [
@@ -25,32 +26,32 @@
 						// icon: "../product/aop/Group 121.png",
 						// text: "Our return policy is...",
 						image: "../product/aop/Group 121.png",
-						additionalText: "Easy to Install In New System Or To Retrofit In Exisiting System."
+						additionalText: "Easily Installed In the existing HVAC system"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
 						// text: "Our shipping policy is...",
 						image: "../product/aop/Group 122.png",
-						additionalText: "Requires Zero Maintenance"
+						additionalText: "Very Low Pressure Drop & Enegry Consumption"
 					},
 					{
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
 						image: "../product/aop/Group 124.png",
-						additionalText: "Greener and Sustainable solution"
+						additionalText: "Flexible & Cost Eective Solution"
 					},
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
 						image: "../product/aop/Group 125.png",
-						additionalText: "Additional support information..."
+						additionalText: "Eiciency of MERV-16 Filter"
 					}
 				]
 			}
 		},
 		{
 			id: 2,
-			question: "Protection From",
+			question: "Benefits ",
 			answer: {
 				type: "list",
 				items: ["Enhances Indoor air quality of conditioned spaces.",
@@ -65,11 +66,11 @@
 		},
 		{
 			id: 3,
-			question: "Benefits",
+			question: "Protection From",
 			answer: {
 				type: "images",
 				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
-				imagescontent: ["Viruses", "Bacteria", "Formaldehyde", "VOC’s", "Gases & Odor", "PM2.5 & PM10"]
+				imagescontent: ["PM2.5, PM10,Dust & Pollens", "Spores & Dander", "VOCS & Odor", "SOx & NOx ", "Formaldehyde", "Viruses & Bacteria"]
 
 			}
 		},
@@ -117,8 +118,8 @@
               <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">
-                    The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.					</p>
-				</div>
+					Ultrapure's revolutionary Chemical Biological Radiological (CBR) air filtration technology combines an electrostatically charged filter with a particle charging section and a gas filter. This system efficiently destroys airborne viruses, bacteria, molds, VOCs, and microscopic particles, while offering massive dust holding capacity with extremely low pressure drop. Unlike standard filters, Ultrapure's CBR filtration provides high efficiency even for the smallest particle sizes, including tobacco smoke, bacteria, and viruses.</p>
+					</div>
 				<div className="w-full md:w-1/2 flex justify-between items-center">
 					<div className="w-1/2">
 						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />

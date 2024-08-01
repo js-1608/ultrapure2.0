@@ -81,8 +81,8 @@ const products = [
   },
   {
     name: "Particulate Contamination",
-    list: ['CBR Filter','ESP Filter',' plasmOX Bipolar Ionizers'],
-    links: ['/cf', '/ef', '/aop'],
+    list: ['CBR Filter','ESP Filter',],
+    links: ['/cf', '/ef', ],
     description: "",
     icon: CursorArrowRaysIcon,
   },

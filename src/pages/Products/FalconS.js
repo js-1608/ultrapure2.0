@@ -8,7 +8,7 @@
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
   import tech1 from "../../assests/technology (1).png";
-import tech2 from "../../assests/technology (2).png";
+// import tech2 from "../../assests/technology (2).png";
 import tech3 from "../../assests/plasmOX.png";
   // import aop1 from 'product/aop.png'
   // import FAQSection from '../components/FAQSection';
@@ -51,22 +51,21 @@ import tech3 from "../../assests/plasmOX.png";
 		},
 		{
 			id: 2,
-			question: "Protection From",
+			question: " Benefits ",
 			answer: {
 				type: "list",
-				items: ["Enhances Indoor air quality of conditioned spaces.",
-                   " Energy-efficient and safe solution.",
-                    "Kills > 90% Bacteria, Viruses , Molds and other Pathogens on Surface and in Air.",
-                    "Very effective on viruses like Corona family virus.",
-                    "Prevent bioaerosol cross-contamination.",
-                   "Eliminate  gaseous contamination, SO2, NO2, Ozone etc. and mitigate odors.",
-                    "Partially reduces Particulate Matter (PM2.5 & PM10).",
-                    "Can be easily installed without affecting the Low Static Machine Airflow."]
+				items: [ "Comprehensive protection from Chemical, Biological & Radiological threat",
+					"High filtration e­iciency for PM and gases contaminants.",
+					"Remove >99.5% of PM0.3",
+					"Active carbon layer adsorb gases & protects from toxic warfare gases.",
+					"Very e­ective on viruses like Corona family virus.",
+					 "E­iciency of MERV 16 filter",
+					"Very Low Pressure drop & Energy consumption"]
 			}
 		},
 		{
 			id: 3,
-			question: "Benefits",
+			question: "Protection From",
 			answer: {
 				type: "images",
 				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
@@ -80,8 +79,8 @@ import tech3 from "../../assests/plasmOX.png";
 			answer: {
 				type: "words",
 				words: [
-					"Word1", "Word2", "Word3", "Word4", "Word5", "Word6",
-					"Word7", "Word8", "Word9", "Word10", "Word11", "Word12"
+					"Government", "Airport", "Offices", "Residential", "University",
+					"Hospitality", "Transportation", "Factories", "Residential", "Railways", 
 				]
 			}
 		}

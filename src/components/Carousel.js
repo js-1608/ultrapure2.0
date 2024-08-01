@@ -38,10 +38,10 @@ const Carousel = () => {
   return (
     <div className="carousel-container p-5">
       <div className='mt-10 p-2'>
-       <h2 className=" font-bold text-3xl sm:text-4xl lg:text-7xl  text-white">
+       <h2 className=" font-bold text-3xl sm:text-4xl lg:text-6xl  text-white">
        Discover Our Product Range
       </h2>
-      <p className='text-md p-1 text-white'>Breathe easier with ouur advanced air purification solutions.</p>
+      <p className='text-xl p-1 text-white'>Breathe easier with ouur advanced air purification solutions.</p>
       </div>
       <div
         className="carousel-slide"

@@ -98,7 +98,7 @@ export default function HomePage() {
         <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
 
         <OurClientele />
-        <hr className=" border-1 border-black lg:w-4/5 sm:w-full m-auto"></hr>
+        <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto"></hr>
         <CarouselComponent />
         </div>
       </div>

@@ -181,7 +181,7 @@ function OdorNOX() {
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className="h-20 w-20 mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}

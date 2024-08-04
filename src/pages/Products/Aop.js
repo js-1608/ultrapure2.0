@@ -53,7 +53,7 @@ function Aop() {
 		},
 		{
 			id: 2,
-			question: "Protection From",
+			question: "Benefits",
 			answer: {
 				type: "list",
 				items: ["Enhances Indoor air quality of conditioned spaces.",
@@ -67,7 +67,7 @@ function Aop() {
 		},
 		{
 			id: 3,
-			question: "Benefits",
+			question: "Protection From",
 			answer: {
 				type: "images",
 				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
@@ -115,8 +115,10 @@ function Aop() {
 			/>
 
 			<div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
-				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
-					<p className="text-gray-700 p-8 text-justify">
+				<div className="w-full md:w-1/2 mt-4 md:mt-0  flex flex-col justify-center p-10">
+				<h1 className="lg:text-2xl  text-xl font-bold mt-2">Product Info</h1>
+
+					<p className="text-gray-700  text-justify">
 						nanoX Technology is at the forefront of our air purification
 						solutions, harnessing the power of nature-friendly oxidizers to
 						effectively eliminate viruses, microbes, and pollutants from indoor
@@ -128,21 +130,20 @@ function Aop() {
 						airborne pathogens.
 					</p>
 				</div>
-				<div className="w-full md:w-1/2 flex justify-between items-center">
+				<div className="w-full md:w-1/2 flex justify-between items-center ">
 					<div className="w-1/2">
 						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold text-sm">nanoX® Technology</h6>
+						{/* <h6 className="font-bold text-sm">nanoX® Technology</h6> */}
 					</div>
 
 					<div className="w-1/2">
 						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold w-full text-sm">plasmOX® Technology</h6>
+						{/* <h6 className="font-bold w-full text-sm">plasmOX® Technology</h6> */}
 					</div>
 				</div>
 			</div>
 			{/* faq */}
 			<div className="mx-auto bg-white p-8 rounded-lg shadow-lg">
-				<h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
 				{faqs.map((faq) => (
 					<div key={faq.id} className="mb-4">
 						<button
@@ -152,7 +153,7 @@ function Aop() {
 								}`}
 							onClick={() => toggleFAQ(faq.id)}
 						>
-							<span className="text-lg">{faq.question}</span>
+							<span className="text-lg font-bold">{faq.question}</span>
 							<FontAwesomeIcon
 								icon={openFAQ === faq.id ? faChevronDown : faChevronRight}
 							/>
@@ -162,11 +163,13 @@ function Aop() {
 								{faq.answer.type === "iconText" && (
 									<div className="space-y-4 flex flex-wrap">
 										{faq.answer.iconContent.map((content, index) => (
-											<div key={index} className="flex items-center w-1/4 p-3 font-semibold">
+											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/4  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
-												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
+												<div className="flex items-center">
+												<img src={content.image} alt="product" className="h-15 w-15 mx-2" />
 												<span>{content.additionalText}</span>
+												</div>
 											</div>
 										))}
 									</div>
@@ -182,14 +185,14 @@ function Aop() {
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className="h-20 w-20 mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}
 									</div>
 								)}
 								{faq.answer.type === "words" && (
-									<div className="grid grid-cols-5 gap-2">
+									<div className="gap-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5">
 										{faq.answer.words.map((word, index) => (
 											<li key={index}>{word}</li>
 										))}

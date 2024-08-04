@@ -9,9 +9,8 @@
   import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
   // import aop1 from 'product/aop.png'
   // import FAQSection from '../components/FAQSection';
-  import tech1 from "../../assests/technology (1).png";
-  import tech2 from "../../assests/technology (2).png";
-  import tech3 from "../../assests/plasmOX.png";
+  import tech1 from "../../assests/iacs.png";
+ 
 
   function CBR() {
       const [openFAQ, setOpenFAQ] = useState(null);
@@ -25,25 +24,25 @@
 					{
 						// icon: "../product/aop/Group 121.png",
 						// text: "Our return policy is...",
-						image: "../product/aop/Group 121.png",
-						additionalText: "Easily Installed In the existing HVAC system"
+						image: "../product/cbr/Group 142.png ",
+						additionalText: "Easily Instal.pngled In the existing HVAC system"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
 						// text: "Our shipping policy is...",
-						image: "../product/aop/Group 122.png",
+						image: "../product/cbr/Group 143.png",
 						additionalText: "Very Low Pressure Drop & Enegry Consumption"
 					},
 					{
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
-						image: "../product/aop/Group 124.png",
+						image: "../product/cbr/Group 144.png",
 						additionalText: "Flexible & Cost Eective Solution"
 					},
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
+						image: "../product/cbr/Group 145.png",
 						additionalText: "Eiciency of MERV-16 Filter"
 					}
 				]
@@ -54,14 +53,13 @@
 			question: "Benefits ",
 			answer: {
 				type: "list",
-				items: ["Enhances Indoor air quality of conditioned spaces.",
-                   " Energy-efficient and safe solution.",
-                    "Kills > 90% Bacteria, Viruses , Molds and other Pathogens on Surface and in Air.",
-                    "Very effective on viruses like Corona family virus.",
-                    "Prevent bioaerosol cross-contamination.",
-                   "Eliminate  gaseous contamination, SO2, NO2, Ozone etc. and mitigate odors.",
-                    "Partially reduces Particulate Matter (PM2.5 & PM10).",
-                    "Can be easily installed without affecting the Low Static Machine Airflow."]
+				items: ["Comprehensive protection from Chemical, Biological & Radiological threat",
+						"High filtration e­iciency for PM and gases contaminants.",
+						"Remove >99.5% of PM0.3",
+						"Active carbon layer adsorb gases & protects from toxic warfare gases.",
+						"Very e­ective on viruses like Corona family virus.",
+						"E­iciency of MERV 16 filter",
+						"Very Low Pressure drop & Energy consumption"]
 			}
 		},
 		{
@@ -69,7 +67,7 @@
 			question: "Protection From",
 			answer: {
 				type: "images",
-				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
+				images: ["../product/cbr/Layer_1.png", "../product/cbr/Layer_1 (1).png", "../product/cbr/Layer_1 (2).png", "../product/cbr/Layer_1 (3).png", "../product/cbr/Layer 4.png", "../product/cbr/Layer_1 (4).png"],
 				imagescontent: ["PM2.5, PM10,Dust & Pollens", "Spores & Dander", "VOCS & Odor", "SOx & NOx ", "Formaldehyde", "Viruses & Bacteria"]
 
 			}
@@ -123,12 +121,11 @@
 				<div className="w-full md:w-1/2 flex justify-between items-center">
 					<div className="w-1/2">
 						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold text-sm">nanoX® Technology</h6>
 					</div>
 
 					<div className="w-1/2">
-						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold w-full text-sm">plasmOX® Technology</h6>
+						
+						<h6 className="font-bold  text-2xl w-1/2">Tested by IACS University Kolkata</h6>
 					</div>
 				</div>
 			</div>
@@ -154,11 +151,13 @@
 								{faq.answer.type === "iconText" && (
 									<div className="space-y-4 flex flex-wrap">
 										{faq.answer.iconContent.map((content, index) => (
-											<div key={index} className="flex items-center w-1/4 p-3 font-semibold">
+											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/4  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
-												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
+												<div className="flex items-center">
+												<img src={content.image} alt="features" className="h-15 w-15 mx-2" />
 												<span>{content.additionalText}</span>
+												</div>
 											</div>
 										))}
 									</div>
@@ -174,7 +173,7 @@
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className="h-20 w-20 mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}

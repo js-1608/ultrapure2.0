@@ -25,26 +25,38 @@
 					{
 						// icon: "../product/aop/Group 121.png",
 						// text: "Our return policy is...",
-						image: "../product/aop/Group 121.png",
-						additionalText: "Replace traditional bag filter section of AHU with Low Resistance"
+						image: "../product/UltraSORB/Group 151.png",
+						additionalText: "No Bypass"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
 						// text: "Our shipping policy is...",
-						image: "../product/aop/Group 122.png",
-						additionalText: "High purification e­iciency, reduces PM2.5"
+						image: "../product/UltraSORB/Group 154.png",
+						additionalText: "Low Pressure Drop"
 					},
 					{
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
-						image: "../product/aop/Group 124.png",
-						additionalText: "Intelligent power module stabilizes voltage output (additional)"
+						image: "../product/UltraSORB/Group 155.png",
+						additionalText: "Turbulent Flow"
 					},
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
-						additionalText: "Flexible installation available in different customisable sizes"
+						image: "../product/UltraSORB/Group 156.png",
+						additionalText: "Full Optimization"
+					},
+					{
+						// icon: "../product/aop/Group 125.png",
+						// text: "Our support policy is...",
+						image: "../product/UltraSORB/Group 152.png",
+						additionalText: "Composite Structure"
+					},
+					{
+						// icon: "../product/aop/Group 125.png",
+						// text: "Our support policy is...",
+						image: "../product/UltraSORB/Group 153.png",
+						additionalText: "Lifem Testable"
 					},
                  
 				]
@@ -64,7 +76,7 @@
 			question: "Protection From",
 			answer: {
 				type: "images",
-				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
+				images: ["../product/UltraSORB/H2s.png", "../product/UltraSORB/Asset 14.png", "../product/UltraSORB/Asset 13.png", "../product/UltraSORB/Asset 12.png", "../product/UltraSORB/Asset 11.png", "../product/ultraSORB/Asset 10.png"],
 				imagescontent: ["Hydrogen Sulphie","Nitrogen Oxides ", "Sulphur Dioxide", "Ammonia ", "Formaldehyde", "Chlorine", ]
 
 			}
@@ -115,19 +127,18 @@
 <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">
-                    The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.
-					</p>
+					UltraSORB is a highly efficient air purification solution designed by ULTRAPURE®. It excels in removing moisture, odors, and harmful gases from the air, ensuring a clean and healthy environment.					</p>
 				</div>
-				<div className="w-full md:w-1/2 flex justify-between items-center">
+				<div className="w-full md:w-1/2 flex justify-evenly items-center">
 					<div className="w-1/2">
-						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold text-sm">nanoX® Technology</h6>
+						<img src={tech2} alt="plasma" className=" h-auto rounded-lg" />
+						{/* <h6 className="font-bold text-sm">nanoX® Technology</h6> */}
 					</div>
 
-					<div className="w-1/2">
+					{/* <div className="w-1/2">
 						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
 						<h6 className="font-bold w-full text-sm">plasmOX® Technology</h6>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			{/* faq */}
@@ -155,8 +166,10 @@
 											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/4  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
+												<div className="flex items-center">
 												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
 												<span>{content.additionalText}</span>
+												</div>
 											</div>
 										))}
 									</div>

@@ -87,7 +87,7 @@
 
       const product = {
           headingText: "HVAC Duct Air Purification",
-          title: "Advanced Oxidation Plasma (AOP) Cell",
+          title: "Germinox",
           downloadFile: "./Product/aop/brochure.pdf",
           mainImage: 'product/aop.png',
           relativeImages: [

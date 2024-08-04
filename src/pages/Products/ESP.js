@@ -25,31 +25,31 @@
 					{
 						// icon: "../product/aop/Group 121.png",
 						// text: "Our return policy is...",
-						image: "../product/aop/Group 121.png",
+						image: "../product/esp/Group 146.png",
 						additionalText: "Replace traditional bag filter section of AHU with Low Resistance"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
 						// text: "Our shipping policy is...",
-						image: "../product/aop/Group 122.png",
+						image: "../product/esp/Group 147.png",
 						additionalText: "High purification e­iciency, reduces PM2.5"
 					},
 					{
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
-						image: "../product/aop/Group 124.png",
+						image: "../product/esp/Group 149.png",
 						additionalText: "Intelligent power module stabilizes voltage output (additional)"
 					},
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
+						image: "../product/esp/Group 150.png",
 						additionalText: "Flexible installation available in different customisable sizes"
 					},
                     {
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
+						image: "../product/esp/Group 148.png",
 						additionalText: "Protects Coil’s &provide filth blockage of air conditioning system"
 					}
 				]
@@ -60,12 +60,13 @@
 			question: "Benefits",
 			answer: {
 				type: "list",
-				items: ["Enhances Indoor air quality of conditioned spaces.",
-					 "Energy-e­icient and safe solution.",
-					 "Very e­ective on viruses like Corona family virus.",
-					"Prevent bioaerosol cross-contamination.",
-					"Eliminate gaseous contamination, SO2, NO2, Ozone etc. and mitigate odors.",
-					" Independent Equipments having cleaning performance in Independent matter"]
+				items: ["High Efficiency for Particulate Removal: Electrostatic precipitators (ESPs) are highly effective at removing fine particulates from the air, including dust, smoke, and pollen, even those as small as 0.1 microns in diameter.",
+						"The device exhibits high collection efficiency even for small particles.",
+						"Versatility: ESPs can handle  heavy dust and large gas volume loads at low pressures.",
+						"Efficient sterilization and dust removal, ensuring effective purification: Effectively capture dust particles as small as 0.1 micron in the air and kill microorganisms attached to the dust particles.",
+						"Low energy consumption and Operating costs.",
+						"Environmental Friendliness: They are environment friendly and produce no secondary pollution.",
+						"Effective Sterilization: Some ESP systems with extra section can efficiently remove airborne pathogens, contributing to improved indoor air quality."]
 			}
 		},
 		{
@@ -123,24 +124,24 @@
 <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">
-                    The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.
-					</p>
+					One-time ultra-high purification efficiency, using Micro-Electrostatic technology, resulting in a substantial reduction of Particulate Contamination from  the Air which Improves AQI Index and also reduces electrical load.					</p>
 				</div>
-				<div className="w-full md:w-1/2 flex justify-between items-center">
+				<div className="w-full md:w-1/2 flex justify-evenly items-center">
 					<div className="w-1/2">
-						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold text-sm">nanoX® Technology</h6>
+						{/* <img src={tech1} alt="plasma" className=" h-auto rounded-lg" /> */}
+						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
+
+						{/* <h6 className="font-bold text-sm">nanoX® Technology</h6> */}
 					</div>
 
-					<div className="w-1/2">
-						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold w-full text-sm">plasmOX® Technology</h6>
-					</div>
+					{/* <div className="w-1/2"> */}
+						{/* <h6 className="font-bold w-full text-sm">plasmOX® Technology</h6> */}
+					{/* </div> */}
 				</div>
 			</div>
 			{/* faq */}
 			<div className="mx-auto bg-white p-8 rounded-lg shadow-lg">
-				<h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+				{/* <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2> */}
 				{faqs.map((faq) => (
 					<div key={faq.id} className="mb-4">
 						<button
@@ -160,11 +161,13 @@
 								{faq.answer.type === "iconText" && (
 									<div className="space-y-4 flex flex-wrap">
 										{faq.answer.iconContent.map((content, index) => (
-											<div key={index} className="flex items-center w-1/4 p-3 font-semibold">
+											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/4  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
-												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
+												<div className="flex items-center">
+												<img src={content.image} alt="features" className="h-15 w-15 mx-2" />
 												<span>{content.additionalText}</span>
+												</div>
 											</div>
 										))}
 									</div>
@@ -180,7 +183,7 @@
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className="h-20 w-20 mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className="mx-auto" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}

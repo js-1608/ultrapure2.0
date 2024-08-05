@@ -28,6 +28,7 @@ import CBR from './pages/Products/CBR';
 import UltraSORB from './pages/Products/UltraSORB';
 import ESP from './pages/Products/ESP';
 import Commerical from './pages/market_served/Commerical';
+import CS from './pages/Products/CS';
 export default function App() {
   return (
     <Router>
@@ -62,6 +63,7 @@ export default function App() {
             <Route path="/cf" element={<CBR/>} />
             <Route path="/ucm" element={<UltraSORB/>} />
             <Route path="/ef" element={<ESP/>} />
+            <Route path="/csap" element={<CS/>}/>
 
 
             <Route path="commercial" element={<Commerical/>} />

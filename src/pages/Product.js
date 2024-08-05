@@ -31,6 +31,8 @@ const images = [
 	{ src: '/products/Group 94.png', alt: 'Image 8', link: '/ucm' },
 	{ src: '/products/Group 93.png', alt: 'Image 9', link: '/ef' },
 	{ src: '/products/Group 113.png', alt: 'Image 9', link: '/fsap' },
+	{ src: '/products/Group 95.png', alt: 'Image 9', link: '/csap' },
+
   ];
   
 	return (

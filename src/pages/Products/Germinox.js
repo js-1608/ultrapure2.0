@@ -23,21 +23,21 @@
 				type: "iconText",
 				iconContent: [
 					{
-						// icon: "../product/aop/Group 121.png",
+						// icon: "../product/aop/Group 121.png",s
 						// text: "Our return policy is...",
-						image: "../product/aop/Group 121.png",
+						image: "../product/germinox/Group 182.png",
 						additionalText: "Active & Passive Technology"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
 						// text: "Our shipping policy is...",
-						image: "../product/aop/Group 122.png",
+						image: "../product/germinox/Group 175.png",
 						additionalText: "Plug and Play"
 					},
 					{
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
-						image: "../product/aop/Group 124.png",
+						image: "../product/germinox/Group 169.png",
 						additionalText: "Lightweight & Noise-free"
 					},
 					// {
@@ -67,7 +67,7 @@
 			question: "Protection From",
 			answer: {
 				type: "images",
-				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
+				images: ["../product/germinox/Pathogenic Mircobes.svg", "../product/germinox/Food Odor.svg", "../product/germinox/Washroom Odor.svg", "../product/germinox/VOC & Formaldehyde.svg", "../product/germinox/Hospital ODor.svg", "../product/germinox/Particulate Matter PM.svg"],
 				imagescontent: ["Pathogenic Food Odor","Food Odor", "Washroom Odor", "VOCS & Formaldehyde", "Hospital Odor", "Particulate Matter", ]
 
 			}
@@ -174,7 +174,7 @@
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className=" m-10" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}

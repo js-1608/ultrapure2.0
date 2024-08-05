@@ -18,12 +18,12 @@ const MarketSErved = () => {
       />
 
       <div className="flex flex-wrap ">
-        <div className="flex-1 p-2 w-4/5">
+        <div className="flex-1 p-10 w-full">
           <FAQSection faqs={faqs} />
         </div>
-        <div className=" p-4 w-1/5  border border-black m-5 rounded display_hide">
+        {/* <div className=" p-4 w-1/5  border border-black m-5 rounded display_hide">
           <ProductList faqs={faqs} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

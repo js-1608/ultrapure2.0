@@ -121,18 +121,18 @@
 				<div className="w-full md:w-1/2 flex justify-between items-center">
 					<div className="w-1/2">
 						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold text-sm">nanoX® Technology</h6>
+						{/* <h6 className="font-bold text-sm">nanoX® Technology</h6> */}
 					</div>
 
 					<div className="w-1/2">
 						<img src={tech3} alt="plasma" className=" h-auto rounded-lg" />
-						<h6 className="font-bold w-full text-sm">plasmOX® Technology</h6>
+						{/* <h6 className="font-bold w-full text-sm">plasmOX® Technology</h6> */}
 					</div>
 				</div>
 			</div>
 			{/* faq */}
 			<div className="mx-auto bg-white p-8 rounded-lg shadow-lg">
-				<h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+				{/* <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2> */}
 				{faqs.map((faq) => (
 					<div key={faq.id} className="mb-4">
 						<button
@@ -152,11 +152,13 @@
 								{faq.answer.type === "iconText" && (
 									<div className="space-y-4 flex flex-wrap">
 										{faq.answer.iconContent.map((content, index) => (
-											<div key={index} className="flex items-center w-1/4 p-3 font-semibold">
+											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/4  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
+												<div className="flex items-center">
 												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
 												<span>{content.additionalText}</span>
+												</div>
 											</div>
 										))}
 									</div>
@@ -172,7 +174,7 @@
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 									{faq.answer.images.map((image, index) => (
 										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className="h-20 w-20 mx-auto" />
+										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
 										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
 										</div>
 									))}

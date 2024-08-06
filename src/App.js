@@ -29,6 +29,9 @@ import UltraSORB from './pages/Products/UltraSORB';
 import ESP from './pages/Products/ESP';
 import Commerical from './pages/market_served/Commerical';
 import CS from './pages/Products/CS';
+import Industrial from './pages/market_served/Industrail';
+
+
 export default function App() {
   return (
     <Router>
@@ -67,7 +70,7 @@ export default function App() {
 
 
             <Route path="commercial" element={<Commerical/>} />
-
+            <Route path="industrial" element={<Industrial/>} />
 
 
       </Routes>

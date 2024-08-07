@@ -47,7 +47,7 @@ export default function Technology() {
             airborne pathogens.
           </p>
         </div>
-        <div className="w-full md:w-1/2 flex justify-between items-center">
+        <div className="w-full md:w-1/2 flex justify-evenly items-center">
           <div className="w-1/4">
             <img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
             <h6 className="font-bold text-sm">nanoX® Technology</h6>

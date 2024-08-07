@@ -2,7 +2,7 @@ import React from "react";
 
 export const AirportSolutions = ({ imageUrl, problem, tableData, health }) => {
   return (
-    <div className=" p-0 lg:p-6">
+    <div className=" p-0 lg:p-6 ">
       <div className="flex">
         <div className="p-2 w-full lg:w-3/4 sm:w-full">
           {/* <img
@@ -20,11 +20,11 @@ export const AirportSolutions = ({ imageUrl, problem, tableData, health }) => {
             ))}
           </ul>
         </div>
-        {/* <img
+        <img
           src={imageUrl}
           alt="Airport"
-          className="w-full h-64 object-cover  rounded m-auto display_hide"
-        /> */}
+          className="w-1/2 h-64 object-cover  rounded m-auto display_hide"
+        />
  
       </div>
       <table className="w-full mb-4 border">
@@ -43,12 +43,12 @@ export const AirportSolutions = ({ imageUrl, problem, tableData, health }) => {
           ))}
         </tbody>
       </table>
-      <div className="flex justify-evenly">
-        <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+      <div className="flex justify-left">
+        {/* <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
           Contact Us
-        </button>
-        <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
-          Reach Us
+        </button> */}
+        <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 p-5">
+          Contact us
         </button>
       </div>
     </div>

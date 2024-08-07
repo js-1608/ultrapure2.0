@@ -69,7 +69,7 @@ const ReportForm = () => {
             </div>
             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="Phone" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <input type="text" value={selectedReport} readOnly className="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 cursor-not-allowed focus:outline-none" />
-            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-blue-600 to-green-400 text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none">Submit</button>
+            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none">Submit</button>
           </form>
         )}
       </div>

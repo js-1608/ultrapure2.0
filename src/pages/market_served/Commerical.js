@@ -159,8 +159,8 @@ export default function Commerical() {
       <div className="flex flex-wrap ">
         <div className="flex-1 p-2 w-4/5">
           {/* Airports */}
-          <section id="Airports " className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Airport</h1>
+          <section id="Airports " className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl ml-10 mt-5  font-bold '>Airport</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={imageUrl} problem={problem} tableData={tableData} health={health} />

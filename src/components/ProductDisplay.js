@@ -9,7 +9,7 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
   };
 
   return (
-    <div className="flex flex-col md:flex-row bg-gray-500 p-10">
+    <div className="flex flex-col md:flex-row bg-productbanner p-10">
       <div className="md:w-1/2 flex flex-col justify-center">
         <p className="text-xl uppercase text-white font-semibold">{headingText}</p>
         <h1 className="lg:text-6xl  text-3xl text-white font-bold mt-2">{title}</h1>
@@ -29,7 +29,7 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
       </div>
       <div className="md:w-1/2 flex lg:justify-end sm:text-center justify-center items-center mt-10">
           <div className='rounded flex items-center'>
-          <img src={currentMainImage} alt="Main product" className="w-3/4 h-auto mb-4 rounded-lg "/>
+          <img src={currentMainImage} alt="Main product" className=" h-auto mb-4 rounded-lg "/>
           {/* <div className="flex flex-col  space-y-3 ml-8 items-center m-auto">
           {relativeImages.map((image, index) => (
             <img

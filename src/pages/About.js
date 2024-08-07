@@ -12,7 +12,7 @@ const About = () => {
 		<div>
 			<Banner
 				src={banner}
-				title="About Us"
+				title="Abouts Us"
 				text="Welcome to Ultrapure Envirocare Pvt Ltd, a leading provider of innovative air purification solutions dedicated to enhancing indoor air quality worldwide."
 				updated=""
 				buttonUrl=""

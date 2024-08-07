@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         textBlue: '#1D9AD6',
-        ultragreen:'#90C03E'
+        ultragreen:'#90C03E',
+        productbanner:'#818181'
       },
       borderRadius: {
         large:'25%',

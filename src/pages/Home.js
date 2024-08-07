@@ -16,6 +16,7 @@ import ImageTextCard from "../components/ImageTextCard";
 import OurClientele from "../components/OurClientele";
 import CarouselComponent from "../components/CarouselComponent";
 import MarketCarousel from "../components/MarketCarousel";
+import { Link } from "react-router-dom";
 export default function HomePage() {
   return (
     <div>
@@ -50,14 +51,14 @@ export default function HomePage() {
           <h2 className=" font-bold text-5xl">
             Why Choose <span className="text-textBlue">Ultrapure</span>
           </h2>
-          <p className="max-w-4xl text-center m-auto font-normal mt-10">
+          <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
             We stand out as a 'Need-based Manufacturer,' focusing on
             client-specific solutions, which has built our strong reputation and
             loyal customer base. With offices in Delhi, Mumbai, and Bengaluru,
             we effectively serve clients nationwide.
           </p>
         </div>
-        <div className="flex justify-center mt-10 flex-wrap mb-10">
+        <div className="flex justify-center mt-16 flex-wrap mb-16">
           <InfoCard
             imageUrl={choose1}
             heading="Superior Air Purification Solutions"
@@ -75,14 +76,14 @@ export default function HomePage() {
           />
         </div>
         <div className=" flex justify-center mb-2">
-          <button className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1">
+          <Link className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1" to="./pdf/FINAL UEPL REPORT (1).pdf" target="_blank">
             Learn More
             <FaArrowRight className="ml-2" />
-          </button>
-          <button className="mt-5 inline-flex items-center px-4 py-2 rounded hover:bg-gray-200 font-medium  text-center m-1">
+          </Link>
+          <Link to="/contact" className="mt-5 inline-flex items-center px-4 py-2 rounded hover:bg-gray-200 font-medium  text-center m-1" >
             Contact us
             <FaArrowRight className="ml-2" />
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -98,7 +99,7 @@ export default function HomePage() {
         <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
 
         <OurClientele />
-        <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto"></hr>
+        <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
         <CarouselComponent />
         </div>
       </div>

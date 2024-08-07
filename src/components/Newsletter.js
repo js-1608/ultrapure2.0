@@ -11,7 +11,7 @@ const Newsletter = () => {
       <div className="m-4 lg:w-2/5  text-end">
         <button className="bg-white text-[#90C03E] font-bold py-2 px-10 rounded hover:bg-gray-200  ">
           Contact Us  <span aria-hidden="true">&rarr;</span>
-        </button>
+        </button>+
       </div>
     </div>
   );

@@ -253,15 +253,10 @@ export default function Header() {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex items-left pl-10 pr-10 p-5 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <Link to="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-          </Link>
-        </div>
+   
 
         <div className="flex lg:hidden">
           <button
@@ -275,12 +270,12 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link to="/about" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/about" className="text-md font-semibold leading-6 text-gray-900">
             Abouts us
           </Link>
 
           <Popover className="">
-            <PopoverButton className="flex relative right-0 items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <PopoverButton className="flex relative right-0 items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
               Our Technology
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -297,7 +292,7 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-                <div className=" w-full   p-5 overflow-hidden  bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 ">
+                <div className=" w-full   p-5 overflow-hidden  bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5 ">
                   <h1 className="font-semibold text-3xl">Our Technology</h1>
                   <div className="flex size-max p-5 pt-14 ">
                     {/* Left Content (60% width) */}
@@ -305,7 +300,7 @@ export default function Header() {
                     {technology.map((item) => (
                       <div
                         key={item.name}
-                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
+                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
                       >
                         <div className="flex-auto">
                           <Link
@@ -329,8 +324,8 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          {/* <Popover className="">
-            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+          <Popover className="">
+            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
               Market Served
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -347,13 +342,13 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-                <div className="w-full flex overflow-hidden  bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 ">
+                <div className="w-full flex overflow-hidden  bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5 ">
                   <div className=" w-100% p-2 m-2 flex ">
                     <div className="p-4 flex">
                       {market_served.map((item) => (
                         <div
                           key={item.name}
-                          className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
+                          className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
                         >
                           <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                             <item.icon
@@ -382,10 +377,10 @@ export default function Header() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover> */}
+          </Popover>
 
         <Popover className="relative">
-          <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+          <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
             Product
             <ChevronDownIcon
               className="h-5 w-5 flex-none text-gray-400"
@@ -402,7 +397,7 @@ export default function Header() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-              <div className="w-full flex overflow-hidden bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+              <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
                 {/* Left Content (60% width) */}
                 <div className="w-60% p-2 m-2">
                   <div className="p-4">
@@ -410,7 +405,7 @@ export default function Header() {
                       {products.map((item) => (
                         <div
                           key={item.name}
-                          className="group relative flex items-start gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 color-blue"
+                          className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
                         >
                           <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                             <item.icon
@@ -437,7 +432,7 @@ export default function Header() {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                        className="flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                       >
                         <item.icon
                           className="h-5 w-5 flex-none text-gray-400"
@@ -462,7 +457,7 @@ export default function Header() {
 
 
           <Popover className="">
-            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
               Resources
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -479,7 +474,7 @@ export default function Header() {
               leaveTo="opacity-0 translate-y-1"
             >
               <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4  header_container">
-                <div className="w-full flex overflow-hidden  bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                <div className="w-full flex overflow-hidden  bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
                   {/* Left Content (60% width) */}
                   <div className="w-full p-2 m-2 flex flex-wrap  ">
                     {resources.map((item) => (
@@ -508,12 +503,12 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <Link to="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900">
             Contact us
           </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="#" className="text-md font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
@@ -569,7 +564,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             to={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -579,7 +574,7 @@ export default function Header() {
                   )}
                 </Disclosure>
 
-                {/* <Disclosure as="div" className="-mx-3">
+               <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -598,7 +593,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -606,7 +601,7 @@ export default function Header() {
                       </DisclosurePanel>
                     </>
                   )}
-                </Disclosure> */}
+                </Disclosure> 
 
                 {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
@@ -627,7 +622,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -656,7 +651,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             to={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -685,7 +680,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             to={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </DisclosureButton>

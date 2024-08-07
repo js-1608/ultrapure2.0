@@ -1,6 +1,8 @@
 // src/ReportForm.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa6';
 
 const ReportForm = () => {
   const [selectedReport, setSelectedReport] = useState('');
@@ -31,7 +33,7 @@ const ReportForm = () => {
       phone: formData.phone
     };
 
-    emailjs.send('your_service_id', 'your_template_id', templateParams, 'your_user_id')
+    emailjs.send('your_service_id', 'template_gc3uee3', templateParams, 'your_user_id')
       .then((result) => {
         console.log(result.text);
         alert('Email sent successfully!');
@@ -59,7 +61,7 @@ const ReportForm = () => {
               <option value="Deep Clean Products">Deep Clean Products</option>
               <option value="Face Masks">Face Masks</option>
             </select>
-            <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-green-400 text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none">Email Me</button>
+            <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">Email Me</button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4 w-full lg:w-auto">
@@ -69,7 +71,10 @@ const ReportForm = () => {
             </div>
             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="Phone" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <input type="text" value={selectedReport} readOnly className="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 cursor-not-allowed focus:outline-none" />
-            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none">Submit</button>
+          
+            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">Submit
+            <FaArrowRight className="ml-2" />
+            </button>
           </form>
         )}
       </div>

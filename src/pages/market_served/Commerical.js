@@ -160,7 +160,7 @@ export default function Commerical() {
         <div className="flex-1 p-2 w-4/5">
           {/* Airports */}
           <section id="Airports " className=" border rounded shadow-lg m-5 mb-16">
-            <h1 className='text-4xl ml-10 mt-5  font-bold '>Airport</h1>
+            <h1 className='text-4xl ml-5 lg:ml-10 mt-5  font-bold '>Airport</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={imageUrl} problem={problem} tableData={tableData} health={health} />
@@ -168,48 +168,48 @@ export default function Commerical() {
           </section>
 
           {/* Musuems */}
-          <section id="Museums" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Museums</h1>
+          <section id="Museums" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Museums</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={MuseumsimageUrl} problem={Museumsproblem} tableData={MuseumstableData} health={Museumshealth} />
             </div>
           </section>
 
           {/* Schools */}
-          <section id="Schools" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Schools & Universities</h1>
+          <section id="Schools"className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Schools & Universities</h1>
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={SchoolimageUrl} problem={Schoolproblem} tableData={SchooltableData} health={Schoolhealth} />
             </div>
           </section>
 
           {/* Restaurants */}
-          <section id="Restaurants" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>	Restaurants</h1>
+          <section id="Restaurants"className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>	Restaurants</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={RestaurantsimageUrl} problem={Restaurantsproblem} tableData={RestaurantstableData} health={Restaurantshealth} />
             </div>
           </section>
 
           {/* Officies */}
-          <section id="Offices" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Offices</h1>
+          <section id="Offices" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Offices</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={OfficesimageUrl} problem={Officesproblem} tableData={OfficestableData} health={Officeshealth} />
             </div>
           </section>
 
           {/* Hotels */}
-          <section id="Hotels" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Hotels</h1>
+          <section id="Hotels" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Hotels</h1>
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={HotelimageUrl} problem={Hotelproblem} tableData={HoteltableData} health={Hotelhealth} />
             </div>
           </section>
 
           {/* Halls */}
-          <section id="Halls" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>	Halls & Malls</h1>
+          <section id="Halls" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>	Halls & Malls</h1>
             <div className="container mx-auto p-4">
               <AirportSolutions imageUrl={HallsimageUrl} problem={Hallsproblem} tableData={HallstableData} health={Hallshealth} />
             </div>

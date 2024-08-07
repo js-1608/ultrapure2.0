@@ -60,32 +60,19 @@ export default function Industrial() {
   const publicpowerhealth = [
     "Respiratory infections", "asthma exacerbations", " cardiovascular problems"
   ];
-    //•	Pulp
-    const PulppowertableData = [
+    
+    //refineries
+    const refineriestableData = [
       { applicationArea: 'Cabins with Air Conditioning  ', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
-      { applicationArea: 'Pulp and Paper industries', solution: 'Fresh air standalone unit/ Corrosion Control unit Corrosion Coupons/ monitoring system' },
+      { applicationArea: 'Pulp and Paper industries', solution: 'Fresh air standalone unit/ Corrosion Control unit /Corrosion Coupons/ monitoring system' },
     
     ];
   
-    const PulppowerimageUrl = "publicbuilding/public (1).png";
-    const Pulppowerproblem = " : The pulp and paper industry emits dust, chemical fumes, VOCs, and odors during production processes. These pollutants can affect workers' health and the surrounding community, necessitating effective air purification solutions.";
-    const Pulppowerhealth = [
-      "Respiratory issues", "skin and eye irritation",  "long-term exposure risks such as cancer"
+    const refineriesimageUrl = "publicbuilding/public (1).png";
+    const refineriesproblem = " : Refineries release hazardous gases, VOCs, chemical fumes, and particulate matter during the processing of crude oil. These emissions pose significant health risks to workers and nearby residents, making air quality management a critical concern.";
+    const refinerieshealth = [
+      "Respiratory problems", "skin and eye irritation", "cancer", "other long-term health effects"
     ];
-
-     //refineries
-     const refineriestableData = [
-        { applicationArea: 'Cabins with Air Conditioning  ', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
-        { applicationArea: 'Pulp and Paper industries', solution: 'Fresh air standalone unit/ Corrosion Control unit /Corrosion Coupons/ monitoring system' },
-      
-      ];
-    
-      const refineriesimageUrl = "publicbuilding/public (1).png";
-      const refineriesproblem = " : Refineries release hazardous gases, VOCs, chemical fumes, and particulate matter during the processing of crude oil. These emissions pose significant health risks to workers and nearby residents, making air quality management a critical concern.";
-      const refinerieshealth = [
-        "Respiratory problems", "skin and eye irritation", "cancer", "other long-term health effects"
-      ];
-
   return (
     <div>
       <Banner
@@ -99,8 +86,8 @@ export default function Industrial() {
       <div className="flex flex-wrap ">
         <div className="flex-1 p-2 w-4/5">
           {/* Airports */}
-          <section id="Airports" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Airport</h1>
+          <section id="Airports" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 font-bold '>Airport</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={imageUrl} problem={problem} tableData={tableData} health={health} />
@@ -108,8 +95,8 @@ export default function Industrial() {
           </section>
 
             {/* Power */}
-            <section id="Power" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Power</h1>
+            <section id="Power" className=" border rounded shadow-lg m-5  mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 font-bold '>Power</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={powerimageUrl} problem={powerproblem}  health={powerhealth} />
@@ -117,8 +104,8 @@ export default function Industrial() {
           </section>
 
             {/* public */}
-            <section id="Public" className=" border rounded shadow-lg m-5">
-                <h1 className='text-4xl text-center font-bold '>Public Transportations</h1>
+            <section id="Public" className=" border rounded shadow-lg m-5  mb-16">
+                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Public Transportations</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />
@@ -129,7 +116,7 @@ export default function Industrial() {
 
            {/* Refineries */}
            <section id="Refineries" className=" border rounded shadow-lg m-5">
-                <h1 className='text-4xl text-center font-bold '>Refineries</h1>
+                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Refineries</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={refineriesimageUrl} problem={refineriesproblem} tableData={refineriestableData} health={refinerieshealth} />
@@ -138,7 +125,7 @@ export default function Industrial() {
 
             {/* Pulp*/}
             <section id="Pulp" className=" border rounded shadow-lg m-5">
-                <h1 className='text-4xl text-center font-bold '>Pulp & Paper</h1>
+                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Pulp & Paper</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />

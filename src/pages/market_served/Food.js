@@ -56,8 +56,8 @@ export default function Food() {
       <div className="flex flex-wrap ">
         <div className="flex-1 p-2 w-4/5">
           {/* Beverage Production */}
-          <section id="Beverage" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Beverage Production</h1>
+          <section id="Beverage" className=" border rounded shadow-lg m-5  mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Beverage Production</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={imageUrl} problem={problem} health={health} />
@@ -65,8 +65,8 @@ export default function Food() {
           </section>
 
           {/* Dairy */}
-          <section id="Dairy" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Dairy Processes</h1>
+          <section id="Dairy" className=" border rounded shadow-lg m-5  mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Dairy Processes</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={dairyimageUrl} problem={dairyproblem} health={dairyhealth} />
@@ -74,8 +74,8 @@ export default function Food() {
           </section>
 
           {/* Beverage Production */}
-          <section id="Food" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Food Processing</h1>
+          <section id="Food" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Food Processing</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={foodimageUrl} problem={foodproblem} health={foodhealth} />

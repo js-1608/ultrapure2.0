@@ -108,7 +108,7 @@ export default function HomePage() {
       <div className="container mx-auto p-4">
         <MarketCarousel/>
       </div>
-        <Newsletter/>
+        {/* <Newsletter/> */}
         <ReportForm/>
     </div>
 

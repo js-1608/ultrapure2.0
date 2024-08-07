@@ -56,8 +56,8 @@ export default function Waste() {
       <div className="flex flex-wrap ">
         <div className="flex-1 p-2 w-4/5">
           {/*Corrosion*/}
-          <section id="Corrosion" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Corrosion Control</h1>
+          <section id="Corrosion" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Corrosion Control</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={imageUrl} problem={problem} health={health} />
@@ -65,8 +65,8 @@ export default function Waste() {
           </section>
 
           {/* Dairy */}
-          <section id="Odor" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Odor Control</h1>
+          <section id="Odor" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Odor Control</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={ OdorimageUrl} problem={ Odorproblem} health={ Odorhealth} />
@@ -74,9 +74,8 @@ export default function Waste() {
           </section>
 
           {/* Beverage Production */}
-          <section id="Emergency" className=" border rounded shadow-lg m-5">
-            <h1 className='text-4xl text-center font-bold '>Emergency Gas Scrubbing</h1>
-x
+          <section id="Emergency" className=" border rounded shadow-lg m-5 mb-16">
+            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Emergency Gas Scrubbing</h1>
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={EmergencyimageUrl} problem={Emergencyproblem} health={Emergencyhealth} />
             </div>

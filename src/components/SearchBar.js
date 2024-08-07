@@ -21,10 +21,10 @@ const SearchBar = ({ data }) => {
     : [];
 
   return (
-    <div className=" max-w-md  relative">
+    <div className=" max-w-md  relative ">
       <input
         type="text"
-        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+        className="w-full p-3 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
         placeholder="Search for products..."
         value={query}
         onChange={handleInputChange}

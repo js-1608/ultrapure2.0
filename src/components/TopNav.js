@@ -41,7 +41,7 @@ const TopNav = () => {
       <Link to="/">
         <img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18 "  />
       </Link>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-10">
         <div className="hidden md:flex items-center space-x-2">
           <FiPhoneCall className="text-lg md:text-xl text-gray-700" />
           <div className="flex flex-col text-right">

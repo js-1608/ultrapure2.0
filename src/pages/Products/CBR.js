@@ -115,12 +115,13 @@
               {/* faq */}
               <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
-					<p className="text-gray-700 p-8 text-justify">
+				<h1>Product Info</h1>
+					<p className="text-gray-700 p-8 pl-1	 text-justify">
 					Ultrapure's revolutionary Chemical Biological Radiological (CBR) air filtration technology combines an electrostatically charged filter with a particle charging section and a gas filter. This system efficiently destroys airborne viruses, bacteria, molds, VOCs, and microscopic particles, while offering massive dust holding capacity with extremely low pressure drop. Unlike standard filters, Ultrapure's CBR filtration provides high efficiency even for the smallest particle sizes, including tobacco smoke, bacteria, and viruses.</p>
 					</div>
-				<div className="w-full md:w-1/2 flex justify-between items-center">
+				<div className="w-full md:w-1/2 flex justify-evenly">
 					<div className="w-1/2">
-						<img src={tech1} alt="plasma" className=" h-auto rounded-lg" />
+						<img src={tech1} alt="plasma" className="w-1/2 h-3/4 rounded-lg" />
 					</div>
 
 					<div className="w-1/2">

@@ -191,7 +191,7 @@ const resources = [
   {
     name: "Test Reports",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "./pdf/FINAL UEPL REPORT (1).pdf",
     icon: CursorArrowRaysIcon,
     src: r3,
   },

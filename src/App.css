@@ -1,0 +1,14 @@
+/* src/fonts.css */
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('./fonts/mona-sans.woff2') format('woff2'),
+         url('./fonts/mona-sans.woff') format('woff'),
+         url('./fonts/mona-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* src/App.css or any other CSS file */
+body {
+    font-family: 'Mona Sans', sans-serif;
+  }
+  

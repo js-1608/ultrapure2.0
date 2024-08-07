@@ -17,6 +17,7 @@ import OurClientele from "../components/OurClientele";
 import CarouselComponent from "../components/CarouselComponent";
 import MarketCarousel from "../components/MarketCarousel";
 import { Link } from "react-router-dom";
+import ReportForm from "../components/ReportForm";
 export default function HomePage() {
   return (
     <div>
@@ -108,6 +109,7 @@ export default function HomePage() {
         <MarketCarousel/>
       </div>
         <Newsletter/>
+        <ReportForm/>
     </div>
 
   );

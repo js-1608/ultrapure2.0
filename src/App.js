@@ -30,6 +30,9 @@ import ESP from './pages/Products/ESP';
 import Commerical from './pages/market_served/Commerical';
 import CS from './pages/Products/CS';
 import Industrial from './pages/market_served/Industrail';
+import Food from './pages/market_served/Food';
+import Material from './pages/market_served/Material';
+import Waste from './pages/market_served/Waste';
 
 
 export default function App() {
@@ -71,6 +74,9 @@ export default function App() {
 
             <Route path="commercial" element={<Commerical/>} />
             <Route path="industrial" element={<Industrial/>} />
+            <Route path="food" element={<Food/>} />
+            <Route path="material" element={<Material/>} />
+            <Route path="waste" element={<Waste/>} />
 
 
       </Routes>

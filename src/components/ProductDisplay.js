@@ -14,9 +14,9 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
         <p className="text-xl uppercase text-white font-semibold">{headingText}</p>
         <h1 className="lg:text-6xl  text-3xl text-white font-bold mt-2">{title}</h1>
         <div className="flex space-x-5 mt-10">
-          <button className="bg-ultragreen text-white px-4 py-2 rounded flex items-center font-semibold text-md lg:text-lg">
+          <a className="bg-ultragreen text-white px-4 py-2 rounded flex items-center font-semibold text-md lg:text-lg" href="contact">
             Get Quote →
-          </button>
+          </a>
           <a
             href={downloadFile}
             download

@@ -1,5 +1,5 @@
 
-  import React, { useState } from 'react';
+import React, { useState } from 'react';
 import ProductDisplay from '../../components/ProductDisplay';
 // import Carousel from '../components/Carousel';
 import Carousel from '../../components/Carousel.js'
@@ -56,7 +56,7 @@ function OdorNOX() {
 						image: "../product/aop/Group 125.png",
 						additionalText: "Silent Operation"
 					},
-                 
+
 				]
 			}
 		},
@@ -66,7 +66,7 @@ function OdorNOX() {
 			answer: {
 				type: "list",
 				items: ["Designed for removing toxic, corrosive and odorous gases (acid gases, aldehydes, amines).",
-                        "Chemical Filters use the adsorption and the Chemisorption process to Treat the Gaseous Contamination both Organic / Inorganic compound "]
+					"Chemical Filters use the adsorption and the Chemisorption process to Treat the Gaseous Contamination both Organic / Inorganic compound "]
 			}
 		},
 		{
@@ -75,7 +75,7 @@ function OdorNOX() {
 			answer: {
 				type: "images",
 				images: ["../product/aop/Group 126.png", "../product/aop/Group 127.png", "../product/aop/Group 128.png", "../product/aop/Group 129.png", "../product/aop/Group 130.png", "../product/aop/Group 131.png"],
-				imagescontent: ["Hydrogen Sulphie","Mercaptans ", "Sulphur Dioxide", "Ammonia ", "Aldehydes", "Methane", ]
+				imagescontent: ["Hydrogen Sulphie", "Mercaptans ", "Sulphur Dioxide", "Ammonia ", "Aldehydes", "Methane",]
 
 			}
 		},
@@ -86,7 +86,7 @@ function OdorNOX() {
 				type: "words",
 				words: [
 					"Government", "Airport", "Offices", "Residential", "University",
-					"Hospitality", "Transportation", "Factories", "Residential", "Railways", 
+					"Hospitality", "Transportation", "Factories", "Residential", "Railways",
 				]
 			}
 		}
@@ -97,7 +97,7 @@ function OdorNOX() {
 	const product = {
 		headingText: "For Gases Filtration	",
 		title: "odorNOX",
-		downloadFile: "./Product/aop/brochure.pdf",
+		downloadFile: "./pdf/odorNOX brochure.pdf",
 		mainImage: 'product/odorNOX.png',
 		relativeImages: [
 			"./Product/odorNOX.png",
@@ -120,11 +120,11 @@ function OdorNOX() {
 				relativeImages={product.relativeImages}
 			/>
 
-			             
-<div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
+
+			<div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">
-                    The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.
+						The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex justify-between items-center">
@@ -179,12 +179,12 @@ function OdorNOX() {
 								)}
 								{faq.answer.type === "images" && (
 									<div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-									{faq.answer.images.map((image, index) => (
-										<div key={index} className="text-center">
-										<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
-										<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
-										</div>
-									))}
+										{faq.answer.images.map((image, index) => (
+											<div key={index} className="text-center">
+												<img src={image} alt={`Image ${index + 1}`} className=" mx-auto" />
+												<span className="block mt-2">{faq.answer.imagescontent[index]}</span>
+											</div>
+										))}
 									</div>
 								)}
 								{faq.answer.type === "words" && (

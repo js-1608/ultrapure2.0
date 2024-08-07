@@ -91,7 +91,7 @@ function Aop() {
 	const product = {
 		headingText: "HVAC Duct Air Purification",
 		title: "Advanced Oxidation Plasma (AOP) Cell",
-		downloadFile: "./Product/aop/brochure.pdf",
+		downloadFile: "./Pdf/AOP PPT.pdf",
 		mainImage: "product/aop.png",
 		relativeImages: [
 			"./Product/aop.png",

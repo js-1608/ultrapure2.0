@@ -88,7 +88,7 @@
       const product = {
           headingText: "HVAC Duct Air Purification",
           title: "Germinox",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./pdf/germiNOX.pdf",
           mainImage: 'product/aop.png',
           relativeImages: [
               "./Product/aop.png",

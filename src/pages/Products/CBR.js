@@ -88,7 +88,7 @@
       const product = {
           headingText: "DEFENCE AGAINST AIRBORNE",
           title: "Chemical BiologicalRadiological Filter (CBR)",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./pdf/Chemical Biological Radiological Filtration System.pdf",
           mainImage: 'product/CBR.png',
           relativeImages: [
               "product/CBR.png",

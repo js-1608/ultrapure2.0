@@ -39,7 +39,7 @@ const TopNav = () => {
   return (
     <div className="flex items-center justify-between p-4 border-b-2">
       <Link to="/">
-        <img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18" />
+        <img src={logo} alt="Logo" className="w-40 h-auto md:w-38 md:h-18" quality="100" />
       </Link>
       <div className="flex items-center space-x-4">
         <div className="hidden md:flex items-center space-x-2">

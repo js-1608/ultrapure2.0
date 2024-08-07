@@ -7,6 +7,7 @@ import ProductList from '../../components/ProductList';
 // import faqs from '../data/faqsData';
 import faqs from '../../data/Data';
 import { AirportSolutions } from './AirportSolutions';
+import {Solution} from './Solution';
 export default function Industrial() {
   const location = useLocation();
 
@@ -39,15 +40,7 @@ export default function Industrial() {
     "Transmission of infectious diseases"
   ];
   //POWER
-  const powertableData = [
-    { applicationArea: 'Whole building with Centralized Air Conditioning', solution: 'Pentagon AOP duct air purifiers' },
-    { applicationArea: 'Spa areas', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
-    { applicationArea: 'Washrooms/ restrooms', solution: 'Virushield/ GermiNOX' },
-    { applicationArea: 'Pantry/ kitchen areas/ Cafeteria/ Lounges', solution: 'Virushield/ GermiNOX' },
-    { applicationArea: 'Waiting areas', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
-    { applicationArea: 'Smoking Zones', solution: 'Customized air purification (SmokoNOX)' },
-    { applicationArea: 'Bags Check-in area', solution: 'Virushield/ GermiNOX/ Customized purifier' },
-  ];
+  
 
   const powerimageUrl = "publicbuilding/public (1).png";
   const powerproblem = " Power plants emit large amounts of pollutants, including particulate matter, sulfur dioxide, nitrogen oxides, and VOCs, which can harm human health and the environment. Managing these emissions is crucial for regulatory compliance and community health.";
@@ -55,7 +48,7 @@ export default function Industrial() {
     "Respiratory" ,"cardiovascular diseases", "lung cancer"," premature death"
   ];
 
-   //POWER
+   //Public
    const publicpowertableData = [
     { applicationArea: 'Buses/ Trains with Centralized Air Conditioning ', solution: 'Pentagon AOP duct air purifiers or customized duct purifiers' },
     { applicationArea: 'Power generation plant', solution: 'Fresh air standalone unit/ Corrosion Control unit /Corrosion Coupons/ monitoring system' },
@@ -67,6 +60,18 @@ export default function Industrial() {
   const publicpowerhealth = [
     "Respiratory infections", "asthma exacerbations", " cardiovascular problems"
   ];
+    //•	Pulp
+    const PulppowertableData = [
+      { applicationArea: 'Cabins with Air Conditioning  ', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
+      { applicationArea: 'Pulp and Paper industries', solution: 'Fresh air standalone unit/ Corrosion Control unit Corrosion Coupons/ monitoring system' },
+    
+    ];
+  
+    const PulppowerimageUrl = "publicbuilding/public (1).png";
+    const Pulppowerproblem = " : The pulp and paper industry emits dust, chemical fumes, VOCs, and odors during production processes. These pollutants can affect workers' health and the surrounding community, necessitating effective air purification solutions.";
+    const Pulppowerhealth = [
+      "Respiratory issues", "skin and eye irritation",  "long-term exposure risks such as cancer"
+    ];
 
      //refineries
      const refineriestableData = [
@@ -107,7 +112,7 @@ export default function Industrial() {
             <h1 className='text-4xl text-center font-bold '>Power</h1>
 
             <div className="container mx-auto p-4 ">
-              <AirportSolutions imageUrl={powerimageUrl} problem={powerproblem} tableData={powertableData} health={powerhealth} />
+              <Solution imageUrl={powerimageUrl} problem={powerproblem}  health={powerhealth} />
             </div>
           </section>
 
@@ -119,6 +124,8 @@ export default function Industrial() {
               <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />
             </div>
           </section>
+          
+          
 
            {/* Refineries */}
            <section id="Refineries" className=" border rounded shadow-lg m-5">
@@ -126,6 +133,15 @@ export default function Industrial() {
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={refineriesimageUrl} problem={refineriesproblem} tableData={refineriestableData} health={refinerieshealth} />
+            </div>
+          </section>
+
+            {/* Pulp*/}
+            <section id="Pulp" className=" border rounded shadow-lg m-5">
+                <h1 className='text-4xl text-center font-bold '>Pulp & Paper</h1>
+
+            <div className="container mx-auto p-4 ">
+              <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />
             </div>
           </section>
          

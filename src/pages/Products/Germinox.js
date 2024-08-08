@@ -89,7 +89,7 @@
           headingText: "HVAC Duct Air Purification",
           title: "Germinox",
           downloadFile: "./pdf/germiNOX.pdf",
-          mainImage: 'product/aop.png',
+          mainImage: 'product/germinox.png',
           relativeImages: [
               "./Product/aop.png",
               "./Product/aop.png",

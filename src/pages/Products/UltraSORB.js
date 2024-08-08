@@ -99,7 +99,7 @@
       const product = {
           headingText: "For Gases Filtration",
           title: "ultraSORB MediaultraSORB Media",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./pdf/ultrasorb chemical media.pdf",
           mainImage: 'product/ultrasorb.png',
           relativeImages: [
               "./Product/ultrasorb.png",

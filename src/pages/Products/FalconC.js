@@ -85,7 +85,7 @@
       const product = {
           headingText: "AC AIR PURIFIERS (For Cassette AC)",
           title: "FALCON-C Air Purifier",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./pdf/Falcon C.pdf",
           mainImage: 'product/FALCONC.png',
           relativeImages: [
               "./Product/FALCONC.png",

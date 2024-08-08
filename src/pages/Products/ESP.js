@@ -97,7 +97,7 @@
       const product = {
           headingText: "HVAC Duct Air Purification",
           title: "ESP Filter",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./pdf/ESP Brochure.pdf",
           mainImage: 'product/ESP.png',
           relativeImages: [
               "Product/ESP.png",

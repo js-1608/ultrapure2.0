@@ -74,13 +74,12 @@ function CS() {
 			question: "Benefits",
 			answer: {
 				type: "list",
-				items: ["Enhances Indoor air quality of conditioned spaces.",
-					"Energy-efficient and safe solution.",
-					"Kills > 90% Bacteria, Viruses , Molds and other Pathogens on Surface and in Air.",
-					"Very effective on viruses like Corona family virus.",
-					"Prevent bioaerosol cross-contatmination.",
-					"Eliminate  gaseous contamination, SO2, NO2, Ozone etc. and mitigate odors.",
-					"Partially reduces Particulate Matter (PM2.5 & PM10)."]
+				items: ["Enhances indoor air quality",
+"Energy-efficient and safe solution",
+"Eliminates smoke and gaseous contamination and mitigates odors",
+"Kills > 90% Bacteria, Viruses, Molds, and other Pathogens",
+"Prevents bioaerosol cross-contamination",
+"+Partially reduces Particulate Matter"]
 			}
 		},
 		{
@@ -110,7 +109,7 @@ function CS() {
 		headingText: "Ceiling/Floor Mounted",
 		title: "Ceiling Suspended Air Purifier (smokeNOX)",
 		downloadFile: "./Product/aop/brochure.pdf",
-		mainImage: "product/aop.png",
+		mainImage: "product/Group 120.png",
 		relativeImages: [
 			"./Product/aop.png",
 			"./Product/aop.png",

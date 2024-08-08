@@ -87,8 +87,8 @@ function Virushield() {
 	const product = {
 		headingText: "HVAC Duct Air Purification",
 		title: "Virushield Air Purifer",
-		downloadFile: "./Product/aop/brochure.pdf",
-		mainImage: 'products/Group 89.png',
+		downloadFile: "./pdf/Virushield.pdf",
+		mainImage: 'product/virshulfield.png',
 		relativeImages: [
 			"products/Group 89.png",
 			"products/Group 89.png",

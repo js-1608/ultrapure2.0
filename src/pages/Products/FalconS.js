@@ -86,7 +86,7 @@ import tech3 from "../../assests/plasmOX.png";
       const product = {
           headingText: "AC AIR PURIFIERS (For Split AC)",
           title: "FALCON-S Air Purifier",
-          downloadFile: "./Product/aop/brochure.pdf",
+          downloadFile: "./Pdf/Falcon s- Single.pdf",
           mainImage: 'product/FALCONS.png',
           relativeImages: [
               "./Product/FALCONS.png",

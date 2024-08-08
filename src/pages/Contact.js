@@ -27,9 +27,9 @@ const Contact = () => {
             <div className="container mx-auto p-4">
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-2/6 p-4 m-auto">
-                        <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
+                        <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
                         <div className="flex items-center mb-4">
-                            <img src={mail} alt="Email Logo" className="w-10 h-10 mr-2" />
+                            <img src={mail} alt="Email Logo" className="w-12 h-12 mr-2" />
                             <div>
                                 <h6 className='font-bold'>Email</h6>
                                 <span className="text-gray-700">info@ultrapureindia.in</span>
@@ -37,7 +37,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex items-center mb-4">
-                            <img src={phone} alt="Email Logo" className="w-10 h-10 mr-2" />
+                            <img src={phone} alt="Email Logo" className="w-12 h-12 mr-2" />
                             <div>
                                 <h6 className='font-bold'>Phone</h6>
                                 <span className="text-gray-700">1800-1100-50 (Toll Free)</span>
@@ -45,7 +45,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex items-center">
-                            <img src={location} alt="Contact Logo" className="w-10 h-10 mr-2" />
+                            <img src={location} alt="Contact Logo" className="w-12 h-12 mr-2" />
                             <div>
                             <h6 className='font-bold'>Address</h6>
                             <span className="text-gray-700">3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011</span>
@@ -58,13 +58,13 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto p-4">
-                <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/6 p-4 m-auto">
-                    <h5 className='font-bold'>Head Office</h5>
-                    3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
+            <div className="container mx-auto ">
+                <div className="flex flex-col md:flex-row bg-gray-50 ">
+                    <div className="w-full md:w-2/5 text-end m-auto ">
+                        <h5 className='font-bold text-4xl '>Head Office</h5>
+                        <p className='text-xl'>3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011</p>
                     </div>
-                    <div className="w-full md:w-3/5 p-4  ">
+                    <div className="w-full md:w-3/5  ">
                     <img src={map1} alt="Email Logo" className="w-3/5 h-4/5  m-auto border_left" />
 
                     </div>
@@ -72,10 +72,10 @@ const Contact = () => {
             </div>
 
             <div className="container mx-auto p-4">
-                <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-2/6 p-4 m-auto">
-                    <h5 className='font-bold'>Registered Office</h5>
-                    CB-344, 2nd Floor, Ring Road Naraina, New Delhi- 110028
+                <div className="flex flex-col md:flex-row bg-gray-50">
+                <div className="w-full md:w-2/5 text-end m-auto">
+                <h5 className='font-bold text-4xl '>Registered Office</h5>
+                <p className='text-xl'> CB-344, 2nd Floor, Ring Road Naraina, New Delhi- 110028</p>
                     </div>
                     <div className="w-full md:w-3/5 p-4  ">
                     <img src={map2} alt="Email Logo" className="w-3/5 h-4/5  m-auto border_left" />

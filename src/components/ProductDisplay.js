@@ -11,20 +11,24 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
   return (
     <div className="flex flex-col md:flex-row bg-productbanner p-10">
       <div className="md:w-1/2 flex flex-col justify-center">
-        <p className="text-xl uppercase text-white font-semibold">{headingText}</p>
+        <p className="text-md lg:text-xl uppercase text-white font-semibold">{headingText}</p>
         <h1 className="lg:text-6xl  text-3xl text-white font-bold mt-2">{title}</h1>
-        <div className="flex space-x-5 mt-10">
-          <a className="bg-ultragreen text-white px-4 py-2 rounded flex items-center font-semibold text-md lg:text-lg" href="contact">
+        <div className=" flex  space-x-5 mt-10">
+          <div className='items-center bg-ultragreen text-white lg:px-4 py-2 rounded flex  font-semibold text-md lg:text-xl'>
+          <a className="  font-semibold text-md lg:text-lg" href="contact">
             Get Quote →
           </a>
+          </div>
+          <div className='flex  text-white '>
           <a
             href={downloadFile}
             download
-            className=" flex items-center text-white  hover:text-ultragreen text-md lg:text-lg"
+            className=" flex items-center hover:text-ultragreen text-md lg:text-xl"
           >
             Download Brochure <span className="ml-2"><FaCloudArrowDown  className="ml-2 w-5 h-5"/>
             </span>
           </a>
+          </div>
         </div>
       </div>
       <div className="md:w-1/2 flex lg:justify-end sm:text-center justify-center items-center mt-10">

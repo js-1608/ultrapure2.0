@@ -2,7 +2,11 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa"; // Using react-icons for the arrow
 import Banner from "../components/Banner";
+import Banner2 from "../components/Banner2";
+
 import banner from "../assests/home_banner.png";
+import banner2 from "../assests/mbanner.png";
+
 import InfoCard from "../components/InfoCars";
 import choose1 from "../assests/whyChose/choose (1).png";
 import choose2 from "../assests/whyChose/choose (2).png";
@@ -23,6 +27,14 @@ export default function HomePage() {
     <div>
       <Banner
         src={banner}
+        title="The Future Of Clean Air"
+        text="For better health of your family "
+        updated="UPGRADE NOW."
+        buttonUrl="https://example.com"
+        buttonText="Get Free Consultation"
+      />
+         <Banner2
+        src={banner2}
         title="The Future Of Clean Air"
         text="For better health of your family "
         updated="UPGRADE NOW."

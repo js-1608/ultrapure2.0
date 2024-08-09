@@ -27,12 +27,12 @@ const Download = () => {
     buttonUrl=""
     buttonText=""
   />
-    <div className="max-w-6xl mx-auto py-8">
+    <div className="max-w-6xl mx-auto py-8 ">
       {/* <h1 className="text-3xl font-bold text-center mb-8">Download Documents</h1> */}
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:p-2">
         {files.map((file, index) => (
           <div key={index} className="flex flex-col items-center bg-gray-100 rounded-lg shadow border_left2  p-7">
-            <h2 className="text-xl font-bold mb-4">{file.name}</h2>
+            <h2 className="lg:text-xl font-bold mb-4">{file.name}</h2>
             <a href={file.url} download className="flex items-center  py-2 px-4 rounded hover:text-blue-700">
               Download
               <FaCloudArrowDown  className="ml-2 w-5 h-5"/>

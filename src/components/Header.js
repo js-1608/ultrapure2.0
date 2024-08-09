@@ -80,26 +80,27 @@ const products = [
     icon: ChartPieIcon,
   },
   {
+    name: "For Gaseous Contamination",
+    list: ['ultraSORB Chemical Media Grid Block','odorNOX System','Data Centre Corrosion Control Unit'],
+    links: ['/ucm','/OdorNOX','/ccu'],
+    description: "",
+    icon: FingerPrintIcon,
+  },
+  {
     name: "Particulate Contamination",
     list: ['CBR Filter','ESP Filter',],
     links: ['/cf', '/ef', ],
     description: "",
     icon: CursorArrowRaysIcon,
   },
-  {
-    name: "For Gaseous Contamination",
-    list: ['ultraSORB Chemical Media Grid Block'],
-    links: ['/ucm'],
-    description: "",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Particulate Contamination",
-    list: ['odorNOX System','garboNOX System'],
-    links: ['/OdorNOX', '/gap'],   
-     description: "Connect with third-party tools",
-    icon: SquaresPlusIcon,
-  },
+
+  // {
+  //   name: "Particulate Contamination",
+  //   list: [,'garboNOX System'],
+  //   links: [, '/gap'],   
+  //    description: "Connect with third-party tools",
+  //   icon: SquaresPlusIcon,
+  // },
 ];
 
 const market_served = [
@@ -191,7 +192,7 @@ const resources = [
   {
     name: "Test Reports",
     description: "Speak directly to your customers",
-    href: "./pdf/FINAL UEPL REPORT (1).pdf",
+    href: "/pdf/FINAL UEPL REPORT (1).pdf",
     icon: CursorArrowRaysIcon,
     src: r3,
   },
@@ -427,8 +428,8 @@ export default function Header() {
                       ))}
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                    {callsToAction.map((item) => (
+                  <div className=" divide-gray-900/5 w-1/2 ml-10">
+                    {/* {callsToAction.map((item) => (
                       <Link
                         key={item.name}
                         to={item.href}
@@ -440,7 +441,15 @@ export default function Header() {
                         />
                         {item.name}
                       </Link>
-                    ))}
+                    ))} */}
+                    <Link
+                    to="/product"
+                    className="text-md font-semibold  text-gray-900 hover:bg-gray-100"
+                    >
+                      We Manufacture Customized Standalone
+                      Air Purification Equipment's
+                    </Link>
+                    
                   </div>
                 </div>
 

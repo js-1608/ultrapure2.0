@@ -89,9 +89,7 @@ export default function HomePage() {
       </div>
 
       <div className="flex justify-center mt-10 p-10">
-        <ImageTextCard
-          imageUrl={sol}
-        />
+        <ImageTextCard/>
       </div>
       <Carousel />
 

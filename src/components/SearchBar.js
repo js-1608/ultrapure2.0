@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { IoIosSearch } from "react-icons/io";
 
 const SearchBar = ({ data }) => {
   const [query, setQuery] = useState('');
@@ -12,6 +11,7 @@ const SearchBar = ({ data }) => {
 
   const handleProductClick = (product) => {
     navigate(product.path, { state: product });
+    setQuery(''); // Clear the search bar
   };
 
   const filteredData = query
@@ -21,7 +21,7 @@ const SearchBar = ({ data }) => {
     : [];
 
   return (
-    <div className=" max-w-md  relative ">
+    <div className="max-w-md relative">
       <input
         type="text"
         className="w-full p-3 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
@@ -42,7 +42,6 @@ const SearchBar = ({ data }) => {
           ))}
         </ul>
       )}
-
     </div>
   );
 };

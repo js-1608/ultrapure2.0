@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCloudArrowDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeImages }) => {
   const [currentMainImage, setCurrentMainImage] = useState(mainImage);
@@ -14,10 +15,10 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
         <p className="text-md lg:text-xl uppercase text-white font-semibold">{headingText}</p>
         <h1 className="lg:text-6xl  text-3xl text-white font-bold mt-2">{title}</h1>
         <div className=" flex  space-x-5 mt-10">
-          <div className='items-center bg-ultragreen text-white lg:px-4 py-2 rounded flex  font-semibold text-md lg:text-xl'>
-          <a className="  font-semibold text-md lg:text-lg" href="contact">
+          <div className='items-center bg-ultragreen text-white p-3 lg:px-4 py-2 rounded flex  font-semibold text-md lg:text-xl'>
+          <Link className="  font-semibold text-md lg:text-lg" to="/contact">
             Get Quote →
-          </a>
+          </Link>
           </div>
           <div className='flex  text-white '>
           <a

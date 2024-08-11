@@ -252,6 +252,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="bg-white">
@@ -521,15 +524,12 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      <Dialog
-        className="lg:hidden"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-      >
+      <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link to="#" className="-m-1.5 p-1.5">
+            <Link to="#" className="-m-1.5 p-1.5" onClick={closeMenu}>
               <span className="sr-only">Your Company</span>
               {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
             </Link>
@@ -548,6 +548,7 @@ export default function Header() {
                 <Link
                   to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={closeMenu}
                 >
                   About us
                 </Link>
@@ -566,14 +567,17 @@ export default function Header() {
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
                         {[...technology].map((item) => (
-                          <DisclosureButton
+                          // <DisclosureButton>
+                            <Link
                             key={item.name}
                             as="a"
                             to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </DisclosureButton>
+                            onClick={closeMenu}>
+                              {item.name}
+                            </Link>
+                            
+                          // </DisclosureButton>
                         ))}
                       </DisclosurePanel>
                     </>
@@ -652,16 +656,34 @@ export default function Header() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...products].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            to={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
+                      {products.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <item.icon
+                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <div className="flex-auto">
+                        <h5 className="block font-semibold text-gray-900">{item.name}</h5>
+                        <ul className="mt-1 text-gray-600 list-inside">
+                          {item.list.map((listItem, index) => (
+                            <li key={index}>
+                              <Link
+                                to={item.links[index]}
+                                onClick={closeMenu} // Close the Popover on link click
+                              >
+                                {listItem}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
                       </DisclosurePanel>
                     </>
                   )}
@@ -682,14 +704,16 @@ export default function Header() {
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2 w-full">
                         {[...resources].map((item) => (
-                          <DisclosureButton
+                          // <DisclosureButton>
+                            <Link
                             key={item.name}
                             as="a"
                             to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </DisclosureButton>
+                            onClick={closeMenu}
+                          >                            {item.name}
+</Link>
+                          // </DisclosureButton>
                         ))}
                       </DisclosurePanel>
                     </>
@@ -699,18 +723,12 @@ export default function Header() {
                 <Link
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={closeMenu}
                 >
                   Contact Us
                 </Link>
               </div>
-              <div className="py-6">
-                <Link
-                  to="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </Link>
-              </div>
+           
             </div>
           </div>
         </DialogPanel>

@@ -57,7 +57,7 @@ export default function Material() {
         <div className="flex-1 p-2 w-4/5">
           {/*Mining*/}
           <section id="Mining" className=" border rounded shadow-lg m-5 mb-16">
-            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Mining</h1>
+            <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Mining</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={imageUrl} problem={problem} health={health} />
@@ -66,7 +66,7 @@ export default function Material() {
 
           {/* Dairy */}
           <section id="Oil" className=" border rounded shadow-lg m-5 mb-16">
-            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Oil, Gas & Chemicals</h1>
+            <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Oil, Gas & Chemicals</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={dairyimageUrl} problem={dairyproblem} health={dairyhealth} />
@@ -75,7 +75,7 @@ export default function Material() {
 
           {/* Beverage Production */}
           <section id="Pulp" className=" border rounded shadow-lg m-5 mb-16">
-            <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Pulp & Paper</h1>
+            <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Pulp & Paper</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={foodimageUrl} problem={foodproblem} health={foodhealth} />

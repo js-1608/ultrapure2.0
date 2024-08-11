@@ -87,7 +87,7 @@ export default function Industrial() {
         <div className="flex-1 p-2 w-4/5">
           {/* Airports */}
           <section id="Airports" className=" border rounded shadow-lg m-5 mb-16">
-            <h1 className='text-4xl  ml-5 lg:ml-10 font-bold '>Airport</h1>
+            <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 font-bold '>Airport</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={imageUrl} problem={problem} tableData={tableData} health={health} />
@@ -96,7 +96,7 @@ export default function Industrial() {
 
             {/* Power */}
             <section id="Power" className=" border rounded shadow-lg m-5  mb-16">
-            <h1 className='text-4xl  ml-5 lg:ml-10 font-bold '>Power</h1>
+            <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 font-bold '>Power</h1>
 
             <div className="container mx-auto p-4 ">
               <Solution imageUrl={powerimageUrl} problem={powerproblem}  health={powerhealth} />
@@ -105,7 +105,7 @@ export default function Industrial() {
 
             {/* public */}
             <section id="Public" className=" border rounded shadow-lg m-5  mb-16">
-                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Public Transportations</h1>
+                <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Public Transportations</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />
@@ -116,7 +116,7 @@ export default function Industrial() {
 
            {/* Refineries */}
            <section id="Refineries" className=" border rounded shadow-lg m-5">
-                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Refineries</h1>
+                <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Refineries</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={refineriesimageUrl} problem={refineriesproblem} tableData={refineriestableData} health={refinerieshealth} />
@@ -125,7 +125,7 @@ export default function Industrial() {
 
             {/* Pulp*/}
             <section id="Pulp" className=" border rounded shadow-lg m-5">
-                <h1 className='text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Pulp & Paper</h1>
+                <h1 className='text-2xl lg:text-4xl  ml-5 lg:ml-10 mt-5 font-bold '>Pulp & Paper</h1>
 
             <div className="container mx-auto p-4 ">
               <AirportSolutions imageUrl={publicpowerimageUrl} problem={publicpowerproblem} tableData={publicpowertableData} health={publicpowerhealth} />

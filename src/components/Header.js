@@ -117,7 +117,7 @@ const market_served = [
       "Hospitals/IVF Centres",
       
     ],
-    href: "/market-served",
+    href: "/commercial",
     icon: ChartPieIcon,
   },
   {
@@ -127,7 +127,7 @@ const market_served = [
           "Public Transportation",
           "Pulp and Paper",
           "Refineries"],
-    href: "/market-served",
+    href: "/industrial",
     icon: CursorArrowRaysIcon,
   },
   {
@@ -135,7 +135,7 @@ const market_served = [
     items: ["Beverage Production",
             "Dairy Processes",
             "Food Processing"],
-    href: "/market-served",
+    href: "/food",
     icon: FingerPrintIcon,
   },
   {
@@ -143,7 +143,7 @@ const market_served = [
     items: ["Mining",
           "Oil, Gas & Chemicals",
           "Pulp & Paper"],
-    href: "/market-served",
+    href: "/material",
     icon: SquaresPlusIcon,
   },
   {
@@ -151,7 +151,7 @@ const market_served = [
     items: ["Corrosion Control",
           "Emergency Gas Scrubbing",
           "Odor Control"],
-    href: "/market-served",
+    href: "/waste",
     icon: SquaresPlusIcon,
   },
 ];
@@ -250,6 +250,8 @@ function classNames(...classes) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+
 
   return (
     <header className="bg-white">
@@ -358,13 +360,13 @@ export default function Header() {
                             />
                           </div>
                           <div className="flex-auto">
-                            <a
-                              href={item.href}
+                            <Link
+                              to={item.href}
                               className="block font-semibold text-gray-900"
                             >
                               {item.name}
                               <span className="absolute inset-0" />
-                            </a>
+                            </Link>
                             <ul className="mt-1 text-gray-600  list-inside">
                               {item.items.map((listItem, index) => (
                                 <li key={index}>{listItem}</li>
@@ -380,93 +382,87 @@ export default function Header() {
             </Transition>
           </Popover>
 
-        <Popover className="relative">
-          <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
-            Product
-            <ChevronDownIcon
-              className="h-5 w-5 flex-none text-gray-400"
-              aria-hidden="true"
-            />
-          </Popover.Button>
+          <Popover className="relative">
+      <PopoverButton
+        className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+        onClick={() => setIsPopoverOpen(!isPopoverOpen)}
+      >
+        Product
+        <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+      </PopoverButton>
 
-          <Transition
-            enter="transition ease-out duration-200"
-            enterFrom="opacity-0 translate-y-1"
-            enterTo="opacity-100 translate-y-0"
-            leave="transition ease-in duration-150"
-            leaveFrom="opacity-100 translate-y-0"
-            leaveTo="opacity-0 translate-y-1"
-          >
-            <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-              <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
-                {/* Left Content (60% width) */}
-                <div className="w-60% p-2 m-2">
-                  <div className="p-4">
-                    <div className="grid grid-cols-2 gap-4">
-                      {products.map((item) => (
-                        <div
-                          key={item.name}
-                          className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
-                        >
-                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                            <item.icon
-                              className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                              aria-hidden="true"
-                            />
-                          </div>
-                          <div className="flex-auto">
-                            <h5 className="block font-semibold text-gray-900">{item.name}</h5>
-                            <ul className="mt-1 text-gray-600 list-inside">
-                              {item.list.map((listItem, index) => (
-                                <li key={index}>
-                                  <Link to={item.links[index]}>{listItem}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className=" divide-gray-900/5 w-1/2 ml-10">
-                    {/* {callsToAction.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className="flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                      >
+      <Transition
+        show={isPopoverOpen}
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
+      >
+        <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+          <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
+            {/* Left Content (60% width) */}
+            <div className="w-60% p-2 m-2">
+              <div className="p-4">
+                <div className="grid grid-cols-2 gap-4">
+                  {products.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon
-                          className="h-5 w-5 flex-none text-gray-400"
+                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                           aria-hidden="true"
                         />
-                        {item.name}
-                      </Link>
-                    ))} */}
-                    <Link
-                    to="/product"
-                    className="text-md font-semibold  text-gray-900 hover:bg-gray-100"
-                    >
-                      We Manufacture Customized Standalone
-                      Air Purification Equipment's
-                    </Link>
-                    
-                  </div>
-                </div>
-
-                {/* Right Content (40% width) */}
-                <div className="w-40% pl-5 m-auto">
-                  <div className="cols-1 p-5 m-auto">
-                    <img src={productImage} alt="Logo" className="w-full" />
-                  </div>
+                      </div>
+                      <div className="flex-auto">
+                        <h5 className="block font-semibold text-gray-900">{item.name}</h5>
+                        <ul className="mt-1 text-gray-600 list-inside">
+                          {item.list.map((listItem, index) => (
+                            <li key={index}>
+                              <Link
+                                to={item.links[index]}
+                                onClick={() => setIsPopoverOpen(false)} // Close the Popover on link click
+                              >
+                                {listItem}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </Popover.Panel>
-          </Transition>
-        </Popover>
+              <div className=" divide-gray-900/5 w-1/2 ml-10">
+                <Link
+                  to="/product"
+                  className="text-md font-semibold text-gray-900 hover:bg-gray-100"
+                  onClick={() => setIsPopoverOpen(false)} // Close the Popover on link click
+                >
+                  We Manufacture Customized Standalone
+                  Air Purification Equipment's
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Content (40% width) */}
+            <div className="w-40% pl-5 m-auto">
+              <div className="cols-1 p-5 m-auto">
+                <img src={productImage} alt="Logo" className="w-full" />
+              </div>
+            </div>
+          </div>
+        </PopoverPanel>
+      </Transition>
+    </Popover>
 
 
           <Popover className="">
-            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
+            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+            >
               Resources
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -496,6 +492,7 @@ export default function Header() {
                             src={item.src}
                             className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                             aria-hidden="true"
+                            alt="icon"
                           />
                         </div>
                         <Link

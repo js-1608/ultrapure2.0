@@ -331,7 +331,8 @@ export default function Header() {
           </Popover>
 
           <Popover className="">
-            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
+            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+            >
               Market Served
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"

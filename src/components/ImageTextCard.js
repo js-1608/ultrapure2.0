@@ -15,7 +15,7 @@ const ImageTextCard = () => {
       <div className="w-full md:w-1/2">
         <img src={currentImage} alt="Current" className="object-cover w-full h-full opacity-100" />
       </div>
-      <div className="w-full md:w-1/2 p-8">
+      <div className="w-full md:w-1/2 p-0 lg:p-8">
         <h2
           className="text-2xl md:text-2xl font-bold mb-1"
           onMouseEnter={() => handleMouseEnter(sol)}

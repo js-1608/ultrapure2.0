@@ -411,7 +411,7 @@ export default function Header() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <PopoverPanel className="absolute  z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+        <PopoverPanel className="absolute left-3/4 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
           <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
             {/* Left Content (60% width) */}
             <div className="w-60% p-2 m-2">

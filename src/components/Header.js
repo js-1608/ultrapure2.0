@@ -117,6 +117,7 @@ const market_served = [
       "Hospitals/IVF Centres",
       
     ],
+    links: ['/commercial#Airports','/commercial#Hospitals','/commercial#Museums','/commercial#Schools','/commercial#Restaurants','/commercial#Offices','/commercial#Hotels','/commercial#Halls'],
     href: "/commercial",
     icon: ChartPieIcon,
   },
@@ -128,6 +129,7 @@ const market_served = [
           "Pulp and Paper",
           "Refineries"],
     href: "/industrial",
+    links: ['/industrial#Airport','/industrial#Power','/industrial#Public','/industrial#Refineries','/industrial#Pulp'],
     icon: CursorArrowRaysIcon,
   },
   {
@@ -135,7 +137,10 @@ const market_served = [
     items: ["Beverage Production",
             "Dairy Processes",
             "Food Processing"],
+
     href: "/food",
+    links: ['/food/#Beverage','food/#Dairy','/food/#Food'],
+
     icon: FingerPrintIcon,
   },
   {
@@ -144,6 +149,7 @@ const market_served = [
           "Oil, Gas & Chemicals",
           "Pulp & Paper"],
     href: "/material",
+    links: ['/material/#Mining','/material/#Oil','/material/#Pulp'],
     icon: SquaresPlusIcon,
   },
   {

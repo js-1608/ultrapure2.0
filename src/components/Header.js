@@ -115,52 +115,51 @@ const market_served = [
       "Restaurants",
       "Schools & Universities",
       "Hospitals/IVF Centres",
-      
     ],
-    links: ['/commercial#Airports','/commercial#Hospitals','/commercial#Museums','/commercial#Schools','/commercial#Restaurants','/commercial#Offices','/commercial#Hotels','/commercial#Halls'],
-    href: "/commercial",
+    links: [
+      "/commercial#Airports",
+      "/commercial#Halls",
+      "/commercial#Hotels",
+      "/commercial#Museums",
+      "/commercial#Offices",
+      "/commercial#Restaurants",
+      "/commercial#Schools",
+      "/commercial#Hospitals",
+    ],
     icon: ChartPieIcon,
   },
   {
     name: "Industrial/Transportation",
-    items: ["Airports",
-          "Power Generation",
-          "Public Transportation",
-          "Pulp and Paper",
-          "Refineries"],
-    href: "/industrial",
-    links: ['/industrial#Airport','/industrial#Power','/industrial#Public','/industrial#Refineries','/industrial#Pulp'],
+    items: [
+      "Airports",
+      "Power Generation",
+      "Public Transportation",
+      "Pulp and Paper",
+      "Refineries",
+    ],
+    links: [
+      "/industrial#Airport",
+      "/industrial#Power",
+      "/industrial#Public",
+      "/industrial#Pulp",
+      "/industrial#Refineries",
+    ],
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Food & Beverage",
-    items: ["Beverage Production",
-            "Dairy Processes",
-            "Food Processing"],
-
-    href: "/food",
-    links: ['/food/#Beverage','food/#Dairy','/food/#Food'],
-
+    items: ["Beverage Production", "Dairy Processes", "Food Processing"],
+    links: ["/food#Beverage", "/food#Dairy", "/food#Food"],
     icon: FingerPrintIcon,
   },
   {
     name: "Material Processing",
-    items: ["Mining",
-          "Oil, Gas & Chemicals",
-          "Pulp & Paper"],
-    href: "/material",
-    links: ['/material/#Mining','/material/#Oil','/material/#Pulp'],
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Water/Wastewater",
-    items: ["Corrosion Control",
-          "Emergency Gas Scrubbing",
-          "Odor Control"],
-    href: "/waste",
+    items: ["Mining", "Oil, Gas & Chemicals", "Pulp & Paper"],
+    links: ["/material#Mining", "/material#Oil", "/material#Pulp"],
     icon: SquaresPlusIcon,
   },
 ];
+
 
 const solution = [
   { name: "Indoor Air Quality", href: "#", icon: ChartPieIcon },
@@ -337,60 +336,62 @@ export default function Header() {
           </Popover>
 
           <Popover className="">
-            <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
-            >
-              Market Served
-              <ChevronDownIcon
-                className="h-5 w-5 flex-none text-gray-400"
-                aria-hidden="true"
-              />
-            </PopoverButton>
+      <PopoverButton className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
+        Market Served
+        <ChevronDownIcon
+          className="h-5 w-5 flex-none text-gray-400"
+          aria-hidden="true"
+        />
+      </PopoverButton>
 
-            <Transition
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-                <div className="w-full flex overflow-hidden  bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5 ">
-                  <div className=" w-100% p-2 m-2 flex ">
-                    <div className="p-4 flex">
-                      {market_served.map((item) => (
-                        <div
-                          key={item.name}
-                          className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
-                        >
-                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                            <item.icon
-                              className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                              aria-hidden="true"
-                            />
-                          </div>
-                          <div className="flex-auto">
+      <Transition
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
+      >
+        <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+          <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div className="w-full p-2 m-2 flex">
+              <div className="p-4 flex">
+                {market_served.map((category) => (
+                  <div
+                    key={category.name}
+                    className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
+                  >
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <category.icon
+                        className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="flex-auto">
+                      <p className="block font-semibold text-gray-900">
+                        {category.name}
+                      </p>
+                      <ul className="mt-1 text-gray-600 list-inside">
+                        {category.items.map((item, index) => (
+                          <li key={index}>
                             <Link
-                              to={item.href}
-                              className="block font-semibold text-gray-900"
+                              to={category.links[index]}
+                              className="hover:text-textBlue"
                             >
-                              {item.name}
-                              <span className="absolute inset-0" />
+                              {item}
                             </Link>
-                            <ul className="mt-1 text-gray-600  list-inside">
-                              {item.items.map((listItem, index) => (
-                                <li key={index}>{listItem}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      ))}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                </div>
-              </PopoverPanel>
-            </Transition>
-          </Popover>
+                ))}
+              </div>
+            </div>
+          </div>
+        </PopoverPanel>
+      </Transition>
+    </Popover>
 
           <Popover className="relative">
       <PopoverButton
@@ -410,7 +411,7 @@ export default function Header() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+        <PopoverPanel className="absolute  z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
           <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
             {/* Left Content (60% width) */}
             <div className="w-60% p-2 m-2">

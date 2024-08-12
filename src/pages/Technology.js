@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Banner from "../components/Banner";
 import banner from "../assests/ourtechnology_banner.png";
+import banner2 from "../assests/Group 194.png";
+
 import nanox from "../assests/nanoX technology.png";
 import ultrasorb from "../assests/ultrasorb technology.png";
 import plasma from "../assests/plasmOX Technology.png";
@@ -10,6 +12,7 @@ import tech1 from "../assests/technology (1).png";
 import tech2 from "../assests/technology (2).png";
 import tech3 from "../assests/plasmOX.png";
 import Newsletter from "../components/Newsletter";
+import Banner2 from "../components/Banner2";
 
 export default function Technology() {
   const location = useLocation();
@@ -33,6 +36,15 @@ export default function Technology() {
         buttonUrl=""
         buttonText=""
       />
+      <Banner2
+        src={banner2}
+        title="Our Technology"
+        text="Fill up the form and our Team will get back to you within 24 hours"
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+
       <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
         <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
           <p className="text-gray-700 p-8 text-justify">

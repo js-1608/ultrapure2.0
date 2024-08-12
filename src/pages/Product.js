@@ -1,8 +1,10 @@
 import React from 'react';
   import Banner from '../components/Banner';
-  import banner from '../assests/contactBanner.png'
+  import banner from '../assests/contactBanner.png';
+  import banner2 from '../assests/Group 196.png';
 import SearchBar2 from '../components/SearchProdut2';
 import ImageGrid from '../components/ImageGrid';
+import Banner2 from '../components/Banner2';
   const Product = () =>  {
 	 const  data = [
 		{ id: 1, name: 'Advanced Oxidation Plasma (AOP) Cell (for AHU)', description: 'Description of Product 1', path: '/aop' },
@@ -39,6 +41,14 @@ const images = [
 	  <div>
 		 <Banner
         src={banner}
+        title="Our Air Purification Range"
+        text="Fill up the form and our Team will get back to you within 24 hours "
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+	   <Banner2
+        src={banner2}
         title="Our Air Purification Range"
         text="Fill up the form and our Team will get back to you within 24 hours "
         updated=""

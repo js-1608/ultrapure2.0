@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'; // Using react-icons for the arro
 
 function Banner({ src, title, text, updated, buttonUrl, buttonText }) {
   return (
-    <div className="relative  text-white">
+    <div className="relative  text-white display_hide">
 
       {/* <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" /> */}
       <img src={src} alt="banner" className="w-full h-full object-cover opacity-75" />

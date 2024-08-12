@@ -4,7 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Banner from '../components/Banner';
 import banner from '../assests/contactBanner.png';
+import banner2 from '../assests/Group 198.png';
+
 import Newsletter from '../components/Newsletter';
+import Banner2 from '../components/Banner2';
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
@@ -23,6 +26,14 @@ const FAQSection = () => {
     <>
     <Banner
     src={banner}
+    title="Frequently Asked Questions"
+    text=""
+    updated=""
+    buttonUrl=""
+    buttonText=""
+  />
+   <Banner2
+    src={banner2}
     title="Frequently Asked Questions"
     text=""
     updated=""

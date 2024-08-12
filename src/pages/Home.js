@@ -25,7 +25,6 @@ import ReportForm from "../components/ReportForm";
 export default function HomePage() {
   return (
     <div>
-      <div className="display_hide"> 
         <Banner
           src={banner}
           title="The Future Of Clean Air"
@@ -34,7 +33,6 @@ export default function HomePage() {
           buttonUrl="https://example.com"
           buttonText="Get Free Consultation"
         />
-      </div>
          <Banner2
         src={banner2}
         title="The Future Of Clean Air"

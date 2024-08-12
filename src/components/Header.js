@@ -210,13 +210,13 @@ const resources = [
   //   icon: CursorArrowRaysIcon,
   //   src: r5,
   // },
-  {
-    name: "Media Gallery",
-    description: "Speak directly to your customers",
-    href: "/gallery",
-    icon: CursorArrowRaysIcon,
-    src: r6,
-  },
+  // {
+  //   name: "Media Gallery",
+  //   description: "Speak directly to your customers",
+  //   href: "/gallery",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r6,
+  // },
   // {
   //   name: "Customer Support",
   //   description: "Speak directly to your customers",
@@ -259,7 +259,7 @@ export default function Header() {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex items-left pl-10 pr-10 p-5 lg:px-8"
+        className="mx-auto flex items-left pl-10 pr-10 p-3 lg:px-8"
         aria-label="Global"
       >
    
@@ -275,7 +275,7 @@ export default function Header() {
           </button>
         </div>
 
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12 m-auto">
           <Link to="/about" className="text-md font-semibold leading-6 text-gray-900">
             Abouts us
           </Link>
@@ -489,7 +489,7 @@ export default function Header() {
                     {resources.map((item) => (
                       <div
                         key={item.name}
-                        className="w-1/5 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
+                        className="w-1/4 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
                       >
                         <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-50 group-hover:bg-white">
                           <img
@@ -517,9 +517,9 @@ export default function Header() {
             Contact us
           </Link>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="#" className="text-md font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end" >
+          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 p-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">
+            Book Demo <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>

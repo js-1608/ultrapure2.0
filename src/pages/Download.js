@@ -2,8 +2,10 @@
 import React from 'react';
 import { FaCloudArrowDown } from "react-icons/fa6";
 import Banner from '../components/Banner';
-import banner from '../assests/contactBanner.png'
+import banner from '../assests/contactBanner.png';
+import banner2 from '../assests/Group 200.png';
 
+import Banner2 from '../components/Banner2';
 const files = [
   { name: 'Test Certificates', url: '/path/to/document1.pdf' },
   { name: 'AOP Catalog', url: '/path/to/document2.pdf' },
@@ -21,6 +23,14 @@ const Download = () => {
     <>
    <Banner
     src={banner}
+    title="Download Section"
+    text=""
+    updated=""
+    buttonUrl=""
+    buttonText=""
+  />
+  <Banner2
+    src={banner2}
     title="Download Section"
     text=""
     updated=""

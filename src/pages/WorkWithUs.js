@@ -1,9 +1,11 @@
 // WorkWithUs.js
 import React from 'react';
 import Banner from '../components/Banner';
-import banner from '../assests/contactBanner.png'
+import banner from '../assests/contactBanner.png';
+import banner2 from '../assests/Group 198.png';
 import Newsletter from '../components/Newsletter';
 import { MdArrowOutward } from "react-icons/md";
+import Banner2 from '../components/Banner2';
 
 const jobPositions = [
   {
@@ -32,9 +34,17 @@ const WorkWithUs = () => {
     buttonUrl=""
     buttonText=""
   />
+  <Banner2
+    src={banner2}
+    title="Work With Us"
+    text=""
+    updated=""
+    buttonUrl=""
+    buttonText=""
+  />
 
-    <div className="max-w-6xl mx-auto py-8">
-      <h1 className="text-3xl font-bold text-left mb-8">Be the part of our mission</h1>
+    <div className="max-w-6xl mx-auto py-8 ">
+      <h1 className="text-2xl g:text-3xl font-bold text-left mb-8">Be the part of our mission</h1>
       {jobPositions.map((position, index) => (
         <div key={index} className="flex justify-between items-center p-4 mb-4  border-b border-gray-800 ">
           <div>

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import banner from "../assests/about_banner.png";
+import banner2 from '../assests/Group 193.png';
 import vision from "../assests/vision.png";
 import mission from "../assests/mission.png";
 import about1 from "../assests/about_detail (1).png";
@@ -9,6 +10,7 @@ import about2 from "../assests/about_detail (2).png";
 import about3 from "../assests/about_detail (3).png";
 import Newsletter from "../components/Newsletter";
 import Banner from "../components/Banner";
+import Banner2 from "../components/Banner2";
 const About = () => {
 	const [openFAQ, setOpenFAQ] = useState(null);
 	const toggleFAQ = (id) => {
@@ -25,6 +27,14 @@ const About = () => {
 		<div>
 			<Banner
 				src={banner}
+				title="Abouts Us"
+				text="Welcome to Ultrapure Envirocare Pvt Ltd, a leading provider of innovative air purification solutions dedicated to enhancing indoor air quality worldwide."
+				updated=""
+				buttonUrl=""
+				buttonText=""
+			/>
+			<Banner2
+				src={banner2}
 				title="Abouts Us"
 				text="Welcome to Ultrapure Envirocare Pvt Ltd, a leading provider of innovative air purification solutions dedicated to enhancing indoor air quality worldwide."
 				updated=""
@@ -79,10 +89,10 @@ const About = () => {
 			</div>
 
 
-			<div class="bg-[url('https://example.com/your-image.jpg')] bg-cover bg-center">
+		<div class="bg-[url('https://example.com/your-image.jpg')] bg-cover bg-center">
 			<div className=" p-6">
 					{/* bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 */}
-				<div className="max-w-5xl mx-auto bg-white p-8 ">
+				<div className="w-full lg:max-w-5xl mx-auto bg-white p-2 lg:p-8 ">
 					{faqs.map(faq => (
 					<div key={faq.id} className="mb-4">
 						<button 
@@ -100,7 +110,7 @@ const About = () => {
 					</div>
 					))}
 				</div>
-				</div>
+			</div>
 		</div>
 
 			{/* what's that section INCOMPLETE */}

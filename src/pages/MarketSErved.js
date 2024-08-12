@@ -1,15 +1,26 @@
 import React from "react";
 import Banner from "../components/Banner";
 import banner from "../assests/market_banner.png";
+import banner2 from "../assests/Group 195.png";
+
 import FAQSection from "../components/FAQSection";
 import ProductList from "../components/ProductList";
 import faqs from "../data/Data";
+import Banner2 from "../components/Banner2";
 
 const MarketSErved = () => {
   return (  
     <div>
       <Banner
         src={banner}
+        title="Explore Our Expertise"
+        text="Explore the industries most relevant to you "
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+       <Banner2
+        src={banner2}
         title="Explore Our Expertise"
         text="Explore the industries most relevant to you "
         updated=""

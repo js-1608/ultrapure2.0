@@ -7,6 +7,7 @@ import ProductList from '../../components/ProductList';
 // import faqs from '../data/faqsData';
 import faqs from '../../data/Data';
 import { AirportSolutions } from './AirportSolutions';
+import Banner2 from '../../components/Banner2';
 export default function Commerical() {
   const location = useLocation();
 
@@ -115,7 +116,7 @@ export default function Commerical() {
     "Allergies", "respiratory irritation", "potential long-term effects from exposure to VOCs"
   ];
 
-  // Airport data
+  // Hotel
   const HoteltableData = [
     { applicationArea: 'Whole building with Centralized Air Conditioning', solution: 'Pentagon AOP duct air purifiers' },
     { applicationArea: 'Spa areas', solution: 'Virushield/ GermiNOX/ Falcon S/ Falcon C' },
@@ -126,7 +127,7 @@ export default function Commerical() {
     { applicationArea: 'Bags Check-in area', solution: 'Virushield/ GermiNOX/ Customized purifier' },
   ];
 
-  const HotelimageUrl = "publicbuilding/public (1).png";
+  const HotelimageUrl = "publicbuilding/public (7).png";
   const Hotelproblem = " Hotels must manage odors, allergens, VOCs, and airborne bacteria to ensure guest comfort. Cleaning activities, use of personal care products, and high turnover of guests contribute to poor indoor air quality. Issues such as mold and mildew in humid climates can further degrade air quality, impacting guest satisfaction and health.";
   const Hotelhealth = ["Respiratory issues", "allergies, asthma", " exposure to mold-related illnesses"
   ];
@@ -152,6 +153,14 @@ export default function Commerical() {
         src={banner}
         title="Commercial & Public Buildings"
         text="IMPORTANCE OF INDOOR AIR QUALITY IN DIFFERENT MARKET SEGMENTS "
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+      <Banner2
+        src={banner}
+        title=""
+        text="Commercial & Public Buildings"
         updated=""
         buttonUrl=""
         buttonText=""

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Solution = ({ imageUrl, problem, health }) => {
   return (
@@ -23,7 +24,7 @@ export const Solution = ({ imageUrl, problem, health }) => {
         {/* <img
           src={imageUrl}
           alt="Airport"
-          className="w-full h-64 object-cover  rounded m-auto display_hide"
+          className="w-1/2 h-64 object-cover  rounded m-auto display_hide"
         /> */}
  
       </div>
@@ -31,9 +32,10 @@ export const Solution = ({ imageUrl, problem, health }) => {
         {/* <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
           Contact Us
         </button> */}
-        <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
-        Contact Us
-        </button>
+        <Link className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+        to="/Contact"
+        >Contact Us
+        </Link>
       </div>
     </div>
   );

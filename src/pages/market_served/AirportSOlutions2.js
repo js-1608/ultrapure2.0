@@ -8,7 +8,7 @@ export const AirportSOlutions2 = ({ imageUrl, problem, health }) => {
           <img
             src={imageUrl}
             alt="Airport"
-            className="w-full h-64 object-cover  rounded m-auto display_hide_big"
+            className="w-full h-64 object-cover  rounded m-auto"
           />
 
           <h4 className="text-xl font-semibold">The Problem:</h4>
@@ -20,11 +20,11 @@ export const AirportSOlutions2 = ({ imageUrl, problem, health }) => {
             ))}
           </ul>
         </div>
-        {/* <img
+        <img
           src={imageUrl}
           alt="Airport"
-          className="w-full h-64 object-cover  rounded m-auto display_hide"
-        /> */}
+          className="w-full h-64 object-cover  rounded m-auto "
+        />
  
       </div>
       <div className="flex justify-evenly">

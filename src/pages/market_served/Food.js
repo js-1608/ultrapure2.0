@@ -8,6 +8,7 @@ import ProductList from '../../components/ProductList';
 import faqs from '../../data/Data';
 
 import {Solution} from './Solution';
+import Banner2 from '../../components/Banner2';
 
 export default function Food() {
   const location = useLocation();
@@ -22,21 +23,20 @@ export default function Food() {
   }, [location]);
 
   // Beverage Production
-  const imageUrl = "publicbuilding/public (1).png";
+  const imageUrl = " food/food (1).png";
   const problem = "  Beverage production facilities need to maintain high standards of cleanliness to prevent contamination. Airborne pollutants, including dust, VOCs, and microorganisms, can compromise product quality.";
   const health = [
     "Exposure to airborne microorganisms can lead to infections and respiratory issues. VOCs and dust can cause allergies and other respiratory problems."
   ];
 
 //   dairy
-  const dairyimageUrl = "publicbuilding/public (1).png";
+  const dairyimageUrl = "food/food (3).png";
   const dairyproblem = "  Dairy processing facilities face challenges with airborne bacteria, allergens, and VOCs. Maintaining a sterile environment is essential to ensure product safety and quality.";
   const dairyhealth = [
     "Respiratory issues", "allergic reactions", "potential infections from airborne bacteria"
   ]; 
-
   //   food
-  const foodimageUrl = "publicbuilding/public (1).png";
+  const foodimageUrl = "food/food (2).png";
   const foodproblem = "Food processing generates dust, allergens, VOCs, and odors that can affect product quality and worker health. Effective air purification is necessary to maintain hygiene standards and regulatory compliance.";
   const foodhealth = [
     "Respiratory problems", "allergic reactions", " exposure to harmful chemicals"
@@ -49,6 +49,14 @@ export default function Food() {
         src={banner}
         title="Food and Beverage"
         text=""
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+       <Banner2
+        src={banner}
+        title=""
+        text="Food and Beverage"
         updated=""
         buttonUrl=""
         buttonText=""

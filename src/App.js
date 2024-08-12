@@ -72,11 +72,11 @@ export default function App() {
             <Route path="/csap" element={<CS/>}/>
 
 
-            <Route path="commercial" element={<Commerical/>} />
-            <Route path="industrial" element={<Industrial/>} />
-            <Route path="food" element={<Food/>} />
-            <Route path="material" element={<Material/>} />
-            <Route path="waste" element={<Waste/>} />
+            <Route path="/commercial" element={<Commerical/>} />
+            <Route path="/industrial" element={<Industrial/>} />
+            <Route path="/food" element={<Food/>} />
+            <Route path="/material" element={<Material/>} />
+            <Route path="/waste" element={<Waste/>} />
 
 
       </Routes>

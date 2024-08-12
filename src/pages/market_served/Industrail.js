@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Banner from '../../components/Banner';
+import Banner2 from '../../components/Banner2';
+
 import banner from '../../assests/contactBanner.png'
 import ProductList from '../../components/ProductList';
 // import faqs from '../data/faqsData';
@@ -42,7 +44,7 @@ export default function Industrial() {
   //POWER
   
 
-  const powerimageUrl = "publicbuilding/public (1).png";
+  const powerimageUrl = "industrail/industry (5).png";
   const powerproblem = " Power plants emit large amounts of pollutants, including particulate matter, sulfur dioxide, nitrogen oxides, and VOCs, which can harm human health and the environment. Managing these emissions is crucial for regulatory compliance and community health.";
   const powerhealth = [
     "Respiratory" ,"cardiovascular diseases", "lung cancer"," premature death"
@@ -55,7 +57,7 @@ export default function Industrial() {
   
   ];
 
-  const publicpowerimageUrl = "publicbuilding/public (1).png";
+  const publicpowerimageUrl = "industrail/industry (2).png";
   const publicpowerproblem = " High density of passengers in public transportation systems, such as buses and trains, leads to increased airborne pathogens and poor air quality. Vehicle emissions and particulate matter from wear and tear further degrade the environment.";
   const publicpowerhealth = [
     "Respiratory infections", "asthma exacerbations", " cardiovascular problems"
@@ -68,7 +70,7 @@ export default function Industrial() {
     
     ];
   
-    const refineriesimageUrl = "publicbuilding/public (1).png";
+    const refineriesimageUrl = "industrail/industry (3).png";
     const refineriesproblem = " : Refineries release hazardous gases, VOCs, chemical fumes, and particulate matter during the processing of crude oil. These emissions pose significant health risks to workers and nearby residents, making air quality management a critical concern.";
     const refinerieshealth = [
       "Respiratory problems", "skin and eye irritation", "cancer", "other long-term health effects"
@@ -79,6 +81,14 @@ export default function Industrial() {
         src={banner}
         title="Industrial / Transportation"
         text=""
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+         <Banner2
+        src={banner}
+        title=""
+        text="Industrial / Transportation"
         updated=""
         buttonUrl=""
         buttonText=""

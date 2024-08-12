@@ -67,8 +67,9 @@ const Contact = () => {
       <div className="container mx-auto ">
         <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-2/5 text-start lg:text-end  m-auto p-5 lg:p-0">
+            
             <h5 className="font-bold text-xl lg:text-3xl ">Head Office</h5>
-            <p className="text-md lg:text-xl">
+            <p className="text-md lg:text-xl  ">
               3rd Floor, Ion House, Dr. E. Moses Road, Mahalaxmi, Mumbai-400011
             </p>
           </div>

@@ -111,7 +111,7 @@ const market_served = [
       "Halls & Malls",
       "Hotels",
       "Museums",
-      "Offices",
+      "Offices",
       "Restaurants",
       "Schools & Universities",
       "Hospitals/IVF Centres",
@@ -122,7 +122,7 @@ const market_served = [
   },
   {
     name: "Industrial/Transportation",
-    items: ["Airpor",
+    items: ["Airports",
           "Power Generation",
           "Public Transportation",
           "Pulp and Paper",
@@ -277,7 +277,7 @@ export default function Header() {
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12 m-auto">
           <Link to="/about" className="text-md font-semibold leading-6 text-gray-900">
-            Abouts us
+            About
           </Link>
 
           <Popover className="">
@@ -429,6 +429,7 @@ export default function Header() {
                               <Link
                                 to={item.links[index]}
                                 onClick={() => setIsPopoverOpen(false)} // Close the Popover on link click
+                                className=" hover:text-textBlue"
                               >
                                 {listItem}
                               </Link>
@@ -551,7 +552,7 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  About us
+                  About 
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (

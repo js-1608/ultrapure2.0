@@ -48,7 +48,7 @@ const ReportForm = () => {
       <div className="flex flex-col items-start mb-6 lg:mb-0">
         <div>
           <h2 className="text-4xl font-bold text-gray-800">Our <span className="text-blue-600">Test Reports</span></h2>
-          <p className="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className="text-gray-600 mt-2">Enter details to view test reports</p>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
@@ -61,7 +61,7 @@ const ReportForm = () => {
               <option value="Deep Clean Products">Deep Clean Products</option>
               <option value="Face Masks">Face Masks</option>
             </select>
-            <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">Email Me</button>
+            <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md  hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center ">Email Me</button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4 w-full lg:w-auto">
@@ -72,7 +72,7 @@ const ReportForm = () => {
             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="Phone" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <input type="text" value={selectedReport} readOnly className="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 cursor-not-allowed focus:outline-none" />
           
-            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">Submit
+            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center ">Submit
             <FaArrowRight className="ml-2" />
             </button>
           </form>

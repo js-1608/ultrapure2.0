@@ -25,7 +25,7 @@ const SearchBar = ({ data }) => {
       <input
         type="text"
         className="w-full p-3 border border-gray-300 rounded-full focus:outline-none focus:border-blue-500"
-        placeholder="Search for products..."
+        placeholder="Search..."
         value={query}
         onChange={handleInputChange}
       />

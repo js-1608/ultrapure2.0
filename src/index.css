@@ -39,4 +39,6 @@
 body {
     font-family: 'Mona Sans', sans-serif;
   }
-  
+  .aboutbg{
+    background-image: url(./assests/COUNT_bg.png);
+  }

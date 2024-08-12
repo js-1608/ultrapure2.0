@@ -89,7 +89,7 @@ const About = () => {
 			</div>
 
 
-		<div class="bg-[url('https://example.com/your-image.jpg')] bg-cover bg-center">
+		<div class=" aboutbg  bg-cover bg-center">
 			<div className=" p-6">
 					{/* bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 */}
 				<div className="w-full lg:max-w-5xl mx-auto bg-white p-2 lg:p-8 ">

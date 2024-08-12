@@ -1,13 +1,8 @@
-// src/Carousel.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './carousel.css'; // Ensure this file contains the necessary styling
 import p1 from '../assests/products/product.png';
 import p2 from '../assests/products/product2.png';
 import p3 from '../assests/products/product3.png';
-// import p4 from 'products/Group 87.png';
-// import p5 from 'products/Group 87.png';
-// import p6 from 'products/Group 87.png';
-
 
 import l from '../assests/l.png';
 import r from '../assests/r.png'
@@ -19,13 +14,28 @@ const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
   { src: p2, heading: 'Corrosion Control Unit' },
   { src: p3, heading: 'germiNOX Air Purifier' },
-
-  // { src: "products/Group 87.png", heading: 'Advanced Oxidation Plasma (AOP) Cell' },
-
 ];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(2);
+  const [itemsPerSlide, setItemsPerSlide] = useState(3);
+
+  useEffect(() => {
+    const updateItemsPerSlide = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerSlide(2);
+      } else if (window.innerWidth < 1024) {
+        setItemsPerSlide(2);
+      } else {
+        setItemsPerSlide(3);
+      }
+    };
+
+    window.addEventListener('resize', updateItemsPerSlide);
+    updateItemsPerSlide();
+
+    return () => window.removeEventListener('resize', updateItemsPerSlide);
+  }, []);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -39,10 +49,6 @@ const Carousel = () => {
     );
   };
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <div className="carousel-container p-10">
       <div className='mt-5 p-2'>
@@ -53,7 +59,7 @@ const Carousel = () => {
       </div>
       <div
         className="carousel-slide m-auto"
-        style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+        style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-item bg-white ml-3 rounded">
@@ -64,21 +70,20 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <button onClick={prevSlide} className="carousel-button prev display_hide">
+      <button onClick={prevSlide} className="carousel-button prev  display_hide">
         <img src={l} alt="back button"/>
       </button>
       <button onClick={nextSlide} className="carousel-button next display_hide">
         <img src={r} alt="forward button"/>
       </button>
-      {/* <div className="carousel-dots">
-        {Array.from({ length: Math.ceil(images.length / 3) }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index * 3)}
-            className={`carousel-dot ${index === Math.floor(currentIndex / 3) ? 'active' : ''}`}
-          />
-        ))}
-      </div> */}
+      <div className='w-full m-auto display_hide_big'>
+      <button onClick={prevSlide} className="carousel-button2 prev ">
+        <img src={l} alt="back button"/>
+      </button>
+      <button onClick={nextSlide} className="carousel-button2 next">
+        <img src={r} alt="forward button"/>
+      </button>
+      </div>
     </div>
   );
 };

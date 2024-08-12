@@ -1,13 +1,4 @@
-.carousel-item {
-    transition: transform 0.5s ease-in-out;
-  }
-  /* src/carousel.css */
-.carousel-item {
-  /* height: 400px;  */
-  padding:4%;
-}
-
-/* src/carousel.css */
+/* Carousel container styling */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -16,23 +7,25 @@
   background-image: url(../assests/carousel_banner3.png);
   background-size: cover;
   background-position: center;
-
 }
 
+/* Slide styling */
 .carousel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  /* height: 80%; */
   padding: 10%;
-  padding-top:4% ;
+  padding-top: 4%;
 }
 
+/* Carousel item styling */
 .carousel-item {
-  flex: 1 0 33.3333%;
+  flex: 1 0 33.3333%; /* 3 items by default */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 4%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-image {
@@ -42,28 +35,24 @@
   object-fit: contain;
 }
 
+/* Caption styling */
 .carousel-caption {
   position: absolute;
   bottom: 0;
   width: 50%;
-  /* padding:2%; */
-  /* background: rgba(0, 0, 0, 0.5); */
   color: white;
   text-align: center;
   padding-bottom: 5%;
 }
 
+/* Button styling */
 .carousel-button {
   position: absolute;
-  justify-content: end;
-  bottom:0;
+  bottom: 0;
   transform: translateY(-50%);
-  /* background: rgba(0, 0, 0, 0.5); */
   color: white;
-  /* padding: 15px; */
   cursor: pointer;
-  /* border-radius: 100%; */
-  /* border: 1px solid white; */
+  justify-content: end;
 }
 
 .carousel-button.prev {
@@ -74,15 +63,13 @@
   right: 2%;
 }
 
+/* Dots styling */
 .carousel-dots {
   display: flex;
   justify-content: start;
-  /* margin-top: 1rem; */
 }
 
 .carousel-dot {
-  /* width: 10px;
-  height: 10px; */
   margin: 0 5px;
   border-radius: 50%;
   background: rgb(87, 216, 184);
@@ -93,8 +80,39 @@
 .carousel-dot.active {
   background: black;
 }
-@media only screen and (max-width: 600px) {
-  .carousel-button {
-     padding: 7px;
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1024px) {
+  .carousel-item {
+    flex: 1 0 50%; /* 2 items per slide on medium devices */
   }
+}
+
+@media only screen and (max-width: 640px) {
+  .carousel-item {
+    flex: 1 0 100%; /* 1 item per slide on small devices */
+  }
+  .carousel-button {
+    padding: 7px;
+  }
+  .carousel-button.prev {
+    right: 15%;
+    bottom:0%;
+  }
+  
+  .carousel-button.next {
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel-caption {
+    width: 80%; /* Adjust caption width for very small screens */
+    padding-bottom: 10%;
+  }
+}
+.carousel-button2{
+  
+  margin: auto;
+  
 }

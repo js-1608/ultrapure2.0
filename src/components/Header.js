@@ -607,16 +607,36 @@ export default function Header() {
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...market_served].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </DisclosureButton>
+                      {market_served.map((category) => (
+                  <div
+                    key={category.name}
+                    className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
+                  >
+                    {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"> */}
+                      {/* <category.icon
+                        className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        aria-hidden="true"
+                      /> */}
+                    {/* </div> */}
+                    <div className="flex-auto">
+                      <p className="block font-semibold text-gray-900">
+                        {category.name}
+                      </p>
+                      <ul className="mt-1 text-gray-600 list-inside">
+                        {category.items.map((item, index) => (
+                          <li key={index}>
+                            <Link
+                              to={category.links[index]}
+                              className="hover:text-textBlue"
+                            >
+                              {item}
+                            </Link>
+                          </li>
                         ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
                       </DisclosurePanel>
                     </>
                   )}

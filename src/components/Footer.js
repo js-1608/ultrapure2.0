@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../assests/logo.svg';
-import { FaLinkedin, FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -41,35 +41,35 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-evenly space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Products</h1>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Advances Oxidation Plasma </a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Falcon-S</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Falcon-C</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Bipoler Ionizer</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">CBR Filter</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">ESP Filter</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Virushield Air Purifier</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">odorNOX Unit</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Corrosion Control Unit</a></h2>
+          <h2><Link to="/aop" className="hover:underline hover:text-textBlue">Advances Oxidation Plasma </Link></h2>
+          <h2><Link to="/fsap" className="hover:underline hover:text-textBlue">Falcon-S</Link></h2>
+          <h2><Link to="/fcap" className="hover:underline hover:text-textBlue">Falcon-C</Link></h2>
+          <h2><Link to="/gap" className="hover:underline hover:text-textBlue">Bipoler Ionizer</Link></h2>
+          <h2><Link to="/cf" className="hover:underline hover:text-textBlue">CBR Filter</Link></h2>
+          <h2><Link to="/ef" className="hover:underline hover:text-textBlue">ESP Filter</Link></h2>
+          <h2><Link to="/vap" className="hover:underline hover:text-textBlue">Virushield Air Purifier</Link></h2>
+          <h2><Link to="/OdorNOX" className="hover:underline hover:text-textBlue">odorNOX Unit</Link></h2>
+          <h2><Link to="/Ccu" className="hover:underline hover:text-textBlue">Corrosion Control Unit</Link></h2>
         </div>
-        
+{/*         
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Solutions</h1>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Indoor Air Quality</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Toxic Gas</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Corrosion</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Control</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">AQI Monitoring</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Odor Control</a></h2>
-        </div>
+          <h2><Link to="/" className="hover:underline hover:text-textBlue">Indoor Air Quality</Link></h2>
+          <h2><Link to="#" className="hover:underline hover:text-textBlue">Toxic Gas</Link></h2>
+          <h2><Link to="#" className="hover:underline hover:text-textBlue">Corrosion</Link></h2>
+          <h2><Link to="#" className="hover:underline hover:text-textBlue">Control</Link></h2>
+          <h2><Link to="#" className="hover:underline hover:text-textBlue">AQI Monitoring</Link></h2>
+          <h2><Link to="#" className="hover:underline hover:text-textBlue">Odor Control</Link></h2>
+        </div> */}
         
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Explore</h1>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Latest Insights</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Download Centre</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Our Test Reports</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Media Gallery</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Corporate Responsibilities</a></h2>
-          <h2><a href="#" className="hover:underline hover:text-textBlue">Careers</a></h2>
+          {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Latest Insights</a></h2> */}
+          <h2><Link to="/download" className="hover:underline hover:text-textBlue">Download Centre</Link></h2>
+          <h2><Link to="/report" className="hover:underline hover:text-textBlue">Our Test Reports</Link></h2>
+          {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Media Gallery</a></h2> */}
+          {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Corporate Responsibilities</a></h2> */}
+          <h2><Link to="/work" className="hover:underline hover:text-textBlue">Careers</Link></h2>
         </div>
         </div>
       

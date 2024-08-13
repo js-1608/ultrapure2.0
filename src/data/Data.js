@@ -153,7 +153,7 @@ const faqs = [
     },
     {
     id: 1,
-    heading: "Industrial/Transportation",
+    heading: "Industrial / Transportation",
     imageUrl: "market/m (2).png",
     href: "/Industrial",
     },

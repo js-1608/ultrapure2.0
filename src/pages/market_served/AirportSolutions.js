@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export const AirportSolutions = ({ imageUrl, problem, tableData, health }) => {
   return (
     <div className=" p-0 lg:p-6 ">
@@ -47,9 +47,9 @@ export const AirportSolutions = ({ imageUrl, problem, tableData, health }) => {
         {/* <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
           Contact Us
         </button> */}
-        <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 p-5">
+        <Link to="/contact" className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 p-5">
           Contact us
-        </button>
+        </Link>
       </div>
     </div>
   );

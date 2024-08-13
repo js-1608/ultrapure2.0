@@ -34,6 +34,7 @@ import Food from './pages/market_served/Food';
 import Material from './pages/market_served/Material';
 import Waste from './pages/market_served/Waste';
 import Report from './pages/Report';
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -82,6 +83,8 @@ export default function App() {
 
 
       </Routes>
+      <Footer/>
+
     </Router>
   );
 }

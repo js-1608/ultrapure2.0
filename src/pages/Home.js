@@ -89,7 +89,7 @@ export default function HomePage() {
           />
         </div>
         <div className=" flex justify-center mb-2">
-          <Link className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1" to="./pdf/FINAL UEPL REPORT (1).pdf" target="_blank">
+          <Link to="/about" className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1" >
             Learn More
             <FaArrowRight className="ml-2" />
           </Link>

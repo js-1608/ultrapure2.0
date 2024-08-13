@@ -187,13 +187,13 @@ const resources = [
     icon: CursorArrowRaysIcon,
     src: r2,
   },
-  {
-    name: "Download Centre",
-    description: "Speak directly to your customers",
-    href: "/download",
-    icon: CursorArrowRaysIcon,
-    src: r2,
-  },
+  // {
+  //   name: "Download Centre",
+  //   description: "Speak directly to your customers",
+  //   href: "/download",
+  //   icon: CursorArrowRaysIcon,
+  //   src: r2,
+  // },
   {
     name: "Test Reports",
     description: "Speak directly to your customers",

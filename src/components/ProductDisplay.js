@@ -21,14 +21,14 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
           </Link>
           </div>
           <div className='flex  text-white '>
-          <a
+          <Link
             href={downloadFile}
             download
             className=" flex items-center hover:text-ultragreen text-md lg:text-xl"
           >
             Download Brochure <span className="ml-2"><FaCloudArrowDown  className="ml-2 w-5 h-5"/>
             </span>
-          </a>
+          </Link>
           </div>
         </div>
       </div>

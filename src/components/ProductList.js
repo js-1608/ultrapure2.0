@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const ProductList = ({ faqs }) => {
   return (
     <div className="flex flex-col">
@@ -10,9 +10,9 @@ const ProductList = ({ faqs }) => {
           <h2 className='text-lg font-semibold'>{faq.heading}</h2>
           {faq.content.map((item, index) => (
             <div key={index} className="ml-4">
-              <a href={item.href}  rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">
+              <Link to={item.href}  rel="noopener noreferrer" className="hover:text-blue-600 hover:underline">
                 {item.heading}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

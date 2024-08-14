@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-evenly space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Products</h1>
-          <h2><Link to="/aop" className="hover:underline hover:text-textBlue">Advances Oxidation Plasma </Link></h2>
+          <h2><Link to="/aop" className="hover:underline hover:text-textBlue">Advanced Oxidation Plasma </Link></h2>
           <h2><Link to="/fsap" className="hover:underline hover:text-textBlue">Falcon-S</Link></h2>
           <h2><Link to="/fcap" className="hover:underline hover:text-textBlue">Falcon-C</Link></h2>
           <h2><Link to="/gap" className="hover:underline hover:text-textBlue">Bipoler Ionizer</Link></h2>

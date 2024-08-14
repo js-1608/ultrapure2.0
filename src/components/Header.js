@@ -255,225 +255,208 @@ function classNames(...classes) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
   const closeMenu = () => {
     setMobileMenuOpen(false);
   };
+  const [activePopover, setActivePopover] = useState(null);
 
+  const handlePopoverToggle = (popoverName) => {
+    setActivePopover(activePopover === popoverName ? null : popoverName);
+  };
+
+  const handleLinkClick = () => {
+    setActivePopover(null); // Close all popovers when a link is clicked
+  };
   return (
     <header className="bg-white">
-      <nav
-        className="mx-auto flex items-left pl-10 pr-10 p-3 lg:px-8"
-        aria-label="Global"
-      >
-   
-
-        <div className="flex lg:hidden">
+       <nav className=" flex items-left pl-10 pr-10 p-3 lg:px-8" aria-label="Global">
+      <div className="flex lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
+          <span className="sr-only">Open main menu</span>
+          <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+        </button>
+      </div>
 
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12 m-auto">
-          <Link to="/about" className="text-md font-semibold leading-6 text-gray-900">
-            About
-          </Link>
+      <Popover.Group className="hidden lg:flex lg:gap-x-12 m-auto">
+        <Link to="/about" className="text-md font-semibold leading-6 text-gray-900" onClick={handleLinkClick}>
+          About
+        </Link>
 
-          <Popover className="">
-            <PopoverButton className="flex relative right-0 items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
-              Our Technology
-              <ChevronDownIcon
-                className="h-5 w-5 flex-none text-gray-400"
-                aria-hidden="true"
-              />
-            </PopoverButton>
+        <Popover>
+          <PopoverButton
+            className="flex relative right-0 items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+            onClick={() => handlePopoverToggle('ourTechnology')}
+          >
+            Our Technology
+            <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+          </PopoverButton>
 
-            <Transition
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-                <div className=" w-full   p-5 overflow-hidden  bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5 ">
-                  <h1 className="font-semibold text-3xl">Our Technology</h1>
-                  <div className="flex size-max p-5 pt-14 ">
-                    {/* Left Content (60% width) */}
-
-                    {technology.map((item) => (
-                      <div
-                        key={item.name}
-                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
-                      >
-                        <div className="flex-auto">
-                          <Link
-                            to={item.href}
-                            className="block font-semibold text-gray-900"
-                          >
-                            {item.name}
-                            <span className="absolute inset-0" />
-                          </Link>
-                          <img
-                            src={item.src}
-                            alt={item.name}
-                            className="w-4/6 h-2/6 rounded-lg object-cover"
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </PopoverPanel>
-            </Transition>
-          </Popover>
-
-          <Popover className="">
-      <PopoverButton className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
-        Market Served
-        <ChevronDownIcon
-          className="h-5 w-5 flex-none text-gray-400"
-          aria-hidden="true"
-        />
-      </PopoverButton>
-
-      <Transition
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
-        <PopoverPanel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-          <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
-            <div className="w-full p-2 m-2 flex">
-              <div className="p-4 flex">
-                {market_served.map((category) => (
-                  <div
-                    key={category.name}
-                    className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
-                  >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <category.icon
-                        className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="flex-auto">
-                      <p className="block font-semibold text-gray-900">
-                        {category.name}
-                      </p>
-                      <ul className="mt-1 text-gray-600 list-inside">
-                        {category.items.map((item, index) => (
-                          <li key={index}>
-                            <Link
-                              to={category.links[index]}
-                              className="hover:text-textBlue"
-                            >
-                              {item}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </PopoverPanel>
-      </Transition>
-    </Popover>
-
-          <Popover className="relative">
-      <PopoverButton
-        className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
-        onClick={() => setIsPopoverOpen(!isPopoverOpen)}
-      >
-        Product
-        <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-      </PopoverButton>
-
-      <Transition
-        show={isPopoverOpen}
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
-        <PopoverPanel className="absolute left-3/4 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
-          <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
-            {/* Left Content (60% width) */}
-            <div className="w-60% p-2 m-2">
-              <div className="p-4">
-                <div className="grid grid-cols-2 gap-4">
-                  {products.map((item) => (
+          <Transition
+            show={activePopover === 'ourTechnology'}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <PopoverPanel className="absolute left-1/2 z-10 mt-3 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+              <div className="w-full p-5 overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
+                <h1 className="font-semibold text-3xl">Our Technology</h1>
+                <div className="flex size-max p-5 pt-14">
+                  {technology.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
-                      </div>
                       <div className="flex-auto">
-                        <h5 className="block font-semibold text-gray-900">{item.name}</h5>
-                        <ul className="mt-1 text-gray-600 list-inside">
-                          {item.list.map((listItem, index) => (
-                            <li key={index}>
-                              <Link
-                                to={item.links[index]}
-                                onClick={() => setIsPopoverOpen(false)} // Close the Popover on link click
-                                className=" hover:text-textBlue"
-                              >
-                                {listItem}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                        <Link to={item.href} className="block font-semibold text-gray-900" onClick={handleLinkClick}>
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </Link>
+                        <img src={item.src} alt={item.name} className="w-4/6 h-2/6 rounded-lg object-cover" />
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className=" divide-gray-900/5 w-1/2 ml-10">
-                <Link
-                  to="/product"
-                  className="text-md font-semibold text-gray-900 hover:bg-gray-100"
-                  onClick={() => setIsPopoverOpen(false)} // Close the Popover on link click
-                >
-                  We Manufacture Customized Standalone
-                  Air Purification Equipment's
-                </Link>
+            </PopoverPanel>
+          </Transition>
+        </Popover>
+
+        <Popover>
+          <PopoverButton
+            className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+            onClick={() => handlePopoverToggle('marketServed')}
+          >
+            Market Served
+            <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+          </PopoverButton>
+
+          <Transition
+            show={activePopover === 'marketServed'}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <PopoverPanel className="absolute left-1/2 z-10 mt-3 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+              <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
+                <div className="w-full p-2 m-2 flex">
+                  <div className="p-4 flex">
+                    {market_served.map((category) => (
+                      <div
+                        key={category.name}
+                        className="group relative flex-1 items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
+                      >
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <category.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        </div>
+                        <div className="flex-auto">
+                          <p className="block font-semibold text-gray-900">{category.name}</p>
+                          <ul className="mt-1 text-gray-600 list-inside">
+                            {category.items.map((item, index) => (
+                              <li key={index}>
+                                <Link to={category.links[index]} className="hover:text-textBlue" onClick={handleLinkClick}>
+                                  {item}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
+            </PopoverPanel>
+          </Transition>
+        </Popover>
 
-            {/* Right Content (40% width) */}
-            <div className="w-40% pl-5 m-auto">
-              <div className="cols-1 p-5 m-auto">
-                <img src={productImage} alt="Logo" className="w-full" />
+        <Popover>
+          <PopoverButton
+            className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+            onClick={() => handlePopoverToggle('products')}
+          >
+            Product
+            <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+          </PopoverButton>
+
+          <Transition
+            show={activePopover === 'products'}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <PopoverPanel className="absolute left-1/2 z-10 mt-3 flex w-screen max-w-max -translate-x-1/2 px-4 header_container">
+              <div className="w-full flex overflow-hidden bg-white text-md leading-6 shadow-lg ring-1 ring-gray-900/5">
+                <div className="w-60% p-2 m-2">
+                  <div className="p-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      {products.map((item) => (
+                        <div
+                          key={item.name}
+                          className="group relative flex items-start gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50 color-blue"
+                        >
+                          <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                          </div>
+                          <div className="flex-auto">
+                            <h5 className="block font-semibold text-gray-900">{item.name}</h5>
+                            <ul className="mt-1 text-gray-600 list-inside">
+                              {item.list.map((listItem, index) => (
+                                <li key={index}>
+                                  <Link
+                                    to={item.links[index]}
+                                    className="hover:text-textBlue"
+                                    onClick={handleLinkClick} // Close the Popover on link click
+                                  >
+                                    {listItem}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="divide-gray-900/5 w-1/2 ml-10">
+                    <Link
+                      to="/product"
+                      className="text-md font-semibold text-gray-900 hover:bg-gray-100"
+                      onClick={handleLinkClick} // Close the Popover on link click
+                    >
+                      We Manufacture Customized Standalone
+                      Air Purification Equipment's
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="w-40% pl-5 m-auto">
+                  <div className="cols-1 p-5 m-auto">
+                    <img src={productImage} alt="Logo" className="w-full" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </PopoverPanel>
-      </Transition>
-    </Popover>
+            </PopoverPanel>
+          </Transition>
+        </Popover>
 
-
-          <Popover className="">
+        <Popover className="">
             <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+                                             onClick={() => handlePopoverToggle('resources')}
+
             >
               Resources
               <ChevronDownIcon
@@ -483,6 +466,7 @@ export default function Header() {
             </PopoverButton>
 
             <Transition
+              show={activePopover === 'resources'}
               enter="transition ease-out duration-200"
               enterFrom="opacity-0 translate-y-1"
               enterTo="opacity-100 translate-y-0"
@@ -497,7 +481,7 @@ export default function Header() {
                     {resources.map((item) => (
                       <div
                         key={item.name}
-                        className="w-1/4 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
+                        className="w-1/3 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
                       >
                         <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-50 group-hover:bg-white">
                           <img
@@ -524,13 +508,13 @@ export default function Header() {
           <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900">
             Contact us
           </Link>
-        </PopoverGroup>
+        </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end" >
           <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 p-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">
             Book Demo <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
-      </nav>
+    </nav>
 
       {/* Mobile Menu */}
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -628,7 +612,8 @@ export default function Header() {
                             <Link
                               to={category.links[index]}
                               className="hover:text-textBlue"
-                            >
+                              onClick={closeMenu}>
+
                               {item}
                             </Link>
                           </li>

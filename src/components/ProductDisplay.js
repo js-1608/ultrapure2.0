@@ -23,7 +23,8 @@ const ProductDisplay = ({ headingText, title, downloadFile, mainImage, relativeI
           <div className='flex  text-white '>
           <a
             href={downloadFile}
-            download
+            rel="noreferrer"
+            target='_blank'
             className=" flex items-center hover:text-ultragreen text-md lg:text-xl"
           >
             Download Brochure <span className="ml-2"><FaCloudArrowDown  className="ml-2 w-5 h-5"/>

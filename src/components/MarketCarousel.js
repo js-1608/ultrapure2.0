@@ -33,7 +33,7 @@ const MarketCarousel = () => {
         {market.map((market) =>
          
             <div key={market.heading} className="p-4">
-              <a href={market.href} className="block relative group">
+              <Link to={market.href} className="block relative group">
                 <div className="border rounded-lg shadow-lg overflow-hidden">
                   <div className="relative">
                     <img
@@ -52,7 +52,7 @@ const MarketCarousel = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
          
         )}

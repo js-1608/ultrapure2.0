@@ -10,6 +10,7 @@ import location from "../assests/location.png";
 import contactBanner from "../assests/contactBanner.png";
 
 import Form from "../components/Form";
+import Banner2 from "../components/Banner2";
 
 const Contact = () => {
   return (
@@ -18,6 +19,14 @@ const Contact = () => {
         src={contactBanner}
         title="Get In Touch"
         text="Fill up the form and our Team will get back to you within 24 hours "
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+       <Banner2
+        src={contactBanner}
+        title="Get In Touch"
+        text=""
         updated=""
         buttonUrl=""
         buttonText=""

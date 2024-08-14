@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown ,faChevronRight} from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router-dom';
 const FAQSection = ({ faqs }) => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
@@ -27,8 +27,8 @@ const FAQSection = ({ faqs }) => {
             <div className="mt-2 flex flex-wrap m-auto  justify-evenly  ">
               {faq.content.map((item, index) => (
                 <div key={index} className="m-2 hover:shadow-lg ">
-                    <a
-                      href={item.href}
+                    <Link
+                    to={item.href}
                       rel="noopener noreferrer"
                       className="hover:underline block hover:text-ultragreen "
                     >
@@ -36,7 +36,7 @@ const FAQSection = ({ faqs }) => {
                   <h4 className="bg-gray-100 mt-0 p-2 text-lg font-semibold">
                     {item.heading}
                   </h4>
-                  </a>
+                  </Link>
                   <hr className="border-1 border-grey shadow-xl"></hr>
                 </div>
               ))}

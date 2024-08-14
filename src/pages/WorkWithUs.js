@@ -6,7 +6,7 @@ import banner2 from '../assests/Group 198.png';
 import Newsletter from '../components/Newsletter';
 import { MdArrowOutward } from "react-icons/md";
 import Banner2 from '../components/Banner2';
-
+import { Link } from 'react-router-dom';
 const jobPositions = [
   {
     title: 'Frontend Developer',
@@ -52,7 +52,7 @@ const WorkWithUs = () => {
             <p className="text-gray-700">{position.description}</p>
           </div>
           <button className="flex items-center  py-2 px-4 rounded hover:bg-ultragreen">
-            <a href="example.com">Apply</a>
+            <Link to="">Apply</Link>
             <MdArrowOutward className="ml-2 w-5 h-5"/>
 
             {/* <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -27,16 +27,16 @@ const Report = () => {
       />
 
       <div className="items-center bg-ultragreen text-white p-3 lg:px-4 py-2 rounded flex  font-semibold text-md lg:text-xl text-end justify-end">
-        <a
+        <Link
           className="  font-semibold text-md lg:text-lg flex items-center "
-          href="./pdf/FINAL UEPL REPORT (1).pdf"
+          to="./pdf/FINAL UEPL REPORT (1).pdf"
           download
         >
           Download Brochure{" "}
           <span className="ml-2">
             <FaCloudArrowDown className="ml-2 w-5 h-5" />
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );

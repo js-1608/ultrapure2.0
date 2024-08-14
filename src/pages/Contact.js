@@ -25,8 +25,8 @@ const Contact = () => {
       />
        <Banner2
         src={contactBanner}
-        title="Get In Touch"
-        text=""
+        title=""
+        text="Get In Touch"
         updated=""
         buttonUrl=""
         buttonText=""

@@ -4,7 +4,7 @@ import { FaCloudArrowDown } from "react-icons/fa6";
 import Banner from '../components/Banner';
 import banner from '../assests/contactBanner.png';
 import banner2 from '../assests/Group 200.png';
-
+import { Link } from 'react-router-dom';
 import Banner2 from '../components/Banner2';
 const files = [
   { name: 'Test Certificates', url: '/path/to/document1.pdf' },
@@ -43,11 +43,11 @@ const Download = () => {
         {files.map((file, index) => (
           <div key={index} className="flex flex-col items-center bg-gray-100 rounded-lg shadow border_left2  p-7">
             <h2 className="lg:text-xl font-bold mb-4">{file.name}</h2>
-            <a href={file.url} download className="flex items-center  py-2 px-4 rounded hover:text-blue-700">
+            <Link to={file.url} download className="flex items-center  py-2 px-4 rounded hover:text-blue-700">
               Download
               <FaCloudArrowDown  className="ml-2 w-5 h-5"/>
 
-            </a>
+            </Link>
           </div>
         ))}
       </div>

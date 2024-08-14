@@ -35,11 +35,14 @@ import Material from './pages/market_served/Material';
 import Waste from './pages/market_served/Waste';
 import Report from './pages/Report';
 import Footer from './components/Footer';
+import Scroll from './components/Scroll';
 
 
 export default function App() {
   return (
     <Router>
+            <Scroll/> {/* Include the ScrollToTop component */}
+
           <TopNav/>
           <Header/>
 

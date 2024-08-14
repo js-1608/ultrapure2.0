@@ -336,7 +336,10 @@ export default function Header() {
           </Popover>
 
           <Popover className="">
-      <PopoverButton className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900">
+      <PopoverButton className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+              onClick={() => setIsPopoverOpen(!isPopoverOpen)}
+
+      >
         Market Served
         <ChevronDownIcon
           className="h-5 w-5 flex-none text-gray-400"
@@ -377,6 +380,9 @@ export default function Header() {
                             <Link
                               to={category.links[index]}
                               className="hover:text-textBlue"
+                              onClick={() => {
+                              
+                              }}
                             >
                               {item}
                             </Link>
@@ -474,6 +480,7 @@ export default function Header() {
 
           <Popover className="">
             <PopoverButton className=" relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+                    onClick={() => setIsPopoverOpen(!isPopoverOpen)}
             >
               Resources
               <ChevronDownIcon
@@ -497,7 +504,7 @@ export default function Header() {
                     {resources.map((item) => (
                       <div
                         key={item.name}
-                        className="w-1/4 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
+                        className="w-1/3 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
                       >
                         <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-50 group-hover:bg-white">
                           <img

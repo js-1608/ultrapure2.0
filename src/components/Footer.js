@@ -51,16 +51,15 @@ const Footer = () => {
           <h2><Link to="/OdorNOX" className="hover:underline hover:text-textBlue">odorNOX Unit</Link></h2>
           <h2><Link to="/Ccu" className="hover:underline hover:text-textBlue">Corrosion Control Unit</Link></h2>
         </div>
-{/*         
+        
         <div className="flex flex-col space-y-2">
-          <h1 className="text-2xl font-semibold mb-2">Solutions</h1>
-          <h2><Link to="/" className="hover:underline hover:text-textBlue">Indoor Air Quality</Link></h2>
-          <h2><Link to="#" className="hover:underline hover:text-textBlue">Toxic Gas</Link></h2>
-          <h2><Link to="#" className="hover:underline hover:text-textBlue">Corrosion</Link></h2>
-          <h2><Link to="#" className="hover:underline hover:text-textBlue">Control</Link></h2>
-          <h2><Link to="#" className="hover:underline hover:text-textBlue">AQI Monitoring</Link></h2>
-          <h2><Link to="#" className="hover:underline hover:text-textBlue">Odor Control</Link></h2>
-        </div> */}
+          <h1 className="text-2xl font-semibold mb-2">Market Served</h1>
+          <h2><Link to="/commercial" className="hover:underline hover:text-textBlue">Commerical & Public Building</Link></h2>
+          <h2><Link to="/Industrial" className="hover:underline hover:text-textBlue">Industrial / Transportation</Link></h2>
+          <h2><Link to="/Food" className="hover:underline hover:text-textBlue">Food and Beverage</Link></h2>
+          <h2><Link to="/Material" className="hover:underline hover:text-textBlue">Material Processing</Link></h2>
+          <h2><Link to="/Waste" className="hover:underline hover:text-textBlue">Water/Waste</Link></h2>
+        </div>
         
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Explore</h1>

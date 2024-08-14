@@ -30,7 +30,7 @@ export default function HomePage() {
           title="The Future Of Clean Air"
           text="For better health of your family "
           updated="UPGRADE NOW."
-          buttonUrl="https://example.com"
+          buttonUrl="/contact"
           buttonText="Get Free Consultation"
         />
          <Banner2
@@ -38,7 +38,7 @@ export default function HomePage() {
         title="The Future Of Clean Air"
         text="For better health of your family "
         updated="UPGRADE NOW."
-        buttonUrl="https://example.com"
+        buttonUrl="/contact"
         buttonText="Get Free Consultation"
       />
 

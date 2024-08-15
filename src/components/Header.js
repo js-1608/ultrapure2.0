@@ -494,6 +494,7 @@ export default function Header() {
                         <Link
                           to={item.href}
                           className="block font-semibold mt-2"
+                          onClick={handleLinkClick}
                         >
                           {item.name}
                         </Link>

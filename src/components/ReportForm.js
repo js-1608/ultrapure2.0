@@ -1,7 +1,5 @@
-// src/ReportForm.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
 
 const ReportForm = () => {
@@ -12,10 +10,12 @@ const ReportForm = () => {
     email: '',
     phone: ''
   });
+  const [formStatus, setFormStatus] = useState(''); // State to handle form submission status
 
   const handleReportChange = (event) => {
     setSelectedReport(event.target.value);
     setFormVisible(true);
+    setFormStatus(''); // Reset status when the form is re-displayed
   };
 
   const handleInputChange = (event) => {
@@ -33,14 +33,15 @@ const ReportForm = () => {
       phone: formData.phone
     };
 
-    // emailjs.send('your_service_id', 'template_gc3uee3', templateParams, 'your_user_id')
     emailjs.send('service_w0y4uqi', 'template_8lnxjiz', templateParams, 'nVMndy3q-jQjrcEiu')
       .then((result) => {
         console.log(result.text);
-        alert('Email sent successfully!');
+        setFormStatus('success'); // Set status to success
+        setFormVisible(false); // Hide the form after submission
       }, (error) => {
         console.log(error.text);
-        alert('Failed to send email.');
+        setFormStatus('error'); // Set status to error
+        setFormVisible(false); // Hide the form even if there's an error
       });
   };
 
@@ -53,7 +54,7 @@ const ReportForm = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
-        {!formVisible ? (
+        {!formVisible && formStatus === '' && (
           <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
             <select value={selectedReport} onChange={handleReportChange} className="block w-full lg:w-56 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="">Select Report</option>
@@ -62,9 +63,11 @@ const ReportForm = () => {
               <option value="Deep Clean Products">Deep Clean Products</option>
               <option value="Face Masks">Face Masks</option>
             </select>
-            <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md  hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center ">Email Me</button>
+            <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center">Email Me</button>
           </div>
-        ) : (
+        )}
+
+        {formVisible && formStatus === '' && (
           <form onSubmit={handleSubmit} className="space-y-4 w-full lg:w-auto">
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
               <input type="text" name="name" value={formData.name} onChange={handleInputChange} placeholder="Name" required className="w-full lg:w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -73,10 +76,18 @@ const ReportForm = () => {
             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} placeholder="Phone" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <input type="text" value={selectedReport} readOnly className="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 cursor-not-allowed focus:outline-none" />
           
-            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center ">Submit
-            <FaArrowRight className="ml-2" />
+            <button type="submit" className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center">Submit
+              <FaArrowRight className="ml-2" />
             </button>
           </form>
+        )}
+
+        {/* Conditionally render the success or error message */}
+        {!formVisible && formStatus === 'success' && (
+          <p className="text-green-500 mt-4">Email sent successfully!</p>
+        )}
+        {!formVisible && formStatus === 'error' && (
+          <p className="text-red-500 mt-4">Failed to send email. Please try again.</p>
         )}
       </div>
     </div>

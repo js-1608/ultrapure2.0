@@ -64,7 +64,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-semibold mb-2">Explore</h1>
           {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Latest Insights</a></h2> */}
-          <h2><Link to="/download" className="hover:underline hover:text-textBlue">Download Centre</Link></h2>
+          {/* <h2><Link to="/download" className="hover:underline hover:text-textBlue">Download Centre</Link></h2> */}
           <h2><Link to="/report" className="hover:underline hover:text-textBlue">Our Test Reports</Link></h2>
           {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Media Gallery</a></h2> */}
           {/* <h2><a href="#" className="hover:underline hover:text-textBlue">Corporate Responsibilities</a></h2> */}

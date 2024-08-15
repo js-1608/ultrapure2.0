@@ -87,7 +87,7 @@ function Virushield() {
 	const product = {
 		headingText: "HVAC Duct Air Purification",
 		title: "Virushield Air Purifer",
-		downloadFile: "./pdf/Virushield.pdf",
+		downloadFile: "https://ultrapureindia.in/pdf/germiNOX.pdf",
 		mainImage: 'product/virshulfield.png',
 		relativeImages: [
 			"products/Group 89.png",

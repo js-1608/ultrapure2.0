@@ -27,16 +27,17 @@ const Report = () => {
       />
 
       <div className="items-center bg-ultragreen text-white p-3 lg:px-4 py-2 rounded flex  font-semibold text-md lg:text-xl text-end justify-end">
-        <Link
+        <a
           className="  font-semibold text-md lg:text-lg flex items-center "
-          to="./pdf/FINAL UEPL REPORT (1).pdf"
-          download
+          href="https://ultrapureindia.in/pdf/FINAL%20UEPL%20REPORT%20(1).pdf"
+          target="_blank"
+          rel="noreferrer"
         >
           Download Brochure{" "}
           <span className="ml-2">
             <FaCloudArrowDown className="ml-2 w-5 h-5" />
           </span>
-        </Link>
+        </a>
       </div>
     </div>
   );

@@ -74,8 +74,8 @@ const technology = [
 const products = [
   {
     name: "Microbial Contamination",
-    list: ['AOP CELL Technology', 'Virusheild Air Purifier', 'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
-    links: ['/aop', '/vap', '/fcap', '/fsap', '/cf'],
+    list: ['AOP CELL Technology', 'Virusheild Air Purifier','GermiNOX' ,'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
+    links: ['/aop', '/vap','/gap', '/fcap', '/fsap', '/cf'],
     description: "",
     icon: ChartPieIcon,
   },

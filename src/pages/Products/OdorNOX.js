@@ -97,7 +97,7 @@ function OdorNOX() {
 	const product = {
 		headingText: "For Gases Filtration	",
 		title: "odorNOX",
-		downloadFile: "./pdf/odorNOX brochure.pdf",
+		downloadFile: "https://ultrapureindia.in/pdf/odorNOX%20brochure.pdf",
 		mainImage: 'product/odorNOX.png',
 		relativeImages: [
 			"./Product/odorNOX.png",

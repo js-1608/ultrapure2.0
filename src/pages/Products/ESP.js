@@ -97,7 +97,7 @@
       const product = {
           headingText: "HVAC Duct Air Purification",
           title: "ESP Filter",
-          downloadFile: "./pdf/ESP Brochure.pdf",
+          downloadFile: "https://ultrapureindia.in/pdf/ESP%20Brochure.pdf",
           mainImage: 'product/ESP.png',
           relativeImages: [
               "Product/ESP.png",

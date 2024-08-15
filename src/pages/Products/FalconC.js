@@ -85,7 +85,7 @@
       const product = {
           headingText: "AC AIR PURIFIERS (For Cassette AC)",
           title: "FALCON-C Air Purifier",
-          downloadFile: "./pdf/Falcon C.pdf",
+          downloadFile: "https://ultrapureindia.in/pdf/Falcon%20C.pdf",
           mainImage: 'product/FALCONC.png',
           relativeImages: [
               "./Product/FALCONC.png",

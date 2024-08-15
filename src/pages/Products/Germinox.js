@@ -88,7 +88,7 @@
       const product = {
           headingText: "HVAC Duct Air Purification",
           title: "Germinox",
-          downloadFile: "./pdf/germiNOX.pdf",
+          downloadFile: "https://ultrapureindia.in/pdf/germiNOX.pdf",
           mainImage: 'product/germinox.png',
           relativeImages: [
               "./Product/aop.png",

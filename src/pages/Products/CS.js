@@ -108,7 +108,7 @@ function CS() {
 	const product = {
 		headingText: "Ceiling/Floor Mounted",
 		title: "Ceiling Suspended Air Purifier (smokeNOX)",
-		downloadFile: "./Product/aop/brochure.pdf",
+		downloadFile: "https://ultrapureindia.in/pdf/Room%20Air%20Sanitizing%20%26%20Purification%20Unit.pdf",
 		mainImage: "product/Group 120.png",
 		relativeImages: [
 			"./Product/aop.png",

@@ -88,7 +88,7 @@
       const product = {
           headingText: "DEFENCE AGAINST AIRBORNE",
           title: "Chemical BiologicalRadiological Filter (CBR)",
-          downloadFile: "./pdf/Chemical Biological Radiological Filtration System.pdf",
+          downloadFile: "https://ultrapureindia.in/pdf/Chemical%20Biological%20Radiological%20Filtration%20System.pdf",
           mainImage: 'product/CBR.png',
           relativeImages: [
               "product/CBR.png",

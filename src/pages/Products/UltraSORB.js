@@ -99,7 +99,7 @@
       const product = {
           headingText: "For Gases Filtration",
           title: "ultraSORB MediaultraSORB Media",
-          downloadFile: "./pdf/ultrasorb chemical media.pdf",
+          downloadFile: "https://ultrapureindia.in/pdf/ultrasorb%20chemical%20media.pdf",
           mainImage: 'product/ultrasorb.png',
           relativeImages: [
               "./Product/ultrasorb.png",

@@ -101,7 +101,8 @@ function Corrosion() {
 	const product = {
 		headingText: "FOR CORROSION CONTROL",
 		title: "Data Centre Electronic Corrosion Prevention Unit",
-		downloadFile: "./pdf/Data Centre Catalog.pdf",
+
+		downloadFile: "https://ultrapureindia.in/pdf/Data%20Centre%20Catalog.pdf",
 		mainImage: 'product/ccu/Group 179.png',
 		relativeImages: [
 			"./Product/aop.png",

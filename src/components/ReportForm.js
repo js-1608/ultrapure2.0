@@ -33,7 +33,8 @@ const ReportForm = () => {
       phone: formData.phone
     };
 
-    emailjs.send('your_service_id', 'template_gc3uee3', templateParams, 'your_user_id')
+    // emailjs.send('your_service_id', 'template_gc3uee3', templateParams, 'your_user_id')
+    emailjs.send('service_w0y4uqi', 'template_8lnxjiz', templateParams, 'nVMndy3q-jQjrcEiu')
       .then((result) => {
         console.log(result.text);
         alert('Email sent successfully!');

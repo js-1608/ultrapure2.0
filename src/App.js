@@ -36,7 +36,7 @@ import Waste from './pages/market_served/Waste';
 import Report from './pages/Report';
 import Footer from './components/Footer';
 import Scroll from './components/Scroll';
-
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -84,6 +84,8 @@ export default function App() {
             <Route path="/material" element={<Material/>} />
             <Route path="/waste" element={<Waste/>} />
 
+              {/* Add the NotFound Route as the last Route */}
+              <Route path="*" element={<NotFound />} />
 
       </Routes>
       <Footer/>

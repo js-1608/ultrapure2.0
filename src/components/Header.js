@@ -506,12 +506,13 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900">
+          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900"
+          onClick={handleLinkClick}>
             Contact us
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end" >
-          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 p-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-blue-700 hover:to-green-500 focus:outline-none flex items-center ">
+          <Link to="/contact" className="text-md font-semibold leading-6 text-gray-900 p-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center ">
             Book Demo <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
@@ -567,8 +568,11 @@ export default function Header() {
                             as="a"
                             to={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-md font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            onClick={closeMenu}>
+                            onClick={closeMenu}
+
+                            >
                               {item.name}
+                              
                             </Link>
                             
                           // </DisclosureButton>

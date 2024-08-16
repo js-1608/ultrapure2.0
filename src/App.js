@@ -37,6 +37,7 @@ import Report from './pages/Report';
 import Footer from './components/Footer';
 import Scroll from './components/Scroll';
 import NotFound from './pages/NotFound';
+import WhatsAppIcon from './components/WhatsAppIcon';
 
 export default function App() {
   return (
@@ -89,6 +90,7 @@ export default function App() {
 
       </Routes>
       <Footer/>
+      <WhatsAppIcon />
 
     </Router>
   );

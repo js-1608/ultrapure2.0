@@ -6,7 +6,7 @@ import banner from '../../assests/contactBanner.png'
 import ProductList from '../../components/ProductList';
 // import faqs from '../data/faqsData';
 import faqs from '../../data/Data';
-
+import Banner2 from "../components/Banner2";
 import {Solution} from './Solution';
 
 export default function Material() {
@@ -49,6 +49,14 @@ export default function Material() {
         src={banner}
         title="Material Processing"
         text=""
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+       <Banner2
+        src={banner}
+        title=""
+        text="Material Processing"
         updated=""
         buttonUrl=""
         buttonText=""

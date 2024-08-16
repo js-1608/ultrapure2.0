@@ -6,6 +6,7 @@ import banner from '../../assests/contactBanner.png'
 import ProductList from '../../components/ProductList';
 // import faqs from '../data/faqsData';
 import faqs from '../../data/Data';
+import Banner2 from "../components/Banner2";
 
 import {Solution} from './Solution';
 
@@ -53,6 +54,15 @@ export default function Waste() {
         buttonUrl=""
         buttonText=""
       />
+       <Banner2
+        src={banner}
+        title=""
+        text="Water/Waste"
+        updated=""
+        buttonUrl=""
+        buttonText=""
+      />
+
       <div className="flex flex-wrap ">
         <div className="flex-1 p-2 w-4/5">
           {/*Corrosion*/}

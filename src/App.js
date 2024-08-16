@@ -90,7 +90,7 @@ export default function App() {
 
       </Routes>
       <Footer/>
-      <WhatsAppIcon />
+      {/* <WhatsAppIcon /> */}
 
     </Router>
   );

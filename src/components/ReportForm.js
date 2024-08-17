@@ -33,7 +33,7 @@ const ReportForm = () => {
       phone: formData.phone
     };
 
-    emailjs.send('service_w0y4uqi', 'template_8lnxjiz', templateParams, 'nVMndy3q-jQjrcEiu')
+    emailjs.send('service_4o2snl5', 'template_cgfh3mf', templateParams, 'MQErJheZPyYzu9-9f')
       .then((result) => {
         console.log(result.text);
         setFormStatus('success'); // Set status to success

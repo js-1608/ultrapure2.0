@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../assests/logo.svg';
 import { Link } from 'react-router-dom';
+import Input from "./Input";
 
 const Footer = () => {
   return (
@@ -16,24 +17,25 @@ const Footer = () => {
             about new products, offers and <br /> 
             exciting news and announcements.
           </p>
-          <input
+          {/* <input
             type="text"
             placeholder="Enter your email address"
             className="border p-2 rounded w-full max-w-md"
-          />
+          /> */}
+          <Input/>
     
       
           <div className="flex space-x-3 my-0">
-            <a href="https://www.linkedin.com" className="text-blue-700">
+            <a href="https://www.linkedin.com/company/ultrapureindia/" className="text-blue-700">
               <img src="./social/Group.png" alt="social" className="w-10 h-10" />
             </a>
             <a href="https://wa.me/7428534141" target="_blank" rel="noreferrer" className="text-green-500">
             <img src="./social/Group (1).png" alt="social" className="w-10 h-10" />
             </a>
-            <a href="https://www.instagram.com" className="text-pink-500">
+            <a href="https://www.instagram.com/ultrapure_india/" className="text-pink-500">
             <img src="./social/Group (2).png" alt="social" className="w-10 h-10" />
             </a>
-            <a href="https://www.facebook.com" className="text-blue-600">
+            <a href="https://www.facebook.com/ultrapureindia" className="text-blue-600">
             <img src="./social/Group (3).png" alt="social" className="w-10 h-10" />
             </a>
           </div>

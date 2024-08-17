@@ -22,105 +22,138 @@ import CarouselComponent from "../components/CarouselComponent";
 import MarketCarousel from "../components/MarketCarousel";
 import { Link } from "react-router-dom";
 import ReportForm from "../components/ReportForm";
+import video from '../assests/video.mp4'
+
 export default function HomePage() {
   return (
     <div>
-        <Banner
-          src={banner}
+      {/* <Banner
+        src={banner}
+        title="The Future Of Clean Air"
+        text=" "
+        updated=""
+        buttonUrl="/contact"
+        buttonText=""
+      /> */}
+
+        {/* <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" /> */}
+        <div className="relative text-white display_hide">
+  <video
+    src={video} // Replace with your video source URL
+    autoPlay
+    loop
+    muted
+    className="w-full h-3/4 object-cover opacity-75"
+  />
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="p-4 text-center">
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">
+        The Future Of Clean Air
+      </h1>
+      <p className="mt-9 text-sm md:text-xl lg:text-2xl w-3/4 text-center m-auto display_hide">
+        For better health of your family
+      </p>
+      <p className="mt-0 text-lg md:text-2xl lg:text-3xl font-bold">
+        UPGRADE NOW.
+      </p>
+      <Link
+        to="/contact"
+        className="sm:mt-1 lg:mt-10 inline-flex items-center px-4 py-2 sm:px-5 sm:py-4 lg:px-8 lg:py-4 bg-white text-blue-700 rounded hover:bg-gray-200 font-medium"
+      >
+        Get Free Consultation <FaArrowRight className="ml-2" />
+      </Link>
+    </div>
+  </div>
+</div>
+
+        <Banner2
+          src={banner2}
           title="The Future Of Clean Air"
           text="For better health of your family "
           updated="UPGRADE NOW."
           buttonUrl="/contact"
           buttonText="Get Free Consultation"
         />
-         <Banner2
-        src={banner2}
-        title="The Future Of Clean Air"
-        text="For better health of your family "
-        updated="UPGRADE NOW."
-        buttonUrl="/contact"
-        buttonText="Get Free Consultation"
-      />
 
-      <div className="relative  ">
-        <img
-          src={COUNT}
-          alt="Card"
-          className="w-full h-full object-cover opacity-100"
-        />
-        <div className="absolute inset-0 flex items-center ">
-          {/* <div className="p-8 text-left">
+        <div className="relative  ">
+          <img
+            src={COUNT}
+            alt="Card"
+            className="w-full h-full object-cover opacity-100"
+          />
+          <div className="absolute inset-0 flex items-center ">
+            {/* <div className="p-8 text-left">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">title</h1>
           <p className="mt-6 text-lg md:text-2xl lg:text-3xl">tex</p>
           <p className="mt-0 text-lg md:text-2xl lg:text-3xl font-bold">pdated</p>
           
         </div> */}
+          </div>
         </div>
-      </div>
 
-      <div className="bg-gray-100 order rounded-br-large p-2">
-        <div className="text-center m-5">
-          <h5 className="font-normal text-2xl">Discover</h5>
-          <h2 className=" font-bold text-5xl">
-            Why Choose <span className="text-textBlue">Ultrapure</span>
-          </h2>
-          <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
-            We stand out as a 'Need-based Manufacturer,' focusing on
-            client-specific solutions, which has built our strong reputation and
-            loyal customer base. With offices in Delhi, Mumbai, and Bengaluru,
-            we effectively serve clients nationwide.
-          </p>
+        <div className="bg-gray-100 order rounded-br-large p-2">
+          <div className="text-center m-5">
+            <h5 className="font-normal text-2xl">Discover</h5>
+            <h2 className=" font-bold text-5xl">
+              Why Choose <span className="text-textBlue">Ultrapure</span>
+            </h2>
+            <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
+              We stand out as a 'Need-based Manufacturer,' focusing on
+              client-specific solutions, which has built our strong reputation and
+              loyal customer base. With offices in Delhi, Mumbai, and Bengaluru,
+              we effectively serve clients nationwide.
+            </p>
+          </div>
+          <div className="flex justify-center mt-16 flex-wrap mb-16">
+            <InfoCard
+              imageUrl={choose1}
+              heading="Superior Air Purification Solutions"
+              content="Our products are designed to effectively eliminate airborne pollutants and provide you with clean and healthy air."
+            />
+            <InfoCard
+              imageUrl={choose3}
+              heading="Customised Solutions for Every Need"
+              content="We understand that every environment is unique, which is why we offer air purification solutions to meet your specific requirements."
+            />
+            <InfoCard
+              imageUrl={choose2}
+              heading="Reliable and Long Lasting Performance"
+              content="our products are built to last, providing you with consistent and reliable air purification performance for years to come."
+            />
+          </div>
+          <div className=" flex justify-center mb-2">
+            <Link to="/about" className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1" >
+              Learn More
+              <FaArrowRight className="ml-2" />
+            </Link>
+            <Link to="/contact" className="mt-5 inline-flex items-center px-4 py-2 rounded hover:bg-gray-200 font-medium  text-center m-1" >
+              Contact us
+              <FaArrowRight className="ml-2" />
+            </Link>
+          </div>
         </div>
-        <div className="flex justify-center mt-16 flex-wrap mb-16">
-          <InfoCard
-            imageUrl={choose1}
-            heading="Superior Air Purification Solutions"
-            content="Our products are designed to effectively eliminate airborne pollutants and provide you with clean and healthy air."
-          />
-          <InfoCard
-            imageUrl={choose3}
-            heading="Customised Solutions for Every Need"
-            content="We understand that every environment is unique, which is why we offer air purification solutions to meet your specific requirements."
-          />
-          <InfoCard
-            imageUrl={choose2}
-            heading="Reliable and Long Lasting Performance"
-            content="our products are built to last, providing you with consistent and reliable air purification performance for years to come."
-          />
+
+        <div className="flex justify-center mt-10 p-10">
+          <ImageTextCard />
         </div>
-        <div className=" flex justify-center mb-2">
-          <Link to="/about" className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1" >
-            Learn More
-            <FaArrowRight className="ml-2" />
-          </Link>
-          <Link to="/contact" className="mt-5 inline-flex items-center px-4 py-2 rounded hover:bg-gray-200 font-medium  text-center m-1" >
-            Contact us
-            <FaArrowRight className="ml-2" />
-          </Link>
+        <Carousel />
+
+        <div className="p-10 border-solid   ">
+          <div className="rounded-lg shadow-2xl border-2">
+            <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
+
+            <OurClientele />
+            <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
+            <CarouselComponent />
+          </div>
         </div>
-      </div>
 
-      <div className="flex justify-center mt-10 p-10">
-        <ImageTextCard/>
-      </div>
-      <Carousel />
-
-      <div className="p-10 border-solid   ">
-        <div className="rounded-lg shadow-2xl border-2">
-        <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
-
-        <OurClientele />
-        <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
-        <CarouselComponent />
+        <div className="container mx-auto p-4">
+          <MarketCarousel />
         </div>
-      </div>
-
-      <div className="container mx-auto p-4">
-        <MarketCarousel/>
-      </div>
         {/* <Newsletter/> */}
-        <ReportForm/>
-    </div>
+        <ReportForm />
+      </div>
 
-  );
+      );
 }

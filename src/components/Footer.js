@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com" className="text-blue-700">
               <img src="./social/Group.png" alt="social" className="w-10 h-10" />
             </a>
-            <a href="https://www.whatsapp.com" className="text-green-500">
+            <a href="https://wa.me/7428534141" target="_blank" rel="noreferrer" className="text-green-500">
             <img src="./social/Group (1).png" alt="social" className="w-10 h-10" />
             </a>
             <a href="https://www.instagram.com" className="text-pink-500">

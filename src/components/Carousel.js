@@ -3,17 +3,30 @@ import './carousel.css'; // Ensure this file contains the necessary styling
 import p1 from '../assests/products/product.png';
 import p2 from '../assests/products/product2.png';
 import p3 from '../assests/products/product3.png';
+import p4 from '../assests/products/Group 206.png';
+import p5 from '../assests/products/Group 208.png';
+import p6 from '../assests/products/Group 209.png';
+import p7 from '../assests/products/Group 210.png';
+import p8 from '../assests/products/Group 211.png';
+import p9 from '../assests/products/Group 212.png';
+import p10 from '../assests/products/Group 213.png';
 
 import l from '../assests/l.png';
 import r from '../assests/r.png'
 
 const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
-  { src: p2, heading: 'Corrosion Control Unit' },
+  { src: p2, heading: 'odorNOX Unit (for odor control)' },
   { src: p3, heading: 'germiNOX Air Purifier' },
-  { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
-  { src: p2, heading: 'Corrosion Control Unit' },
-  { src: p3, heading: 'germiNOX Air Purifier' },
+  { src: p4, heading: 'Virushield Air Purifier (for washroom)' },
+  { src: p5, heading: 'germiNOX Air Purifier' },
+  { src: p6, heading: 'germiNOX Air Purifier' },
+  { src: p8, heading: 'germiNOX Air Purifier' },
+  { src: p9, heading: 'germiNOX Air Purifier' },
+  { src: p10, heading: 'germiNOX Air Purifier' },
+
+
+
 ];
 
 const Carousel = () => {

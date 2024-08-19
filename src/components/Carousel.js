@@ -78,6 +78,7 @@ const Carousel = () => {
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-item bg-white ml-3 rounded">
+
             <img src={image.src} alt={image.heading} className="carousel-image" />
             <div className="carousel-caption strong font-bold w-1/2 text-xl">
               <h2 className='display_hide'>{image.heading}</h2>

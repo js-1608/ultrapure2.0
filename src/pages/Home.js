@@ -37,7 +37,7 @@ export default function HomePage() {
       /> */}
 
         {/* <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" /> */}
-        <div className="relative text-white display_hide">
+        <div className="relative text-white ">
   <video
     src={video} // Replace with your video source URL
     autoPlay
@@ -65,7 +65,7 @@ export default function HomePage() {
     </div>
   </div>
 </div>
-
+{/* 
         <Banner2
           src={banner2}
           title="The Future Of Clean Air"
@@ -73,7 +73,7 @@ export default function HomePage() {
           updated="UPGRADE NOW."
           buttonUrl="/contact"
           buttonText="Get Free Consultation"
-        />
+        /> */}
 
         <div className="relative  ">
           <img

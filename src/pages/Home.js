@@ -30,10 +30,10 @@ export default function HomePage() {
       {/* <Banner
         src={banner}
         title="The Future Of Clean Air"
-        text=" "
-        updated=""
+        text="For better health of your family"
+        updated="UPGRADE NOW."
         buttonUrl="/contact"
-        buttonText=""
+        buttonText=" Get Free Consultation 3"
       /> */}
 
         {/* <img src={src} alt="Card image" className="w-full h-full object-cover opacity-100" /> */}

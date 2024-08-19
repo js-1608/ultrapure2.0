@@ -138,7 +138,7 @@ export default function HomePage() {
         </div>
         <Carousel />
 
-        <div className="p-10 border-solid   ">
+        <div className="p-4 lg:p-10 border-solid   ">
           <div className="rounded-lg shadow-2xl border-2">
             <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
 

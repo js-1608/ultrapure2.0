@@ -31,7 +31,8 @@ const CarouselComponent = () => {
   return (
     <div className="flex p-5 rounded-lg">
       <div className="w-1/4 flex flex-col items-center justify-center">
-        <h2 className="text-md lg:text-3xl  font-bold"><span className='text-[#90C03E]'>Tested</span> By</h2>
+        <h2 className="text-md lg:text-3xl  font-bold"><span className='text-[#90C03E]'>Certifications 
+        </span> By</h2>
         <div className="flex space-x-4 mt-4">
           <button 
             onClick={handlePrev}

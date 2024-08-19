@@ -15,15 +15,17 @@ import l from '../assests/l.png';
 import r from '../assests/r.png'
 
 const images = [
-  { src: p1, heading: 'Advanced Oxidation Plasma (AOP) Cell' },
-  { src: p2, heading: 'odorNOX Unit (for odor control)' },
+  { src: p1, heading: 'Advanced Oxidation Plasma ' },
+  { src: p2, heading: 'odorNOX Unit ' },
   { src: p3, heading: 'germiNOX Air Purifier' },
-  { src: p4, heading: 'Virushield Air Purifier (for washroom)' },
+  { src: p4, heading: 'Virushield Air Purifier ' },
   { src: p5, heading: 'germiNOX Air Purifier' },
-  { src: p6, heading: 'germiNOX Air Purifier' },
-  { src: p8, heading: 'germiNOX Air Purifier' },
-  { src: p9, heading: 'germiNOX Air Purifier' },
-  { src: p10, heading: 'germiNOX Air Purifier' },
+  { src: p6, heading: 'Falcon S Air Purifier' },
+  { src: p7, heading: 'CBR Filter' },
+  { src: p8, heading: 'ESP Filter' },
+  { src: p9, heading: 'ultraSORB Chemical Media' },
+
+  { src: p10, heading: 'Ceiling Suspended Air Purifier' },
 
 
 
@@ -52,16 +54,16 @@ const Carousel = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - itemsPerSlide : prevIndex - 1
     );
   };
-
+  
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex >= images.length - itemsPerSlide ? 0 : prevIndex + 1
     );
   };
-
+  
   return (
     <div className="carousel-container p-10">
       <div className='mt-5 p-2'>

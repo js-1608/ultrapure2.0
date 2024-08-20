@@ -284,7 +284,7 @@ export default function Header() {
 
       <Popover.Group className="hidden lg:flex lg:gap-x-12 m-auto">
         <Link to="/about" className="text-md font-semibold leading-6 text-gray-900" onClick={handleLinkClick}>
-          About
+          About Us
         </Link>
 
         <Popover>
@@ -334,7 +334,7 @@ export default function Header() {
             className="relative left-0 flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
             onClick={() => handlePopoverToggle('marketServed')}
           >
-            Market Served
+            Markets Served
             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
           </PopoverButton>
 
@@ -385,7 +385,7 @@ export default function Header() {
             className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
             onClick={() => handlePopoverToggle('products')}
           >
-            Product
+            Product Range
             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
           </PopoverButton>
 
@@ -458,7 +458,7 @@ export default function Header() {
                                              onClick={() => handlePopoverToggle('resources')}
 
             >
-              Resources
+              Resource Matetrial
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -545,7 +545,7 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  About 
+                  About Us
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
@@ -586,7 +586,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Market Served
+                        Markets Served
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -665,7 +665,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Product Range
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -712,7 +712,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Resources
+                        Resources Material  
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",

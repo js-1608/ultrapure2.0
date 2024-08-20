@@ -23,7 +23,7 @@ const ImageTextCard = () => {
           Cutting-Edge Purification Technologies
         </h2>
         <p
-          className="text-gray-700 text-base md:text-md text-justify"
+          className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol)}
         >
           Ultrapure utilizes innovative technologies in their air purifier to provide most effective and efficient purification solutions. These technologies have been tested and certified by various labs, ensuring the highest quality air purification.
@@ -36,7 +36,7 @@ const ImageTextCard = () => {
           Advanced Filtration Systems
         </h2>
         <p
-          className="text-gray-700 text-base md:text-md text-justify"
+          className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol1)}
         >
           With advanced air filtration systems, Ultrapure’s air purifier can effectively capture particulates, microbes, and gases. Our custom filters and chemical media are designed to target specific pollutants, providing clean and healthy air for both commercial and residential use.
@@ -49,7 +49,7 @@ const ImageTextCard = () => {
           Wide Range of Applications
         </h2>
         <p
-          className="text-gray-700 text-base md:text-md text-justify"
+          className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol2)}
         >
           Ultrapure purifiers are suitable for a wide range of industries and environments. Whether it’s a hospital, office building, or residential space, their solutions can effectively address the unique air quality challenges faced by different sectors.

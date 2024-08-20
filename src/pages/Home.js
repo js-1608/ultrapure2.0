@@ -118,7 +118,7 @@ export default function HomePage() {
             <InfoCard
               imageUrl={choose2}
               heading="Reliable and Long Lasting Performance"
-              content="our products are built to last, providing you with consistent and reliable air purification performance for years to come."
+              content="Our products are built to last, providing you with consistent and reliable air purification performance for years to come."
             />
           </div>
           <div className=" flex justify-center mb-2">

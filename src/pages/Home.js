@@ -22,7 +22,9 @@ import CarouselComponent from "../components/CarouselComponent";
 import MarketCarousel from "../components/MarketCarousel";
 import { Link } from "react-router-dom";
 import ReportForm from "../components/ReportForm";
-import video from '../assests/video.mp4'
+import video from '../assests/video.mp4';
+import Mobile_product from "../components/Mobile_product";
+
 
 export default function HomePage() {
   return (
@@ -137,6 +139,8 @@ export default function HomePage() {
           <ImageTextCard />
         </div>
         <Carousel />
+        <Mobile_product/>
+        
 
         <div className="p-4 lg:p-10 border-solid   ">
           <div className="rounded-lg shadow-2xl border-2">

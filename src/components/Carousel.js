@@ -12,7 +12,7 @@ import p9 from '../assests/products/Group 212.png';
 import p10 from '../assests/products/Group 213.png';
 
 import l from '../assests/l.png';
-import r from '../assests/r.png'
+import r from '../assests/r.png';
 
 const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma ' },
@@ -24,11 +24,7 @@ const images = [
   { src: p7, heading: 'CBR Filter' },
   { src: p8, heading: 'ESP Filter' },
   { src: p9, heading: 'ultraSORB Chemical Media' },
-
   { src: p10, heading: 'Ceiling Suspended Air Purifier' },
-
-
-
 ];
 
 const Carousel = () => {
@@ -52,20 +48,29 @@ const Carousel = () => {
     return () => window.removeEventListener('resize', updateItemsPerSlide);
   }, []);
 
+  // Set up automatic sliding
+  useEffect(() => {
+    const autoSlide = setInterval(() => {
+      nextSlide();
+    }, 3000); // Slide every 3 seconds
+
+    return () => clearInterval(autoSlide);
+  }, [currentIndex, itemsPerSlide]);
+
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - itemsPerSlide : prevIndex - 1
     );
   };
-  
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex >= images.length - itemsPerSlide ? 0 : prevIndex + 1
     );
   };
-  
+
   return (
-    <div className="carousel-container p-10">
+    <div className="carousel-container p-10 display_hide">
       <div className='mt-5 p-2'>
         <h2 className="font-bold text-3xl sm:text-4xl lg:text-6xl text-white">
           Discover Our Product Range
@@ -78,7 +83,6 @@ const Carousel = () => {
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-item bg-white ml-3 rounded">
-
             <img src={image.src} alt={image.heading} className="carousel-image" />
             <div className="carousel-caption strong font-bold w-1/2 text-xl">
               <h2 className='display_hide'>{image.heading}</h2>
@@ -86,19 +90,19 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <button onClick={prevSlide} className="carousel-button prev  display_hide">
-        <img src={l} alt="back button"/>
+      <button onClick={prevSlide} className="carousel-button prev display_hide">
+        <img src={l} alt="back button" />
       </button>
       <button onClick={nextSlide} className="carousel-button next display_hide">
-        <img src={r} alt="forward button"/>
+        <img src={r} alt="forward button" />
       </button>
       <div className='w-full m-auto display_hide_big'>
-      <button onClick={prevSlide} className="carousel-button2 prev ">
-        <img src={l} alt="back button"/>
-      </button>
-      <button onClick={nextSlide} className="carousel-button2 next">
-        <img src={r} alt="forward button"/>
-      </button>
+        <button onClick={prevSlide} className="carousel-button2 prev">
+          <img src={l} alt="back button" />
+        </button>
+        <button onClick={nextSlide} className="carousel-button2 next">
+          <img src={r} alt="forward button" />
+        </button>
       </div>
     </div>
   );

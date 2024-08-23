@@ -23,7 +23,7 @@ export default function Waste() {
 
   //Corrosion Control
   const imageUrl = "publicbuilding/public (1).png";
-  const problem = " :Airborne chemicals in water and wastewater treatment facilities can cause corrosion of equipment and infrastructure. This can lead to increased maintenance costs and potential system failures.";
+  const problem = "Airborne chemicals in water and wastewater treatment facilities can cause equipment and infrastructure corrosion, leading to higher maintenance costs and potential system failures.";
   const health = [
    " Exposure to harmful chemicals", "respiratory issues",  "potential long-term health effects from inhalation of corrosive agents"
   ];

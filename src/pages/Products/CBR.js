@@ -25,7 +25,7 @@
 						// icon: "../product/aop/Group 121.png",
 						// text: "Our return policy is...",
 						image: "../product/cbr/Group 142.png ",
-						additionalText: "Easily Instal.pngled In the existing HVAC system"
+						additionalText: "Easily install in the existing HVAC System"
 					},
 					{
 						// icon: "../product/aop/Group 122.png",
@@ -37,13 +37,13 @@
 						// icon: "../product/aop/Group 124.png",
 						// text: "Our warranty policy is...",
 						image: "../product/cbr/Group 144.png",
-						additionalText: "Flexible & Cost Eective Solution"
+						additionalText: "Effective"
 					},
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
 						image: "../product/cbr/Group 145.png",
-						additionalText: "Eiciency of MERV-16 Filter"
+						additionalText: "Efficiency"
 					}
 				]
 			}
@@ -77,9 +77,8 @@
 			question: "Application Area",
 			answer: {
 				type: "words",
-				words: [
-					"Word1", "Word2", "Word3", "Word4", "Word5", "Word6",
-					"Word7", "Word8", "Word9", "Word10", "Word11", "Word12"
+				words: ["Corporate Offices","Hospitals", "Defection sectors" ,"Hotels" ,"Airports"
+
 				]
 			}
 		}
@@ -87,7 +86,7 @@
   
       const product = {
           headingText: "DEFENCE AGAINST AIRBORNE",
-          title: "Chemical BiologicalRadiological Filter (CBR)",
+          title: "CHEMICAL BIOLOGICAL RADIOLOGICAL (CBR) FILTER",
           downloadFile: "https://ultrapureindia.in/pdf/Chemical%20Biological%20Radiological%20Filtration%20System.pdf",
           mainImage: 'product/CBR.png',
           relativeImages: [

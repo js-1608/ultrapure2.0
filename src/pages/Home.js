@@ -95,32 +95,29 @@ export default function HomePage() {
 
         <div className="bg-gray-100 order rounded-br-large p-2">
           <div className="text-center m-5">
-            <h5 className="font-normal text-2xl">Discover</h5>
+            {/* <h5 className="font-normal text-2xl">Discover</h5> */}
             <h2 className=" font-bold text-5xl">
               Why Choose <span className="text-textBlue">Ultrapure</span>
             </h2>
             <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
-              We stand out as a 'Need-based Manufacturer,' focusing on
-              client-specific solutions, which has built our strong reputation and
-              loyal customer base. With offices in Delhi, Mumbai, and Bengaluru,
-              we effectively serve clients nationwide.
+            As a 'Need-based Manufacturer,' we excel in delivering customized, client-focused solutions, earning us a strong reputation and a loyal customer base. With offices in Delhi, Mumbai, and Bengaluru, we efficiently cater to clients across the nation.
             </p>
           </div>
           <div className="flex justify-center mt-16 flex-wrap mb-16">
             <InfoCard
               imageUrl={choose1}
-              heading="Superior Air Purification Solutions"
-              content="Our products are designed to effectively eliminate airborne pollutants and provide you with clean and healthy air."
+              heading="Superior / Advanced Air Purification Solutions"
+              content="Our products are engineered to efficiently remove airborne pollutants, ensuring you enjoy clean and healthy air."
             />
             <InfoCard
               imageUrl={choose3}
-              heading="Customised Solutions for Every Need"
-              content="We understand that every environment is unique, which is why we offer air purification solutions to meet your specific requirements."
+              heading="Customized Solutions for Every Environment"
+              content="We recognize the uniqueness of each setting, providing air purification solutions designed to meet your specific needs."
             />
             <InfoCard
               imageUrl={choose2}
-              heading="Reliable and Long Lasting Performance"
-              content="Our products are built to last, providing you with consistent and reliable air purification performance for years to come."
+              heading="Reliable and Durable Performance"
+              content="Our products are designed for longevity, delivering consistent and reliable air purification for years to come."
             />
           </div>
           <div className=" flex justify-center mb-2">

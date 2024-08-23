@@ -20,14 +20,13 @@ const ImageTextCard = () => {
           className="text-2xl md:text-2xl font-bold mb-1"
           onMouseEnter={() => handleMouseEnter(sol)}
         >
-          Cutting-Edge Purification Technologies
+         State-of-the-Art Purification Technologies
         </h2>
         <p
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol)}
         >
-          Ultrapure utilizes innovative technologies in their air purifier to provide most effective and efficient purification solutions. These technologies have been tested and certified by various labs, ensuring the highest quality air purification.
-        </p>
+Ultrapure leverages advanced innovations in their air purifiers to deliver highly effective and efficient solutions. These technologies are rigorously tested and certified by various labs, guaranteeing top-quality air purification.        </p>
         
         <h2
           className="text-2xl md:text-2xl font-bold mb-1 mt-6"
@@ -39,21 +38,19 @@ const ImageTextCard = () => {
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol1)}
         >
-          With advanced air filtration systems, Ultrapure’s air purifier can effectively capture particulates, microbes, and gases. Our custom filters and chemical media are designed to target specific pollutants, providing clean and healthy air for both commercial and residential use.
-        </p>
+Ultrapure's air purifiers are equipped with cutting-edge filtration systems that effectively capture particulates, deactivate microbes, and neutralizes gases & odors. Our custom filters and chemical media are tailored to target specific pollutants, ensuring clean and healthy air for both commercial and residential environments.        </p>
         
         <h2
           className="text-2xl md:text-2xl font-bold mb-1 mt-6"
           onMouseEnter={() => handleMouseEnter(sol2)}
         >
-          Wide Range of Applications
+          Versatile Applications
         </h2>
         <p
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol2)}
         >
-          Ultrapure purifiers are suitable for a wide range of industries and environments. Whether it’s a hospital, office building, or residential space, their solutions can effectively address the unique air quality challenges faced by different sectors.
-        </p>
+Ultrapure purifiers are ideal for various industries and environments. From hospitals and office buildings to residential spaces, our solutions effectively tackle the unique air quality challenges of each sector.        </p>
       </div>
     </div>
   );

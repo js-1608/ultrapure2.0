@@ -17,14 +17,14 @@ import r from '../assests/r.png';
 const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma ' },
   { src: p2, heading: 'odorNOX Unit ' },
-  { src: p3, heading: 'germiNOX Air Purifier' },
+  { src: p3, heading: 'Corrosion Control Unit' },
   { src: p4, heading: 'Virushield Air Purifier ' },
   { src: p5, heading: 'germiNOX Air Purifier' },
   { src: p6, heading: 'Falcon S Air Purifier' },
   { src: p7, heading: 'CBR Filter' },
   { src: p8, heading: 'ESP Filter' },
-  { src: p9, heading: 'ultraSORB Chemical Media' },
-  { src: p10, heading: 'Ceiling Suspended Air Purifier' },
+  { src: p9, heading: 'Ceiling Suspended Air Purifier ' },
+  { src: p10, heading: ': ultraSORB® Chemical Media' },
 ];
 
 const Carousel = () => {
@@ -73,9 +73,8 @@ const Carousel = () => {
     <div className="carousel-container p-10 display_hide">
       <div className='mt-5 p-2'>
         <h2 className="font-bold text-3xl sm:text-4xl lg:text-6xl text-white">
-          Discover Our Product Range
-        </h2>
-        <p className='text-xl p-1 text-white'>Breathe easier with our advanced air purification solutions.</p>
+        Explore Our Product Line        </h2>
+        <p className='text-xl p-1 text-white'>Experience the benefits of our advanced air purification solutions for cleaner, healthier air.</p>
       </div>
       <div
         className="carousel-slide m-auto"

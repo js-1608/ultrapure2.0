@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import banner from "../assests/about_banner.png";
@@ -15,20 +15,21 @@ const About = () => {
 	const [openFAQ, setOpenFAQ] = useState(null);
 	const toggleFAQ = (id) => {
 		setOpenFAQ(openFAQ === id ? null : id);
-	  };
+	};
 	const faqs = [
-	  { id: 1, question: "Company Overview", answer: "Ultrapure Envirocare Pvt Ltd, established in 1992, is a leading name in air purification solutions. With a commitment to enhancing indoor air quality, our advanced technology and need-based approach ensure that you breathe the cleanest air possible. Based in Mumbai, we have a strong presence across India with offices in Delhi, Chennai, Bengaluru, Ahmedabad, and Kolkata. Follow us to learn more about how we can help you maintain a healthy environment" },
-	  { id: 2, question: "Our Team", answer: "At Ultrapure Envirocare, our success is driven by our dedicated and innovative team. Our in-house research and development team works tirelessly to bring you the latest in air purification technology. Meet the experts who are committed to ensuring you breathe the cleanest air possible. " },
-	  { id: 3, question: "Global presence", answer: "Ultrapure Envirocare is not just a leader in India but also making its mark globally. Our high-quality air purification solutions are trusted worldwide, ensuring cleaner air for everyone. Discover our global impact and how we're making the world a healthier place. "},
-	  {id:4, question:"Sustainable Initiative" ,answer:"Sustainability is at the heart of what we do. Ultrapure Envirocare is committed to creating eco-friendly air purification solutions that protect both your health and the environment. Our decarbonization efforts focus on reducing carbon emissions throughout our manufacturing processes and product lifecycle. Learn more about our sustainable practices and how we're contributing to a greener planet."}
-	  // Add more FAQs as needed
+		{ id: 1, question: "Company Overview", answer: "Company overview	Company overview Founded in 1992, Ultrapure Envirocare Pvt. Ltd. has become a trusted leader in air purification solutions. Committed to improving indoor air quality, our advanced technology and tailored approach ensure you experience the cleanest air possible. Headquartered in Mumbai, we have a strong footprint across India with offices in Delhi, Chennai, Bengaluru, Ahmedabad, and Kolkata. Stay connected with us to discover how we can help you create a healthier environment. \n Stay connected with us to discover how we can help you create a healthier environment." },
+		{ id: 2, question: "Our Team", answer: "At Ultrapure, our success is powered by our passionate and innovative team. Our in-house research and development experts are constantly working to deliver cutting-edge air purification technology. Get to know the specialists dedicated to ensuring you breathe the cleanest air possible. " },
+		{ id: 3, question: "Global presence", answer: "Ultrapure is not only a leader in India but also making a global impact. Our top-tier air purification solutions are trusted around the world, ensuring cleaner air for all. Explore our international reach and see how we’re contributing to a healthier planet." },
+		{ id: 4, question: "Sustainable Initiative", answer: "At Ultrapure, sustainability is central to our mission. We are dedicated to developing eco-friendly air purification solutions that safeguard both your health and the environment. Our decarbonization efforts are aimed at minimizing carbon emissions across our manufacturing processes and product lifecycle. \n \n Discover our sustainable practices and how we’re helping to create a greener planet." },
+		{id :5, question:"Customer-Centric Approach " , answer:"At Ultrapure, excellence is at the core of everything we do. Whether it’s product design, manufacturing, or customer service, we prioritize our customers' needs and satisfaction above all else."}
+		// Add more FAQs as needed
 	];
 	return (
 		<div>
 			<Banner
 				src={banner}
 				title="Abouts Us"
-				text="Welcome to Ultrapure Envirocare Pvt Ltd, a leading provider of innovative air purification solutions dedicated to enhancing indoor air quality worldwide."
+				text="Welcome to Ultrapure, your trusted partner in cutting-edge air purification solutions, committed to enhancing indoor air quality for a healthier world."
 				updated=""
 				buttonUrl=""
 				buttonText=""
@@ -36,7 +37,7 @@ const About = () => {
 			<Banner2
 				src={banner2}
 				title="Abouts Us"
-				text="Welcome to Ultrapure Envirocare Pvt Ltd, a leading provider of innovative air purification solutions dedicated to enhancing indoor air quality worldwide."
+				text="Welcome to Ultrapure, your trusted partner in cutting-edge air purification solutions, committed to enhancing indoor air quality for a healthier world."
 				updated=""
 				buttonUrl=""
 				buttonText=""
@@ -54,12 +55,7 @@ const About = () => {
 								</h5>
 								<div classname="w-full">
 									<p className=" text-md text-justify w-full lg:text-center lg:w-2/3 m-auto">
-										Our mission is to revolutionize indoor air quality by
-										providing innovative and effective air purification
-										solutions tailored to meet the diverse needs of our clients
-										across residential, commercial, and industrial sectors. We
-										are committed to delivering products that promote health,
-										well-being, and sustainability.
+										Our mission is to revolutionize indoor air quality through eco-friendly and effective air purification solutions, thoughtfully designed to meet the unique needs of our clients in residential, commercial, and industrial sectors. We are dedicated to delivering products that not only enhance health and well-being but also support a sustainable future.
 									</p>
 								</div>
 							</div>
@@ -71,15 +67,11 @@ const About = () => {
 
 							<div className="p-5">
 								<h5 className="font-bold text-center text-3xl lg:text-5xl mb-2">
-									Vission
+									Vision
 								</h5>
 								<div classname="w-full">
 									<p className=" text-md text-justify w-full lg:text-center lg:w-2/3 m-auto">
-										Our vision is to become the leading provider of air
-										purification technology, setting new standards of excellence
-										in the industry. We aim to continuously innovate and expand
-										our product offerings, while maintaining a steadfast focus
-										on customer satisfaction and environmental responsibility.
+									Our vision is to become the leading provider of air purification solutions, setting new benchmarks of excellence in the industry. We strive to innovate and expand our product range, with a constant commitment to customer satisfaction and environmental stewardship.
 									</p>
 								</div>
 							</div>
@@ -89,29 +81,29 @@ const About = () => {
 			</div>
 
 
-		<div class=" aboutbg  bg-cover bg-center">
-			<div className=" p-6">
+			<div class=" aboutbg  bg-cover bg-center">
+				<div className=" p-6">
 					{/* bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 */}
-				<div className="w-full lg:max-w-5xl mx-auto bg-white p-2 lg:p-8 ">
-					{faqs.map(faq => (
-					<div key={faq.id} className="mb-4">
-						<button 
-						className={`w-full text-left p-5 rounded-full text-2xl font-bold flex justify-between items-center focus:outline-none transition-colors duration-300 ${openFAQ === faq.id ? 'bg-gradient-to-r from-textBlue  to-ultragreen text-white' : 'bg-gray-200 text-black'}`}
-						onClick={() => toggleFAQ(faq.id)}
-						>
-						<span className="text-lg">{faq.question}</span>
-						<FontAwesomeIcon icon={openFAQ === faq.id ? faChevronDown : faChevronRight} />
-						</button>
-						{openFAQ === faq.id && (
-						<div className=" p-4 bg-gray-100 rounded-lg">
-							{faq.answer}
-						</div>
-						)}
+					<div className="w-full lg:max-w-5xl mx-auto bg-white p-2 lg:p-8 ">
+						{faqs.map(faq => (
+							<div key={faq.id} className="mb-4">
+								<button
+									className={`w-full text-left p-5 rounded-full text-2xl font-bold flex justify-between items-center focus:outline-none transition-colors duration-300 ${openFAQ === faq.id ? 'bg-gradient-to-r from-textBlue  to-ultragreen text-white' : 'bg-gray-200 text-black'}`}
+									onClick={() => toggleFAQ(faq.id)}
+								>
+									<span className="text-lg">{faq.question}</span>
+									<FontAwesomeIcon icon={openFAQ === faq.id ? faChevronDown : faChevronRight} />
+								</button>
+								{openFAQ === faq.id && (
+									<div className=" p-4 bg-gray-100 rounded-lg">
+										{faq.answer}
+									</div>
+								)}
+							</div>
+						))}
 					</div>
-					))}
 				</div>
 			</div>
-		</div>
 
 			{/* what's that section INCOMPLETE */}
 			{/* <div>

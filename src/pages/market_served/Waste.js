@@ -30,7 +30,7 @@ export default function Waste() {
 
 //   •	Emergency
   const EmergencyimageUrl = "publicbuilding/public (1).png";
-  const Emergencyproblem = "TTreatment plants may face sudden releases of toxic gases, including hydrogen sulfide and chlorine, requiring immediate and effective air purification to protect workers and the surrounding community.";
+  const Emergencyproblem = "Sewage and industrial effluent treatment plants can experience sudden releases of toxic gases like hydrogen sulfide and chlorine, necessitating prompt and effective air purification to safeguard workers and the surrounding community.";
   const Emergencyhealth = [
     "Acute respiratory distress"," eye and skin irritation",  "long-term health issues from exposure to toxic gases"
   ]; 

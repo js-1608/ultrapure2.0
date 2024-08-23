@@ -113,8 +113,7 @@
               <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
 				<div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
 					<p className="text-gray-700 p-8 text-justify">
-                    The Ultrapure UV technology utilizes a patented system that differs from traditional germicidal UV-C technology. It generates intense UV radiation within a specialized reflection chamber, leading to an Advanced Oxidation Penta plasma reaction. This reaction involves UV light energy reacting with oxygen, ozone, moisture, and a hydrated chamber to produce cleansing plasma ions like Ozone, Hydroxyls, and super oxide ions. This process helps suppress bacterial and mold growth, reduce odors, and improve air quality.
-					</p>
+					The Ultrapure AOP technology employs a patented system that stands apart from conventional germicidal UV-C technology. It creates intense UV radiation within a specially designed reflector, initiating an Advanced Oxidation Penta plasma reaction. This process involves UV light interacting with oxygen, ozone, moisture, and a hydrated chamber to produce purifying plasma ions, including hydroxyls, peroxide ions, and superoxide ions. These powerful ions work together to suppress bacterial and mold growth, eliminate odors, and enhance overall air quality.					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex justify-between items-center">
 					<div className="w-1/2">

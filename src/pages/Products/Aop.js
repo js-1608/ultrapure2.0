@@ -119,15 +119,7 @@ function Aop() {
 				<h1 className="lg:text-2xl  text-xl font-bold mt-2">Product Info</h1>
 
 					<p className="text-gray-700  text-justify">
-						nanoX Technology is at the forefront of our air purification
-						solutions, harnessing the power of nature-friendly oxidizers to
-						effectively eliminate viruses, microbes, and pollutants from indoor
-						environments. By utilizing UV light to activate nano Titanium
-						dioxide, nanoX generates hydroxyl radicals, which act as powerful
-						oxidizers, breaking down harmful contaminants at the molecular
-						level. This innovative technology offers continuous air purification
-						and disinfection, providing peace of mind and protection against
-						airborne pathogens.
+					Advanced Oxidation Plasma Air purifiers powered by nanoX® & plasmOX® technologies lead the way in air purification with its eco-friendly approach, using natural oxidizers & charged species to remove viruses, microbes, and pollutants from indoor spaces. The technology activates nano Titanium dioxide with UV light to produce hydroxyl radicals, which serve as potent oxidizers, breaking down harmful contaminants at their molecular structure. With these advanced technologies, Ultrapure ensures continuous air purification and disinfection, offering ongoing protection and peace of mind against airborne pathogens.
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex justify-between items-center ">

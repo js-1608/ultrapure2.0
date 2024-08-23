@@ -141,7 +141,7 @@ function OdorNOX() {
 			</div>
 			{/* faq */}
 			<div className="mx-auto bg-white p-8 rounded-lg shadow-lg">
-				<h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+				{/* <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2> */}
 				{faqs.map((faq) => (
 					<div key={faq.id} className="mb-4">
 						<button

@@ -46,7 +46,7 @@ const Footer = () => {
           <h2><Link to="/aop" className="hover:underline hover:text-textBlue">Advanced Oxidation Plasma </Link></h2>
           <h2><Link to="/fsap" className="hover:underline hover:text-textBlue">Falcon-S</Link></h2>
           <h2><Link to="/fcap" className="hover:underline hover:text-textBlue">Falcon-C</Link></h2>
-          <h2><Link to="/gap" className="hover:underline hover:text-textBlue">Bipoler Ionizer</Link></h2>
+          <h2><Link to="/gap" className="hover:underline hover:text-textBlue">Germinox</Link></h2>
           <h2><Link to="/cf" className="hover:underline hover:text-textBlue">CBR Filter</Link></h2>
           <h2><Link to="/ef" className="hover:underline hover:text-textBlue">ESP Filter</Link></h2>
           <h2><Link to="/vap" className="hover:underline hover:text-textBlue">Virushield Air Purifier</Link></h2>

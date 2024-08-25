@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 import ReportForm from "../components/ReportForm";
 import video from '../assests/video.mp4';
 import Mobile_product from "../components/Mobile_product";
-
+import Accordian from "../components/Accordian";
 
 export default function HomePage() {
   return (
@@ -136,6 +136,7 @@ export default function HomePage() {
           <ImageTextCard />
         </div>
         <Carousel />
+        <Accordian/>
         <Mobile_product/>
         
 

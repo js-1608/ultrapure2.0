@@ -64,10 +64,11 @@ const Mobile_product = () => {
       </div>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="carousel-item bg-white sm:m-5 lg:m-2 ml-3 rounded">
+          <div key={index} className="carousel-item bg-white sm:m-5 lg:m-2  rounded">
             <img src={image.src} alt={image.heading} className="carousel-image" />
+            <h2 className='text-center'>{image.heading}</h2>
+
             <div className="carousel-caption strong font-bold w-1/2 text-xl">
-              <h2 className='display_hide'>{image.heading}</h2>
             </div>
           </div>
         ))}

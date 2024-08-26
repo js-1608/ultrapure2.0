@@ -24,7 +24,7 @@ const images = [
   { src: p7, heading: 'CBR Filter' },
   { src: p8, heading: 'ESP Filter' },
   { src: p9, heading: 'Ceiling Suspended Air Purifier ' },
-  { src: p10, heading: ': ultraSORB® Chemical Media' },
+  { src: p10, heading: 'ultraSORB® Chemical Media' },
 ];
 
 const Carousel = () => {

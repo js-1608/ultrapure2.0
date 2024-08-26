@@ -148,13 +148,14 @@ export default function HomePage() {
             <CarouselComponent />
           </div>
         </div>
-        < CertificateGallery/>
 
         <div className="container mx-auto p-4">
           <MarketCarousel />
         </div>
         {/* <Newsletter/> */}
         <ReportForm />
+        < CertificateGallery/>
+
       </div>
 
       );

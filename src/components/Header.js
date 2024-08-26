@@ -71,20 +71,30 @@ const technology = [
   },
 ];
 
+//  ,'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'
+// , '/fcap', '/fsap', '/cf'
 const products = [
   {
     name: "Microbial Contamination",
-    list: ['AOP CELL Technology', 'Virusheild Air Purifier','GermiNOX' ,'Falcon C (For Cassette AC)', 'Falcon S (For Split AC)', 'Ceiling Suspended Air Purifier'],
-    links: ['/aop', '/vap','/gap', '/fcap', '/fsap', '/cf'],
+    list: ['AOP CELL Technology'],
+    links: ['/aop', ],
+    description: "",
+    icon: ChartPieIcon,
+  },
+ 
+  {
+    name: "Wall Hung Air Purifiers",
+    list: ['Virusheild Air Purifier','GermiNOX'],
+    links: ['/vap','/gap' ],
     description: "",
     icon: ChartPieIcon,
   },
   {
     name: "For Gaseous Contamination",
-    list: ['ultraSORB Chemical Media Grid Block','odorNOX System','Data Centre Corrosion Control Unit'],
-    links: ['/ucm','/OdorNOX','/ccu'],
+    list: ['ultraSORB Chemical Media', 'STP Odor scrubber (OdorNOX)',  'Data Centre Corrosion Control Unit','Formaldehyde Gas Scrubber (FormiNOX)'],
+    links: ['/ucm', '/OdorNOX','/ccu','/forminox' ],
     description: "",
-    icon: FingerPrintIcon,
+    icon: CursorArrowRaysIcon,
   },
   {
     name: "Particulate Contamination",
@@ -93,14 +103,13 @@ const products = [
     description: "",
     icon: CursorArrowRaysIcon,
   },
-
-  // {
-  //   name: "Particulate Contamination",
-  //   list: [,'garboNOX System'],
-  //   links: [, '/gap'],   
-  //    description: "Connect with third-party tools",
-  //   icon: SquaresPlusIcon,
-  // },
+  {
+    name: "Particulate Contamination",
+    list: ['Falcon C (For Cassette AC)', 'Flacon S (For Split AC)',],
+    links: ['/fcap', '/fsap', ],
+    description: "",
+    icon: CursorArrowRaysIcon,
+  }
 ];
 
 const market_served = [

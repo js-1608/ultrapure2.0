@@ -58,10 +58,10 @@ const ReportForm = () => {
           <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
             <select value={selectedReport} onChange={handleReportChange} className="block w-full lg:w-56 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option value="">Select Report</option>
-              <option value="Air Purifier (KC450-S8)">Air Purifier (KC450-S8)</option>
-              <option value="In Duct Air Purifier (GX-01)">In Duct Air Purifier (GX-01)</option>
+              <option value="Air Purifier (KC450-S8)">Test Report</option>
+              {/* <option value="In Duct Air Purifier (GX-01)">In Duct Air Purifier (GX-01)</option>
               <option value="Deep Clean Products">Deep Clean Products</option>
-              <option value="Face Masks">Face Masks</option>
+              <option value="Face Masks">Face Masks</option> */}
             </select>
             <button className="px-6 py-2 bg-gradient-to-r from-textBlue to-ultragreen text-white rounded-md hover:from-ultragreen hover:to-textBlue focus:outline-none flex items-center">Email Me</button>
           </div>

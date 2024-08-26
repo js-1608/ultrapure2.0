@@ -25,7 +25,7 @@ import ReportForm from "../components/ReportForm";
 import video from '../assests/video.mp4';
 import Mobile_product from "../components/Mobile_product";
 import Client from "../components/Client";
-
+import CertificateGallery from "../components/Certificates";
 export default function HomePage() {
   return (
     <div>
@@ -152,6 +152,7 @@ export default function HomePage() {
         <div className="container mx-auto p-4">
           <MarketCarousel />
         </div>
+        < CertificateGallery/>
         {/* <Newsletter/> */}
         <ReportForm />
       </div>

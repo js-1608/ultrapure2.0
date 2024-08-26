@@ -109,7 +109,7 @@ const products = [
     links: ['/fcap', '/fsap', ],
     description: "",
     icon: CursorArrowRaysIcon,
-  }
+  },
 ];
 
 const market_served = [

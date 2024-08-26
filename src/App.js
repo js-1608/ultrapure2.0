@@ -38,7 +38,8 @@ import Footer from './components/Footer';
 import Scroll from './components/Scroll';
 import NotFound from './pages/NotFound';
 import WhatsAppIcon from './components/WhatsAppIcon';
-
+import FormaNOX from './pages/Products/FormaNOX';
+import Covid from './pages/Products/Covid';
 export default function App() {
   return (
     <Router>
@@ -77,13 +78,15 @@ export default function App() {
             <Route path="/ucm" element={<UltraSORB/>} />
             <Route path="/ef" element={<ESP/>} />
             <Route path="/csap" element={<CS/>}/>
-
+            <Route path="/forminox" element={<FormaNOX/>} />
+            <Route path="/covid" element={<Covid/>} />
 
             <Route path="/commercial" element={<Commerical/>} />
             <Route path="/industrial" element={<Industrial/>} />
             <Route path="/food" element={<Food/>} />
             <Route path="/material" element={<Material/>} />
             <Route path="/waste" element={<Waste/>} />
+          
 
               {/* Add the NotFound Route as the last Route */}
               <Route path="*" element={<NotFound />} />

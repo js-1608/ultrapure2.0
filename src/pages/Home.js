@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 import ReportForm from "../components/ReportForm";
 import video from '../assests/video.mp4';
 import Mobile_product from "../components/Mobile_product";
-import Accordian from "../components/Accordian";
+import Client from "../components/Client";
 
 export default function HomePage() {
   return (
@@ -136,15 +136,14 @@ export default function HomePage() {
           <ImageTextCard />
         </div>
         <Carousel />
-        <Accordian/>
         <Mobile_product/>
         
 
         <div className="p-4 lg:p-10 border-solid   ">
           <div className="rounded-lg shadow-2xl border-2">
             <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
-
-            <OurClientele />
+              <Client/>
+            {/* <OurClientele /> */}
             <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
             <CarouselComponent />
           </div>

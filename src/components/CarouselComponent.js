@@ -6,6 +6,12 @@ import GreenPro from '../assests/tested/GreenPro.png';
 import IIT from '../assests/tested/IIT.png';
 import ISO from '../assests/tested/ISO.png';
 import ROHS from '../assests/tested/ROHS.png';
+import image1 from '../assests/tested/image 46.png';
+import image2 from '../assests/tested/image 44.png';
+import image3 from '../assests/tested/image 43.png';
+import image4 from '../assests/tested/image 42.png';
+import image5 from '../assests/tested/image 45.png';
+
 
 const logos = [
   CCMB,
@@ -14,7 +20,12 @@ const logos = [
   GreenPro,
   IIT,
   ISO,
-  ROHS
+  ROHS,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5
 ];
 
 const CarouselComponent = () => {
@@ -59,7 +70,7 @@ const CarouselComponent = () => {
                 key={index} 
                 className="flex-shrink-0 w-1/3 sm:w-1/3 md:w-1/6 lg:w-1/7 flex justify-center"
               >
-                <img src={logo} alt={`Logo ${index + 1}`} className="max-w-full" />
+                <img src={logo} alt={`Logo ${index + 1}`} className="p-4 max-w-full" />
               </div>
             ))}
           </div>

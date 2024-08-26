@@ -41,7 +41,7 @@ function OdorNOX() {
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
+						image: "../product/aop/Corrosion.svg",
 						additionalText: "Corrosion Resistant housing"
 					},
 					{
@@ -53,7 +53,7 @@ function OdorNOX() {
 					{
 						// icon: "../product/aop/Group 125.png",
 						// text: "Our support policy is...",
-						image: "../product/aop/Group 125.png",
+						image: "../product/aop/Silent oepration.svg",
 						additionalText: "Silent Operation"
 					},
 
@@ -164,7 +164,7 @@ function OdorNOX() {
 											<div key={index} className="flex sm:flex-wrap items-center w-full lg:w-1/3  p-3 font-semibold">
 												{/* <img src={content.icon} alt="Icon" className="h-6 w-6 mr-2" />
 												<span>{content.text}</span> */}
-												<img src={content.image} alt="Image" className="h-15 w-15 mx-2" />
+												<img src={content.image} alt="Image" className="h-12 w-15 mx-2" />
 												<span>{content.additionalText}</span>
 											</div>
 										))}

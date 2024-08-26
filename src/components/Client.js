@@ -80,8 +80,8 @@ const Client = () => {
             key={index}
             className={`px-5 py-2 m-2 flex-grow flex items-center justify-center rounded  ${activeTab === index
                 ? 'bg-gradient-to-r from-textBlue to-ultragreen text-white'
-                : 'bg-gray-200 text-gray-900'
-              } hover:bg-ultragreen focus:bg-gradient-to-r from-textBlue to-ultragreen text-white`}
+                : 'bg-gray-200  text-gray-600'
+              } hover:bg-ultragreen hover:text-white focus:bg-gradient-to-r from-textBlue to-ultragreen `}
             onClick={() => setActiveTab(index)}
             style={{ minHeight: '50px' }} // Optional: Set a minimum height for consistency
           >

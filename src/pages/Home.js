@@ -100,7 +100,7 @@ export default function HomePage() {
               Why Choose <span className="text-textBlue">Ultrapure</span>
             </h2>
             <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
-            As a 'Need-based Manufacturer,' we excel in delivering customized, client-focused solutions, earning us a strong reputation and a loyal customer base. With offices in Delhi, Mumbai, and Bengaluru, we efficiently cater to clients across the nation.
+            As a need-based manufacturer, we specialize in providing tailored solutions that meet specific client requirements, which has established our strong reputation and loyal customer base. With offices in Delhi, Mumbai, and Bengaluru, we effectively serve clients throughout the country.
             </p>
           </div>
           <div className="flex justify-center mt-16 flex-wrap mb-16">

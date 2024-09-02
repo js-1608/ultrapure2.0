@@ -77,25 +77,26 @@ export default function HomePage() {
           buttonUrl="/contact"
           buttonText="Get Free Consultation"
         /> */}
-<div className="flex justify-evenly items-center h-80 bg-white aboutbg bg-cover bg-center">
+<div className="flex flex-col md:flex-row justify-evenly items-center h-auto md:h-80 bg-white aboutbg bg-cover bg-center p-4">
   {/* Text Section */}
-  <div className="text-left">
-    <h2 className="text-5xl font-bold text-black">Air Purified</h2>
-    <p className="text-5xl font-bold text-black">Till Now</p>
+  <div className="text-center md:text-left mb-8 md:mb-0">
+    <h2 className="text-4xl md:text-5xl font-bold text-black">Air Purified</h2>
+    <p className="text-4xl md:text-5xl font-bold text-black">Till Now</p>
   </div>
 
   {/* Counter Section */}
-  <div className="relative flex items-center justify-center">
-    <div className="absolute w-40 h-40 bg-ultragreen rounded-full flex items-center justify-center">
+  <div className="relative flex items-center justify-center mt-8 md:mt-0 mb-10 lg:mb-2">
+    <div className=" w-32 h-32 md:w-40 md:h-40 bg-ultragreen rounded-full flex items-center justify-center">
       <div className="text-center text-white">
-        <p className="text-2xl font-bold"><Counter />+</p>
-        <p className="text-sm">Cubic Meter</p>
+        <p className="text-xl md:text-2xl font-bold"><Counter />+</p>
+        <p className="text-xs md:text-sm">Cubic Meter</p>
       </div>
     </div>
-    <div className="absolute w-52 h-52 border-2 border-ultragreen rounded-full animate-glow"></div>
-    <div className="absolute w-60 h-60 border-2 border-ultragreen rounded-full animate-glow"></div>
+    <div className=" absolute w-44 h-44 md:w-52 md:h-52 border-2 border-ultragreen rounded-full animate-glow"></div>
+    <div className=" absolute w-52 h-52 md:w-60 md:h-60 border-2 border-ultragreen rounded-full animate-glow"></div>
   </div>
 </div>
+
 
   
         {/* <div className="relative  ">
@@ -165,7 +166,6 @@ We understand that each environment is unique. That's why we offer tailored air 
           <div className="rounded-lg shadow-2xl border-2">
             <h6 className="m-auto text-center text-3xl font-bold p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
               <Client/>
-            {/* <OurClientele /> */}
             <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
           </div>
         </div>
@@ -175,6 +175,8 @@ We understand that each environment is unique. That's why we offer tailored air 
         </div>
         {/* <Newsletter/> */}
         <ReportForm />
+        <OurClientele />
+
         <CarouselComponent />
 
         < CertificateGallery/>

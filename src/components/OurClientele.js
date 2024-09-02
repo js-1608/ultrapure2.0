@@ -20,19 +20,37 @@ import logo18 from '../assests/Our_Clientele/Client Logo-2.png'
 import logo19 from '../assests/Our_Clientele/Client Logo-3.png'
 import logo20 from '../assests/Our_Clientele/Client Logo-4.png'
 
+import logo21 from '../assests/tested/CCMB.png';
+import logo22 from '../assests/tested/CE.png';
+import logo23 from '../assests/tested/CSIR.png';
+import logo24 from '../assests/tested/GreenPro.png';
+import logo25 from '../assests/tested/IIT.png';
+import logo26 from '../assests/tested/ISO.png';
+import logo27 from '../assests/tested/ROHS.png';
+import logo28 from '../assests/tested/image 46.png';
+import logo29 from '../assests/tested/image 44.png';
+import logo30 from '../assests/tested/image 43.png';
+import logo31 from '../assests/tested/image 42.png';
+import logo32 from '../assests/tested/image 45.png';
+
+
 const logos = [
-    logo1, logo2 ,logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12 ,logo13,logo14, logo15, logo16 ,logo17 ,logo18 ,logo19 ,logo20
-];
+logo21,logo22,logo23,logo24,logo25,logo26,logo27,logo28,logo29,logo30,logo31,logo32];
 
 const OurClientele = () => {
     return (
-<div className="grid grid-cols-5 lg:grid-cols-10 gap-1 px-10 py-10">
+        <>
+        <h6 className="m-auto text-center text-4xl font-bold p-1 lg:p-3">Our <span className="text-[#1D9AD6]">Clientele</span></h6>
+
+<div className="grid grid-cols-5 lg:grid-cols-6 gap-1 px-4 py-4 lg:px-10 lg:py-10">
+
 {logos.map((logo, index) => (
                 <div key={index} className="flex justify-center items-center">
                     <img src={logo} alt={`Client Logo ${index + 1}`} className="" />
                 </div>
             ))}
         </div>
+        </>
     );
 };
 

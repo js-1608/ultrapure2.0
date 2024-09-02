@@ -89,11 +89,11 @@ const Client = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-5 lg:grid-cols-10 gap-7 lg:gap-10 px-1 py-2 lg:px-5 lg:py-10">
+      <div className="grid grid-cols-4 lg:grid-cols-10 gap-2 lg:gap-10 px-1 py-2 lg:px-5 lg:py-10">
         {sections[activeTab].logos.map((logo, logoIndex) => (
           <div
             key={logoIndex}
-            className="flex items-center justify-center h-8 lg:h-24"
+            className="flex items-center justify-center "
           >
             <img src={logo} alt={`Logo ${logoIndex + 1}`} className='w-full' />
           </div>

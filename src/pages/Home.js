@@ -26,6 +26,7 @@ import video from '../assests/video.mp4';
 import Mobile_product from "../components/Mobile_product";
 import Client from "../components/Client";
 import CertificateGallery from "../components/Certificates";
+import Counter from '../components/Counter'
 export default function HomePage() {
   return (
     <div>
@@ -76,22 +77,41 @@ export default function HomePage() {
           buttonUrl="/contact"
           buttonText="Get Free Consultation"
         /> */}
+<div className="flex justify-evenly items-center h-80  bg-white aboutbg  bg-cover bg-center">
+      {/* Text Section */}
+      <div className="text-left">
+        <h2 className="text-5xl font-bold text-black">Air Purified</h2>
+        <p className="text-5xl font-bold text-black">Till Now</p>
+      </div>
 
-        <div className="relative  ">
+      {/* Counter Section */}
+      <div className="relative flex items-center justify-center">
+        <div className="absolute w-40 h-40 bg-ultragreen rounded-full flex items-center justify-center">
+          <div className="text-center text-white">
+            <p className="text-2xl font-bold"><Counter/></p>
+            <p className="text-sm">Cubic Meter</p>
+          </div>
+        </div>
+        <div className="absolute w-52 h-52 border-2 border-ultragreen rounded-full animate-pulse"></div>
+        <div className="absolute w-60 h-60 border-2 border-ultragreen rounded-full"></div>
+      </div>
+    </div>
+  
+        {/* <div className="relative  ">
           <img
             src={COUNT}
             alt="Card"
             className="w-full h-full object-cover opacity-100"
           />
-          <div className="absolute inset-0 flex items-center ">
+          <div className="absolute inset-0 flex items-center "> */}
             {/* <div className="p-8 text-left">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">title</h1>
           <p className="mt-6 text-lg md:text-2xl lg:text-3xl">tex</p>
           <p className="mt-0 text-lg md:text-2xl lg:text-3xl font-bold">pdated</p>
           
         </div> */}
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
 
         <div className="bg-gray-100 order rounded-br-large p-2">
           <div className="text-center m-5">

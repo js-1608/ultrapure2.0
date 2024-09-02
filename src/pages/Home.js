@@ -127,7 +127,7 @@ export default function HomePage() {
           </div>
           <div className="flex justify-center mt-16 flex-wrap mb-16">
             <InfoCard
-              imageUrl={choose2}
+              imageUrl={choose1}
               heading="Superior / Advanced Air Purification Solutions"
               content="Our products are meticulously engineered to efficiently eliminate airborne pollutants, ensuring that you enjoy cleaner, healthier air in your environment."
             />
@@ -138,7 +138,7 @@ export default function HomePage() {
 We understand that each environment is unique. That's why we offer tailored air purification solutions designed to address your specific needs and ensure optimal air quality."
             />
             <InfoCard
-              imageUrl={choose1}
+              imageUrl={choose2}
               heading="Reliable and Durable Performance"
               content="Our products are built for longevity, providing consistent and dependable air purification to ensure optimal air quality for years to come."
             />

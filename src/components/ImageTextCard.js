@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import sol from "../assests/sol.png";
+import sol from "../assests/sol2.png";
 import sol1 from "../assests/sol1.png";
-import sol2 from "../assests/sol2.png";
+import sol2 from "../assests/sol.png";
 
 const ImageTextCard = () => {
   const [currentImage, setCurrentImage] = useState(sol);

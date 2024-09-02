@@ -20,14 +20,13 @@ const ImageTextCard = () => {
           className="text-2xl md:text-2xl font-bold mb-1"
           onMouseEnter={() => handleMouseEnter(sol)}
         >
-         State-of-the-Art Purification Technologies
+          Purification Technologies
         </h2>
         <p
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol)}
         >
-Ultrapure leverages advanced innovations in their air purifiers to deliver highly effective and efficient solutions. These technologies are rigorously tested and certified by various labs, guaranteeing top-quality air purification.        </p>
-        
+          Ultrapure utilizes cutting-edge innovations in air purification to offer highly effective and efficient solutions. Our technologies undergo rigorous testing and certification by leading labs, ensuring top-quality air purification for your environment.</p>
         <h2
           className="text-2xl md:text-2xl font-bold mb-1 mt-6"
           onMouseEnter={() => handleMouseEnter(sol1)}
@@ -38,9 +37,8 @@ Ultrapure leverages advanced innovations in their air purifiers to deliver highl
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol1)}
         >
-Ultrapure's air purifiers are equipped with cutting-edge filtration systems that effectively capture particulates, deactivate microbes, and neutralizes gases & odors. Our custom filters and chemical media are tailored to target specific pollutants, ensuring clean and healthy air for both commercial and residential environments.        </p>
-        
-        <h2
+          Ultrapure’s air purifiers feature state-of-the-art filtration systems that effectively capture particulates, deactivate microbes, and neutralize gases and odors. Our custom filters and chemical media are specifically designed to target particular pollutants, ensuring clean and healthy air for both commercial and residential settings.
+        </p>      <h2
           className="text-2xl md:text-2xl font-bold mb-1 mt-6"
           onMouseEnter={() => handleMouseEnter(sol2)}
         >
@@ -50,7 +48,8 @@ Ultrapure's air purifiers are equipped with cutting-edge filtration systems that
           className="text-gray-700 text-base md:text-md text-left lg:text-justify"
           onMouseEnter={() => handleMouseEnter(sol2)}
         >
-Ultrapure purifiers are ideal for various industries and environments. From hospitals and office buildings to residential spaces, our solutions effectively tackle the unique air quality challenges of each sector.        </p>
+          Ultrapure purifiers are designed for diverse industries and environments. Whether in hospitals, office buildings, or residential spaces, our solutions address the specific air quality challenges unique to each sector.
+          </p>      
       </div>
     </div>
   );

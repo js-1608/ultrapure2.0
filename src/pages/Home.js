@@ -126,19 +126,20 @@ export default function HomePage() {
           </div>
           <div className="flex justify-center mt-16 flex-wrap mb-16">
             <InfoCard
-              imageUrl={choose1}
+              imageUrl={choose2}
               heading="Superior / Advanced Air Purification Solutions"
-              content="Our products are engineered to efficiently remove airborne pollutants, ensuring you enjoy clean and healthy air."
+              content="Our products are meticulously engineered to efficiently eliminate airborne pollutants, ensuring that you enjoy cleaner, healthier air in your environment."
             />
             <InfoCard
               imageUrl={choose3}
               heading="Customized Solutions for Every Environment"
-              content="We recognize the uniqueness of each setting, providing air purification solutions designed to meet your specific needs."
+              content="
+We understand that each environment is unique. That's why we offer tailored air purification solutions designed to address your specific needs and ensure optimal air quality."
             />
             <InfoCard
-              imageUrl={choose2}
+              imageUrl={choose1}
               heading="Reliable and Durable Performance"
-              content="Our products are designed for longevity, delivering consistent and reliable air purification for years to come."
+              content="Our products are built for longevity, providing consistent and dependable air purification to ensure optimal air quality for years to come."
             />
           </div>
           <div className=" flex justify-center mb-2">

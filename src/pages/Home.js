@@ -167,7 +167,6 @@ We understand that each environment is unique. That's why we offer tailored air 
               <Client/>
             {/* <OurClientele /> */}
             <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
-            <CarouselComponent />
           </div>
         </div>
 
@@ -176,6 +175,8 @@ We understand that each environment is unique. That's why we offer tailored air 
         </div>
         {/* <Newsletter/> */}
         <ReportForm />
+        <CarouselComponent />
+
         < CertificateGallery/>
 
       </div>

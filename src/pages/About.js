@@ -28,7 +28,7 @@ const About = () => {
 		<div>
 			<Banner
 				src={banner}
-				title="Abouts Us"
+				title="About Us"
 				text="Welcome to Ultrapure, your trusted partner in cutting-edge air purification solutions, committed to enhancing indoor air quality for a healthier world."
 				updated=""
 				buttonUrl=""
@@ -36,7 +36,7 @@ const About = () => {
 			/>
 			<Banner2
 				src={banner2}
-				title="Abouts Us"
+				title="About Us"
 				text="Welcome to Ultrapure, your trusted partner in cutting-edge air purification solutions, committed to enhancing indoor air quality for a healthier world."
 				updated=""
 				buttonUrl=""

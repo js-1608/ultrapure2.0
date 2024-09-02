@@ -77,25 +77,26 @@ export default function HomePage() {
           buttonUrl="/contact"
           buttonText="Get Free Consultation"
         /> */}
-<div className="flex justify-evenly items-center h-80  bg-white aboutbg  bg-cover bg-center">
-      {/* Text Section */}
-      <div className="text-left">
-        <h2 className="text-5xl font-bold text-black">Air Purified</h2>
-        <p className="text-5xl font-bold text-black">Till Now</p>
-      </div>
+<div className="flex justify-evenly items-center h-80 bg-white aboutbg bg-cover bg-center">
+  {/* Text Section */}
+  <div className="text-left">
+    <h2 className="text-5xl font-bold text-black">Air Purified</h2>
+    <p className="text-5xl font-bold text-black">Till Now</p>
+  </div>
 
-      {/* Counter Section */}
-      <div className="relative flex items-center justify-center">
-        <div className="absolute w-40 h-40 bg-ultragreen rounded-full flex items-center justify-center">
-          <div className="text-center text-white">
-            <p className="text-2xl font-bold"><Counter/></p>
-            <p className="text-sm">Cubic Meter</p>
-          </div>
-        </div>
-        <div className="absolute w-52 h-52 border-2 border-ultragreen rounded-full animate-pulse"></div>
-        <div className="absolute w-60 h-60 border-2 border-ultragreen rounded-full"></div>
+  {/* Counter Section */}
+  <div className="relative flex items-center justify-center">
+    <div className="absolute w-40 h-40 bg-ultragreen rounded-full flex items-center justify-center">
+      <div className="text-center text-white">
+        <p className="text-2xl font-bold"><Counter />+</p>
+        <p className="text-sm">Cubic Meter</p>
       </div>
     </div>
+    <div className="absolute w-52 h-52 border-2 border-ultragreen rounded-full animate-glow"></div>
+    <div className="absolute w-60 h-60 border-2 border-ultragreen rounded-full animate-glow"></div>
+  </div>
+</div>
+
   
         {/* <div className="relative  ">
           <img

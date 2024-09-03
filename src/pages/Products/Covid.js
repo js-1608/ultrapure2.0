@@ -120,7 +120,7 @@ function Covid() {
 	const product = {
 		headingText: "Formaldehyde Gas Scrubber",
 		title: "COVID-19 KILLER",
-		downloadFile: "https://ultrapureindia.in/pdf/Room%20Air%20Sanitizing%20%26%20Purification%20Unit.pdf",
+		downloadFile: "https://ultrapureindia.in/pdf/Covid 19 killer.pdf",
 		mainImage: "product/Group 261.png",
 		relativeImages: [
 			"./Product/aop.png",

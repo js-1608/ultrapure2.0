@@ -442,7 +442,7 @@ export default function Header() {
                   </div>
                   <div className="divide-gray-900/5 w-1/2 ml-10">
                     <Link
-                      to="/product"
+                      to="/contact"
                       className="text-md font-semibold text-gray-900 hover:bg-gray-100"
                       onClick={handleLinkClick} // Close the Popover on link click
                     >

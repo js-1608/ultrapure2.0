@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
   const target = 100000;
-  const duration = 3000; // 3 seconds
+  const duration = 4000; // 3 seconds
   const increment = target / (duration / 100);
 
   useEffect(() => {

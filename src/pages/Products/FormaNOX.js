@@ -111,7 +111,7 @@ function FormaNOX() {
 	const product = {
 		headingText: "Formaldehyde Gas Scrubber",
 		title: "formaNOX",
-		downloadFile: "https://ultrapureindia.in/pdf/germiNOX.pdf",
+		downloadFile: "https://ultrapureindia.in/pdf/FormaldehydeNOX.pdf",
 		mainImage: 'product/Group 258.png',
 		relativeImages: [
 			"products/Group 89.png",

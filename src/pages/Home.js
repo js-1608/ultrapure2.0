@@ -179,7 +179,7 @@ We understand that each environment is unique. That's why we offer tailored air 
             Our <span className="text-[#1D9AD6]">Clientele</span>
           </h6>
           <Client />
-          <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr>
+          {/* <hr className=" border-1 border-black lg:w-5/6 sm:w-full m-auto mb-5"></hr> */}
         </div>
       </div>
 

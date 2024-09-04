@@ -117,10 +117,10 @@ export default function HomePage() {
       {/* </div>
         </div> */}
 
-      <div className="bg-gray-100 order rounded-br-large p-2">
-        <div className="text-center m-5">
+      <div className="bg-gray-100 order rounded-br-none lg:rounded-br-large p-2 ">
+        <div className="text-center m-5 mt-10">
           {/* <h5 className="font-normal text-2xl">Discover</h5> */}
-          <h2 className=" font-bold text-5xl">
+          <h2 className=" font-bold text-3xl lg:text-5xl">
             Why Choose <span className="text-textBlue">Ultrapure</span>
           </h2>
           <p className="max-w-4xl text-center m-auto font-normal mt-6 mb-10">
@@ -131,7 +131,7 @@ export default function HomePage() {
             clients throughout the country.
           </p>
         </div>
-        <div className="flex justify-center mt-16 flex-wrap mb-16">
+        <div className="flex justify-center mt-16 flex-wrap mb-8">
           <InfoCard
             imageUrl={choose1}
             heading="Superior / Advanced Air Purification Solutions"
@@ -141,7 +141,7 @@ export default function HomePage() {
             imageUrl={choose3}
             heading="Customized Solutions for Every Environment"
             content="
-We understand that each environment is unique. That's why we offer tailored air purification solutions designed to address your specific needs and ensure optimal air quality."
+            We understand that each environment is unique. That's why we offer tailored air purification solutions designed to address your specific needs and ensure optimal air quality."
           />
           <InfoCard
             imageUrl={choose2}
@@ -149,7 +149,7 @@ We understand that each environment is unique. That's why we offer tailored air 
             content="Our products are built for longevity, providing consistent and dependable air purification to ensure optimal air quality for years to come."
           />
         </div>
-        <div className=" flex justify-center mb-2">
+        <div className=" flex justify-center mb-5 lg:mb-9">
           <Link
             to="/about"
             className="mt-5 inline-flex items-center px-4 py-2 bg-ultragreen  text-white rounded hover:bg-gray-200 font-medium  text-center m-1"
@@ -174,8 +174,8 @@ We understand that each environment is unique. That's why we offer tailored air 
       <Mobile_product />
 
       <div className="p-4 lg:p-10 border-solid   ">
-        <div className="rounded-lg shadow-2xl border-2">
-          <h6 className="m-auto text-center text-3xl font-bold p-3">
+        <div className="rounded-lg shadow-2xl border-2 ">
+          <h6 className="m-auto text-center text-3xl font-bold p-3 mt-9">
             Our <span className="text-[#1D9AD6]">Clientele</span>
           </h6>
           <Client />

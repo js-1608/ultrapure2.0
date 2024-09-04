@@ -100,7 +100,7 @@ import tech3 from "../../assests/plasmOX.png";
       };
   
 	  return (
-		<div>
+		<div className="overflow-x-hidden">
 			<ProductDisplay
 				headingText={product.headingText}
 				title={product.title}

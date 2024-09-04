@@ -29,7 +29,7 @@ import CertificateGallery from "../components/Certificates";
 import Counter from "../components/Counter";
 export default function HomePage() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* <Banner
         src={banner}
         title="The Future Of Clean Air"

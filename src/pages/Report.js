@@ -8,7 +8,7 @@ import { FaCloudArrowDown } from "react-icons/fa6";
 
 const Report = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner
         src={banner}
         title="Explore Our Expertise"

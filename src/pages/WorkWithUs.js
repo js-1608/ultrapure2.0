@@ -25,7 +25,7 @@ const jobPositions = [
 
 const WorkWithUs = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Banner
     src={banner}
     title="Work With Us"
@@ -64,7 +64,7 @@ const WorkWithUs = () => {
     </div>
 
     <Newsletter/>
-    </>
+    </div>
   );
 };
 

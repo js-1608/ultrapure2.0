@@ -20,7 +20,7 @@ const files = [
 
 const Download = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
    <Banner
     src={banner}
     title="Download Section"
@@ -52,7 +52,7 @@ const Download = () => {
         ))}
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

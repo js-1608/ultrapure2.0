@@ -10,7 +10,7 @@ import Banner2 from "../components/Banner2";
 
 const MarketSErved = () => {
   return (  
-    <div>
+    <div className="overflow-x-hidden">
       <Banner
         src={banner}
         title="Explore Our Expertise"

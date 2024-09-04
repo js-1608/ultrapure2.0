@@ -23,7 +23,7 @@ const FAQSection = () => {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Banner
     src={banner}
     title="Frequently Asked Questions"
@@ -64,7 +64,7 @@ const FAQSection = () => {
       </div>
     </div>
     <Newsletter/>
-    </>
+    </div>
   );
 };
 

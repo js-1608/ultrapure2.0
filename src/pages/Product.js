@@ -38,7 +38,7 @@ const images = [
   ];
   
 	return (
-	  <div>
+	  <div className="overflow-x-hidden">
 		 <Banner
         src={banner}
         title="Our Air Purification Range"

@@ -14,7 +14,7 @@ import Banner2 from "../components/Banner2";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner
         src={contactBanner}
         title="Get In Touch"

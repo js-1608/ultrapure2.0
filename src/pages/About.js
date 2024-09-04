@@ -25,7 +25,7 @@ const About = () => {
 		// Add more FAQs as needed
 	];
 	return (
-		<div>
+		<div className="overflow-x-hidden">
 			<Banner
 				src={banner}
 				title="About Us"

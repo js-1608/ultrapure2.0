@@ -30,7 +30,7 @@ const Gallery = () => {
   };
 
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Banner
     src={banner}
     title="Media Gallery"
@@ -53,7 +53,7 @@ const Gallery = () => {
         ))}
       </div>
     </InfiniteScroll>
-    </>
+    </div>
   );
 };
 

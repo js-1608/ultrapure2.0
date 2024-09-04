@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './carousel.css'; // Ensure this file contains the necessary styling
-import p1 from '../assests/products/Group 267.png';
+import p1 from '../assests/products/Group 266.png';
 import p2 from '../assests/products/Group 267.png';
 import p3 from '../assests/products/Group 268.png';
 import p4 from '../assests/products/Group 206.png';

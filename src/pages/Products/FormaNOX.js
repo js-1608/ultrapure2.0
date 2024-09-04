@@ -124,7 +124,7 @@ function FormaNOX() {
 		setOpenFAQ(openFAQ === id ? null : id);
 	};
 	return (
-		<div>
+		<div className="overflow-x-hidden">
 			<ProductDisplay
 				headingText={product.headingText}
 				title={product.title}

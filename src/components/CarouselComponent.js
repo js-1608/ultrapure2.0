@@ -34,11 +34,11 @@ const CarouselComponent = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     nextArrow: <button className="slick-next custom-arrow">&rarr;</button>,
     prevArrow: <button className="slick-prev custom-arrow">&larr;</button>,
     responsive: [

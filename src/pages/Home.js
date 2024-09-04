@@ -188,7 +188,7 @@ export default function HomePage() {
       </div>
       {/* <Newsletter/> */}
       <ReportForm />
-      <OurClientele />
+      {/* <OurClientele /> */}
 
       <CarouselComponent />
 

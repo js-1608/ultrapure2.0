@@ -17,14 +17,14 @@ import p10 from '../assests/products/Group 213.png';
 const images = [
   { src: p1, heading: 'Advanced Oxidation Plasma ' },
   { src: p2, heading: 'odorNOX Unit ' },
-  { src: p3, heading: 'germiNOX Air Purifier' },
+  { src: p3, heading: 'Data Centre Corrosion Control Unit' },
   { src: p4, heading: 'Virushield Air Purifier ' },
   { src: p5, heading: 'germiNOX Air Purifier' },
   { src: p6, heading: 'Falcon S Air Purifier' },
   { src: p7, heading: 'CBR Filter' },
   { src: p8, heading: 'ESP Filter' },
-  { src: p9, heading: 'ultraSORB Chemical Media' },
-  { src: p10, heading: 'Ceiling Suspended Air Purifier' },
+  { src: p9, heading: 'Ceiling Suspended Air Purifier' },
+  { src: p10, heading: 'ultraSORB Chemical Media' },
 ];
 
 const Mobile_product = () => {

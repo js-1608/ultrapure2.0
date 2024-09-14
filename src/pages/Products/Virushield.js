@@ -202,11 +202,15 @@ function Virushield() {
       </div>
 
       <div className="flex flex-col md:flex-row  p-4 md:p-8 rounded-lg">
+        <div className="w-2/3 text-center justify-center m-auto display_hide_big">
+          <img src="product/G84.png" alt="plasma" className="  rounded-lg" />
+          {/* <h6 className="font-bold w-full text-sm">Modular Decontamination Unit - 42</h6> */}
+        </div>
         <div className="w-full md:w-2/3 mt-4 md:mt-0 md:ml-6 flex flex-col justify-center">
-          <h1 className="font-bold w-full text-xl md:text-2xl  lg:text-3xl p-8">
+          <h1 className="font-bold w-full text-xl md:text-2xl  p-3 pl-3 lg:pl-8 lg:pr-8">
             Modular Decontamination Unit - 84
           </h1>
-          <p className="text-gray-700 p-3 pl-8 lg:pr-8 text-justify">
+          <p className="text-gray-700 p-3 pl-3 lg:pl-8 lg:pr-8 text-justify">
             The Ultrapure Modular air decontamination unit, featuring the
             Advanced Oxidation Plasma system, utilizes an antimicrobial catalyst
             reflector that releases plasma of friendly oxidizers when a
@@ -230,7 +234,7 @@ function Virushield() {
             </span>
           </a>
         </div>
-        <div className="w-full md:w-1/3 flex justify-between items-center">
+        <div className="w-full md:w-1/3 flex justify-between items-center display_hide">
           <div className="w-2/3 text-center justify-center m-auto">
             <img src="product/G84.png" alt="plasma" className="  rounded-lg" />
             {/* <h6 className="font-bold w-full text-sm">Modular Decontamination Unit - 42</h6> */}

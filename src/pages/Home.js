@@ -187,7 +187,7 @@ export default function HomePage() {
         <MarketCarousel />
       </div>
       {/* <Newsletter/> */}
-      <ReportForm />
+      {/* <ReportForm /> */}
       {/* <OurClientele /> */}
 
       <CarouselComponent />

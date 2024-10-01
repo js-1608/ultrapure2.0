@@ -113,7 +113,7 @@ function Virushield() {
   ];
 
   const product = {
-    headingText: "HVAC Duct Air Purification",
+    headingText: "Wall hung Air Purification ",
     title: "Virushield Air Purifer",
     downloadFile:
       "https://ultrapureindia.in/pdf/Wallhung Or Virushield Flyer.pdf",

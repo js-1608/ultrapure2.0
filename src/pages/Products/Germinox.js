@@ -86,7 +86,7 @@
 	];
 
       const product = {
-          headingText: "HVAC Duct Air Purification",
+          headingText: "Wall hung Air Purification",
           title: "Germinox",
           downloadFile: "https://ultrapureindia.in/pdf/germiNOX.pdf",
           mainImage: 'product/germinox.png',

@@ -60,14 +60,14 @@ const technology = [
     description: "Speak directly to your customers",
     href: "/technology#section2",
     icon: CursorArrowRaysIcon,
-    src: technology2, // Use imported variable
+    src: technology3, // Use imported variable
   },
   {
     name: "ultraSORB technology",
     description: "Your customers’ data will be safe and secure",
     href: "/technology#section3",
     icon: FingerPrintIcon,
-    src: technology3, // Use imported variable
+    src: technology2, // Use imported variable
   },
 ];
 
@@ -203,13 +203,13 @@ const resources = [
   //   icon: CursorArrowRaysIcon,
   //   src: r2,
   // },
-  {
-    name: "Test Reports",
-    description: "Speak directly to your customers",
-    href: "/report",
-    icon: CursorArrowRaysIcon,
-    src: r3,
-  },
+  // {
+  //   // name: "Test Reports",
+  //   // description: "Speak directly to your customers",
+  //   // href: "/report",
+  //   // icon: CursorArrowRaysIcon,
+  //   // src: r3,
+  // },
   // {
   //   name: "Corporate Social Responsibilities",
   //   description: "Speak directly to your customers",
@@ -490,7 +490,7 @@ export default function Header() {
                     {resources.map((item) => (
                       <div
                         key={item.name}
-                        className="w-1/3 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
+                        className="w-1/2 p-5 flex items-center justify-center flex-row text-center rounded-lg text-gray-900 hover:bg-gray-50 cursor-pointer"
                       >
                         <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-gray-50 group-hover:bg-white">
                           <img

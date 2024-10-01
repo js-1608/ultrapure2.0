@@ -13,7 +13,7 @@ const TopNav = () => {
     { id: 5, name: 'Market served', description: 'Description of Product 3', path: '/market-served' },
     { id: 6, name: 'faq', description: 'Description of Product 3', path: '/faq' },
     { id: 7, name: 'career', description: 'Description of Product 3', path: '/work' },
-    { id: 8, name: 'download', description: 'Description of Product 3', path: '/download' },
+    // { id: 8, name: 'download', description: 'Description of Product 3', path: '/download' },
     { id: 9, name: 'contact', description: 'Description of Product 3', path: '/contact' },
     { id: 10, name: 'Gallery', description: 'Description of Product 3', path: '/gallery' },
     { id: 11, name: 'Advanced Oxidation Plasma (AOP) Cell', description: 'Description of Product 3', path: '/aop' },

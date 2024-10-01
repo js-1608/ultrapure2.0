@@ -33,7 +33,7 @@ import Industrial from './pages/market_served/Industrail';
 import Food from './pages/market_served/Food';
 import Material from './pages/market_served/Material';
 import Waste from './pages/market_served/Waste';
-import Report from './pages/Report';
+// import Report from './pages/Report';
 import Footer from './components/Footer';
 import Scroll from './components/Scroll';
 import NotFound from './pages/NotFound';
@@ -61,7 +61,7 @@ export default function App() {
         <Route path="/work" element={<WorkWithUs/>} />
         <Route path="/download" element={<Download/>} />
         <Route path="/gallery" element={<Gallery/>} />
-        <Route path="/report" element={<Report/>} />
+        {/* <Route path="/report" element={<Report/>} /> */}
 
 
 

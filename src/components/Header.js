@@ -12,7 +12,7 @@ import {
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
-  Transition,
+  Transition, 
 } from "@headlessui/react";
 import {
   ArrowPathIcon,
@@ -33,7 +33,7 @@ import {
 import technology1 from "../assests/technology (1).png";
 import technology2 from "../assests/technology (2).png";
 import technology3 from "../assests/technology (3).png";
-
+ 
 import r1 from "../assests/resource/r (1).png";
 import r2 from "../assests/resource/r (2).png";
 import r3 from "../assests/resource/r (3).png";
